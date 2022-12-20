@@ -453,6 +453,10 @@ dl, ol, ul, pre, blockquote, .table {
   }
 }
 
+.texto-indice {
+  color:#dddddd ;
+}
+
 .text-11, .text-12, .text-13, .text-14, .text-15, .text-16, .text-17, .text-18, .text-19, .text-20, .text-21, .text-22, .text-23, .text-24, .text-25 {
   line-height: 1.3;
 }
