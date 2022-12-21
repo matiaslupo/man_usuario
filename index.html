@@ -47,7 +47,7 @@
   ============================ -->
     <header id="header" class="sticky-top">
       <!-- Navbar -->
-      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark ">
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark bg-lightblue">
         <div class="container-fluid">
           <!-- Sidebar Toggler -->
           <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
@@ -56,7 +56,7 @@
           <!-- Logo -->
           <a class="logo ml-md-3" href="index.html" title="Larsoft Logo"> <img src="assets/images/logo-larsoft.png"
               alt="" /> </a>
-          <span class="text-2 ml-2">(En Prod.)</span>
+          <span class="text-2 ml-2 texto-indice">(En Prod.)</span>
           <!-- Logo End -->
 
           <!-- Navbar Toggler -->
@@ -81,7 +81,7 @@
                 <li><a class="dropdown-item" href="#">Something Else Here</a></li>
               </ul>
             </li>-->
-              <li><a target="_blank" href="#">Soporte Técnico</a></li>
+              <li><a target="_blank" href="#"><span class="texto-indice">Soporte Técnico</span> </a></li>
             </ul>
           </div>
           <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
@@ -116,18 +116,16 @@
               <li class="nav-item"><a class="nav-link" href="#man_aspectos_generales">Aspectos Generales</a></li>
             </ul>
           </li>
+          <!--SECCION FAQ-->
           <li class="nav-item"><a class="nav-link" href="#man_faq">Preguntas Frecuentes</a></li>
 
-          <li class="nav-item"><a class="nav-link" href="#man_inicio">Inicio</a>
-            <ul class="nav flex-column">
-            </ul>
-          </li>
-
+          <!--SECCION STOCK-->
           <li class="nav-item"><a class="nav-link" href="#man_stock">Productos y Stock</a>
             <ul class="nav flex-column">
             </ul>
           </li>
 
+          <!--SECCION VENTAS-->
           <li class="nav-item"><a class="nav-link" href="#man_ventas">Ventas</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#man_clientes">Clientes</a>
@@ -181,8 +179,18 @@
               <li class="nav-item"><a class="nav-link" href="#man_ventas_saldos">Saldos</a>
               <ul class="nav flex-column">
                 <li class="nav-item"><a class="nav-link" href="#man_ventas_deudacliente">Deuda del Cliente</a></li>
-                <li class="nav-item"><a class="nav-link" href="#man_ventas_saldomensual">Saldo Mensual</a></li>
+                <li class="nav-item"><a class="nav-link" href="#man_ventas_saldosmensuales">Saldos Mensuales</a></li>
               </ul>
+              <li class="nav-item"><a class="nav-link" href="#man_ventas_libroiva">Libro IVA de Ventas</a>
+              <li class="nav-item"><a class="nav-link" href="#man_ventas_otroslistados">Otros Listados</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link" href="#man_ventas_comprobxsucursal">Comprobantes Emitidos por Sucursal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_ventas_comprobxcliente">Comprobantes Emitidos por Cliente</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_ventas_reciboxsucursal">Recibos de Cobro por Sucursal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_ventas_artvendidos">Artículos Vendidos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_ventas_credxcliente">Análisis de Crédito por Cliente</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_ventas_oprealizadas">Informe de Operaciones Realizadas</a></li>
+                </ul>
             </li>
             </ul>
           </li>
@@ -233,9 +241,10 @@
                 </ul>
               </div>
             </div>
+            <!--
             <p class="alert alert-info">If you have any questions that are beyond the scope of this help file, Please
               feel free to email via <a target="_blank"
-                href="#">Item Support Page</a>.</p>
+                href="#">Item Support Page</a>.</p>-->
           </section>
 
           <hr class="divider">
@@ -1513,27 +1522,371 @@
       <h3>Saldos Mensuales</h3>
 
       <p>
+        Se accede desde la opción <b>Saldos de Cliente Mensual</b> dentro del menú Listados Saldos
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Saldo Mensual.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Saldo Mensual.png" alt=""></a></p>
+
+      <p>
+        Se utiliza para listar todos los clientes con un detalle mensual de los saldos. Presione Buscar para listarlos.
       </p>
 
-      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-            src="assets/images/Ventas/" alt=""></a></p>
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Saldos Mensuales.png"><img class="img-fluid border"
+            src="assets/images/Ventas/Ventana Saldos Mensuales.png" alt=""></a></p>
+
+      <p>
+        Presione Imprimir para generar el reporte.
+      </p>
     </section>
 
     <hr class="divider">
 
     <!-- Ventas -> Presupuesto -> Listado
 		============================ -->
+    <section id="man_ventas_libroiva">
+      <h2>Libro IVA de Ventas</h2>
+
+      <p>Se accede desde Ventas -> Otros Listados -> <b>Libro de IVA Ventas</b></p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Libro Venta.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Libro Venta.png" alt=""></a></p>
+
+      <p>
+        Al debe seleccionar la fecha y la sucursal, se habilitarán los campos en la tabla debajo.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Libro IVA Ventas.png"><img class="img-fluid border"
+            src="assets/images/Ventas/Libro IVA Ventas.png" alt=""></a></p>
+
+      <p>
+        Presione Iniciar para comenzar el proceso. Al finalizar, se completarán los detalles en la tabla.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Libro IVA Ventas - Detalles.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Libro IVA Ventas - Detalles.png" alt=""></a></p>
+
+      <p>
+        En el apartado <b>Listado</b>, podrá observar los comprobantes que fueron levantados en la consulta. Utilice la barra de navegación para recorrer
+         el listado y ver el resto de los campos.
+      </p>
+
+        <p><a class="popup-img" href="assets/images/Ventas/Libro IVA Ventas - Listado.png"><img class="img-fluid border"
+          src="assets/images/Ventas/Libro IVA Ventas - Listado.png" alt=""></a></p>
+
+      <p>
+        Presione <b>Imprimir</b> para generar el reporte. <br>
+        Cierre Fiscal: Cierra el período de manera que no se puedan modificar los movimientos. Esto se hace después de imprimir el libro de IVA.<br>
+        <p><img class="img-fluid border"
+          src="assets/images/Ventas/Libro IVA Ventas - Cierre Fiscal.png" alt=""></p>
+      </p>
+    </section>
+
+    <hr class="divider">
+
+
+        <!-- Ventas -> Otros Listados
+		============================ -->
+    <section id="man_ventas_otroslistados">
+      <h3>Otros Listados</h3>
+
+      <p>
+        Sección con otras herramientas útiles relacionadas a informes y listados. 
+        Las herramientas descritas a continuación se encuentran en las secciones dentro de Ventas -> <b>Listados</b>.
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/Otros Listados.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Otros Listados.png" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+    <!--  Ventas -> Otros Listados -> 
+		============================ -->
+    <section id="man_ventas_comprobxsucursal">
+      <h3>Comprobantes Emitidos por Sucursal</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Comprobantes Emitidos.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Comprobantes Emitidos.png" alt=""></a></p>
+
+      <p>
+        La opción Listado de Comprobantes Emitidos está ubicada en el submenú <b>Relacionados a Comprobantes</b>,
+         lista todos los comprobantes de ventas emitidos por sucursal en un período determinado. 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes por Sucursal.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Ventana Comprobantes por Sucursal.png" alt=""></a></p>
+
+      <p>Seleccione la sucursal y el tipo de comprobante, establezca las fechas y presione Buscar.</p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes por Sucursal - Listado.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Ventana Comprobantes por Sucursal - Listado.png" alt=""></a></p>
+
+      <p>Haciendo doble click sobre uno de los registros, se abrirá una vista del comprobante. Presione Imprimir para generar el reporte.</p>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- Ventas -> Otros Listados ->
+		============================ -->
+    <section id="man_ventas_comprobxcliente">
+      <h3>Comprobantes Emitidos por Cliente</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Comprobantes Clientes.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Comprobantes Clientes.png" alt=""></a></p>
+
+      <p>
+        La opción Listado de Comprobantes Emitidos está ubicada en el submenú <b>Relacionados a Comprobantes</b>,
+         lista todos los comprobantes de ventas emitidos para un cliente en específico en un período determinado.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes Clientes.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Ventana Comprobantes Clientes.png" alt=""></a></p>
+
+      <p>
+        Seleccione el cliente, el tipo de comprobante, establezca un rango de fechas y presione Buscar. Presione Imprimir para generar el reporte.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes Clientes - Listado.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Ventana Comprobantes Clientes - Listado.png" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+        <!-- Ventas -> Otros Listados ->
+		============================ -->
+    <section id="man_ventas_reciboxsucursal">
+      <h3>Recibos de Cobro por Sucursal</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Listado de Recibos.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Listado de Recibos.png" alt=""></a></p>
+
+      <p>
+        La opción Listado de Recibos se encuentra en el submenú <b>Relacionados a Comprobantes</b>, lista todos los cobros efectuados por sucursal. 
+      </p>
+
+      <p>
+        En la primer tabla se listan los recibos, y en las otras, según el recibo seleccionado, se detallan las retenciones que afectaron la operación y 
+        el detalle de los valores que componen su importe. <br>
+       Seleccione la sucursal, las fechas y presione Buscar.
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Lista de Recibos.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Ventana Lista de Recibos.png" alt=""></a></p>
+
+      <p>
+        Presione Imprimir para generar el reporte.
+      </p>
+    </section>
+
+    <hr class="divider">
+
+            <!-- Ventas -> Otros Listados -> Control de Forma de Pago de Clientes
+		============================ 
+    <section id="man_ventas_ctrlpagocliente">
+      <h3>Control de Forma de Pago de Clientes</h3>
+
+      <p>
+        Mediante esta opción se pueden controlar los pagos de los clientes. Seleccione un cliente, un período y presione Buscar.
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
+        src="assets/images/Ventas/" alt=""></a></p>
+    </section>
+
+    <hr class="divider"> -->
+
+    
+    <!-- Ventas -> Otros Listados ->
+		============================ 
+    <section id="man_ventas_retenciones">
+      <h3>Retenciones</h3>
+
+      <p>
+        
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
+        src="assets/images/Ventas/" alt=""></a></p>
+    </section>
+
+    <hr class="divider"> -->
+
+    <!-- Ventas -> Otros Listados ->
+		============================ -->
+    <section id="man_ventas_artvendidos">
+      <h3>Articulos Vendidos</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Venta Articulos.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Venta Articulos.png" alt=""></a></p>
+
+      <p>
+        Se accede desde el submenú <b>Relacionado a las Vtas.</b>, opción Listado de Vta por Artiuclo. Lista todos los artículos vendidos en un período determinado. 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Vtas x Articulo.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Vtas x Articulo.png" alt=""></a></p>
+
+      <p>
+        Parámetros de búsqueda:
+        <ul>
+          <li><b>Items a Visualizar</b>: Permite elegir qué tipo de artículos se buscarán: afectados por IVA, exentos o ambos.</li>
+          <li><b>Sucursal</b>: donde se realizaron las ventas buscadas.</li>
+          <li><b>Zona</b>: donde se realizaron las ventas buscadas.</li>
+          <li><b>Marca</b> de los articulos vendidos buscados.</li>
+          <li><b>Filtro Comprobante</b>: qué tipo de comprobantes emitidos se buscarán.</li>
+          <li><b>Fechas</b> desde y hasta las que fueron emitidos los comprobantes.</li>
+          <li><b>Rubro</b> de los artículos buscados.</li>
+          <li><b>SubRubro</b> de los artículos buscados.</li>
+          <li><b>Vendedor</b> que realizó las ventas.</li>
+          <li><b>Artículo:</b> permite buscar un único artículo en específico. Desmarcar la casilla <b>Todos los artículos</b> para usar.</li>
+          <li><b>Cliente:</b> permite buscar ventas realizadas a un único cliente en específico. Desmarcar la casilla <b>Todos los clientes</b> para usar.</li>
+        </ul>
+        Presione Buscar para iniciar el proceso, puede tardar unos minutos. En la tabla debajo aparecerán los resultados. Presione Imprimir para generar un reporte.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
+        src="assets/images/Ventas/" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+    
+    <!-- Ventas -> Otros Listados ->
+		============================ -->
+    <section id="man_ventas_credxcliente">
+      <h3>Análisis de Crédito por Cliente</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Credito Clientes.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Credito Clientes.png" alt=""></a></p>
+      
+      <p>
+        Esta pantalla analiza por cliente en un período determinado diferentes variables que tienen que ver con los movimientos en la cuenta corriente del cliente. 
+        Seleccione el cliente, el período y presione Buscar.
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/Credito Clientes.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Credito Clientes.png" alt=""></a></p>
+
+      <p>
+        <ul>
+          <li><b>Cantidad de días</b>: Días que componen el período analizado.</li>
+          <li><b>Saldo Inicial</b>: El saldo que el cliente tenía a la fecha “Desde”.</li>
+          <li><b>Saldo Final</b>: El saldo que el cliente tenía a la fecha “Hasta”.</li>
+          <li><b>Saldo Medio</b>: Es el promedio entre el saldo inicial y el final.</li>
+          <li><b>Rotación</b>: Surge de dividir el total de ventas realizadas por el saldo medio. Este valor significa la rotación del crédito del cliente. 
+            Si este valor es bajo, significa que el cliente no ha saldado sus deudas o no ha comprado mucho. 
+            Si este valor es alto, significa que el cliente ha ido comprando y saldando las deudas en un período razonable. </li>
+          <li><b>Ventas realizadas</b>: Es la suma de todos los comprobantes de venta. Da el total de las ventas realizadas en ese período.</li>
+          <li><b>Duración</b>: Surge de dividir la cantidad de días del período por la rotación. Este valor muestra la duración de la rotación que mencionábamos más arriba.
+             Significa cada cuanto (en promedio) el cliente rota su crédito. </li>
+        </ul>
+      </p>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- Ventas -> Otros Listados ->
+		============================ -->
+    <section id="man_ventas_oprealizadas">
+      <h3>Informe de Operaciones Realizadas</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Informe Operaciones.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Boton Informe Operaciones.png" alt=""></a></p>
+
+      <p>
+        Mediante la opción Informes de Operaciones Realizadas del submenú Otros Listados se pueden ver los totales de las ventas y compras por sucursal. 
+        Seleccione la sucursal, el período y presione Iniciar.
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/Informe Operaciones.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Informe Operaciones.png" alt=""></a></p>
+
+      <p>
+        En el apartado de Compras podemos encontrar: Totales facturados en cuenta corriente, notas de crédito y de débito, total de compras en contado, 
+         total neto de artículos gravados y de exentos vendidos.<br>
+        En el apartado de Ventas encontramos: Totales facturados en cuenta corriente, notas de crédito y de débito, total de ventas de contado, 
+         total neto de artículos gravados y exentos vendidos. <br>
+        En el apartado de Gastos de Banco encontramos: Total de gastos, IVA, Ingresos Brutos y Percepciones de IVA. <br>
+        <!-- Preguntar qué es esta parte -->
+        En el apartado Liquidación T. de C encontramos: Liq. de TC, IVA e Ingresos Brutos. <br>
+        En el apartado Resumen TC encontramos: Resumen TC, IVA e Ingresos Brutos. <br>
+        En el apartado Saldos Totales encontramos: Total IVA Crédito (Compras), Total IVA Débito (Ventas), Total IIBB Crédito (Compras), Total IIBB Débito (Ventas), 
+         Total de Recibos (cobro a clientes) y Total de órdenes de pago a proveedores. <br>
+        Finalmente, debajo encontramos los apartados de IVA en Facturas de Compra e IVA en Facturas de Venta.
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    
+            <!-- Ventas -> Otros Listados ->
+		============================ 
+    <section id="man_ventas_gravadoseniibb">
+      <h3>Artículos Gravados en Ingresos Brutos</h3>
+
+      <p>
+        
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
+        src="assets/images/Ventas/" alt=""></a></p>
+    </section>
+
+    <hr class="divider"> -->
+
+    
+            <!-- Ventas -> Otros Listados ->
+		============================ -->
     <section id="man_ventas_">
       <h3></h3>
 
       <p>
+        
       </p>
-
+      
       <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-            src="assets/images/Ventas/" alt=""></a></p>
+        src="assets/images/Ventas/" alt=""></a></p>
     </section>
 
     <hr class="divider">
+
+    
+            <!-- Ventas -> Otros Listados ->
+		============================ -->
+    <section id="man_ventas_">
+      <h3></h3>
+
+      <p>
+        
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
+        src="assets/images/Ventas/" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+
+
+            <!-- 
+		============================ -->
+    <section id="man_">
+      <h3></h3>
+
+      <p>
+        
+      </p>
+      
+      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
+        src="assets/images/Ventas/" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+    
 
         </div>
       </div>

@@ -610,6 +610,9 @@ dl, ol, ul, pre, blockquote, .table {
   background-color:#0689C1 !important;
 }
 
+.bg-lightblue {
+  background-color:#07a8ec !important;
+}
 /* Progress Bar */
 .progress-sm {
   height: 0.5rem !important;
