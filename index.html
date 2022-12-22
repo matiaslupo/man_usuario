@@ -115,15 +115,35 @@
           <li class="nav-item"><a class="nav-link" href="#man_primeros_pasos">Primeros Pasos</a>
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#man_ingreso_sistema">Ingresar al Sistema</a></li>
-              <li class="nav-item"><a class="nav-link" href="#man_aspectos_generales">Aspectos Generales</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_aspectos_generales">Aspectos Generales</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link" href="#man_aspgen_barraherram">Barra de Herramientas</a>
+                  <li class="nav-item"><a class="nav-link" href="#man_aspgen_barraestado">Barra de Estado</a>
+                  <li class="nav-item"><a class="nav-link" href="#man_aspgen_reportes">Reportes</a>
+                  <li class="nav-item"><a class="nav-link" href="#man_aspgen_valores">Valores</a>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#man_datos_empresa">Datos de la Empresa</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_sucursales">Sucursales</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_comprobantes">Comprobantes</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_alicuotasiva">Alícuotas de IVA</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_tipos_inscripcion">Tipos de Inscripción</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_datos_geo">Datos Geográficos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_cond_pago">Condiciones de Pago</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_config_local">Configuración Local</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_tipos_retenciones">Tipos de Retenciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_percepciones">Percepciones</a></li>
             </ul>
           </li>
+
           <!--SECCION FAQ-->
           <li class="nav-item"><a class="nav-link" href="#man_faq">Preguntas Frecuentes</a></li>
 
           <!--SECCION STOCK-->
-          <li class="nav-item"><a class="nav-link" href="#man_stock">Productos y Stock</a>
+          <li class="nav-item"><a class="nav-link" href="#man_stock">Artículos y Stock</a>
             <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#man_primeros_datos">Carga de Primeros Datos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_articulos">Artículos</a></li>
             </ul>
           </li>
 
@@ -347,22 +367,385 @@
 
           </section>
 
-          <hr class="divider">
-
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Aspectos Generales ->
 		============================ -->
-          <section id="man_ventas_">
-            <h3></h3>
+          <section id="man_aspgen_barraherram">
+            <h3>Barra de Herramientas</h3>
 
             <p>
+              Los botones de la barra de herramientas varían de acuerdo con las opciones disponibles de cada formulario, pero básicamente funcionan de la siguiente manera: <br>
+              Así se verá la barra al abrir un formulario. De este modo, se puede buscar un registro existente o agregar uno nuevo. <br>
+              <img class="img-fluid border" src="assets/images/Barra de Herramientas.png" alt=""> <br>
+              Si se pulsa Agregar, se debe confirmar la operación para guardar los cambios.<br>
+              <img class="img-fluid border" src="assets/images/Barra de Herramientas - Agregando.png" alt=""> <br>
+              Pulsando Borrar y confirmando la operación, se eliminará el registro actual. <br>
+              <img class="img-fluid border" src="assets/images/Barra de Herramientas - Borrar.png" alt=""> <br>
+              Los botones Previo y Siguiente permiten navegar entre los registros, a partir de un registro elegido. 
+              Esto significa que, si no hay un registro abierto, los botones están deshabilitados. <br>
+              <img class="img-fluid border" src="assets/images/Barra de Herramientas - Navegacion.png" alt=""> <br>
             </p>
 
-            <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-                  src="assets/images/Ventas/" alt=""></a></p>
+            <p>
+              Al pulsar Buscar se pueden presentar diferentes opciones. El caso más simple se presenta en la siguiente ventana: <br>
+              <img class="img-fluid border" src="assets/images/Busqueda Simple.png" alt=""> <br>
+              Como se ve, se despliega una tabla con los registros existentes, en este caso Monedas, y la posibilidad de ingresar el texto para facilitar la búsqueda. <br>
+              La otra posibilidad se presenta cuando los registros tienen varias columnas, entonces se puede especificar otros filtros extra. <br>
+              Por ejemplo, en el caso de Comprobantes, podemos buscar por Tipo y otros detalles como Letra y Número, y también Filtrar por Cliente. <br>
+              <img class="img-fluid border" src="assets/images/Busqueda Compleja.png" alt=""> <br>
+            </p>
           </section>
 
+    <!-- Aspectos Generales ->
+		============================ -->
+    <section id="man_aspgen_barraestado">
+      <h3>Barra de Estado</h3>
 
-          <!-- FAQ
+      <p>
+        <img class="img-fluid border" src="assets/images/Barra de Estado.png" alt=""> <br>
+        En ella se encontrarán los estados de los formularios. Por ejemplo, en este caso, el formulario está en modo de Consulta porque no se modificará ningún dato. 
+        En caso de estar agregando o modificando, estará en modo Agregando Registros. También muestra mensajes del estado de la información, por ejemplo, en este caso, 
+        muestra que el Comprobante ya fue impreso por lo que no puede ser modificado.
+        Por lo tanto, las opciones Borrar y Modificar no estarán habilitadas.
+      </p>
+
+    </section>
+
+    <!-- Aspectos Generales ->
+		============================ -->
+    <section id="man_aspgen_reportes">
+      <h3>Reportes</h3>
+
+      <p>
+        Se abren en una ventana aparte y, en general, se ven así: <br>
+        <!--NECESITO IMAGEN VISTA PREVIA ACTUALIZADA-->
+        <img class="img-fluid border" src="assets/images/Reporte Temp.png" alt=""> <br>
+        Con la opción Guardar, los reportes se guardan con formato Report File para poder ser abierto, 
+         modificado o simplemente archivado como un documento de Microsoft Word. 
+      </p>
+
+    </section>
+
+    
+    <!-- Aspectos Generales ->
+		============================ -->
+    <section id="man_aspgen_valores">
+      <h3>Valores</h3>
+
+      <p>
+        En los casos de manejo de dinero y valores usados en compras y ventas, el mecanismo utilizado es el siguiente: <br>
+        <img class="img-fluid border" src="assets/images/Fondos/Egresos de Caja.png" alt=""> <br>
+        En el ejemplo, estamos viendo un egreso de caja. El manejo de este comprobante está detallado en Fondos -> Egresos de Caja, 
+         ahora sólo nos detendremos a ver cómo ingresar valores. <br>
+        Primero se ingresa con qué caja se va a trabajar con el boton <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt=""> debajo de Caja.
+         Luego, se ingresan los diferentes tipos de pago.<br>
+         Dependiendo el tipo de operación que se realice, serán las formas que estarán habilitadas.<br>
+        <img class="img-fluid border" src="assets/images/Fondos/Fondos - Formas de Pago.png" alt=""> <br>
+        Para acceder a las formas de pago debe presionar el Buscador o pulsar Ctrl + Enter o, en caso de que conozca el código de la forma de pago, 
+        ingrese directamente el código. <br>
+         Esta modalidad de abrir los buscadores se adopta en todas las pantallas. <br>
+
+        
+      </p>
+      <p><u>Pagos en Efectivo</u></p>
+      <p>
+        <!--FALTA-->
+        <img class="img-fluid border" src="assets/images/" alt=""> <br>
+        De todas las operaciones, la más sencilla, sólo debe ingresar el importe en el campo Unidades y confirmar. 
+        En todos los casos, al momento de cargar un movimiento de valores, si no se especifican, por defecto toma el total en Efectivo
+      </p>
+      
+      <p><u>Cheques de Terceros</u><br>
+        En caso de compra, debemos elegir un cheque que ya fue ingresado. 
+        Por lo tanto, al elegir esta opción se despliega una ventana donde se detallan los cheques de terceros que tenemos en cartera. <br>
+        <!--FALTAN IMAGENES-->        
+        <img class="img-fluid border" src="assets/images/" alt=""> <br>
+        Se elige uno con doble click y se cargan los datos automáticamente como muestra la siguiente figura: <br>
+        <!--FALTA-->
+        <img class="img-fluid border" src="assets/images/" alt=""> <br>
+        En caso de venta, la acción correcta sería ingresar ese cheque. Por lo tanto, debemos cargar todos los datos del cheque. 
+        Pulsando Enter luego de cada ingreso, el sistema lo llevará en el orden lógico de la carga de los datos. 
+        La información a ingresar pertenece al cheque que el cliente le está entregando en forma de pago. 
+        Presione Confirmar para guardar la operación. <br>
+        <!--FALTA-->
+        <img class="img-fluid border" src="assets/images/" alt=""> <br>
+      </p>
+
+      <p><u>Cheques Propios</u><br>
+        Utilizando las chequeras de cheques propios, el sistema permite el ingreso de los datos referidos al cheque a emitir. <br>
+        <!--FALTA-->
+        <img class="img-fluid border" src="assets/images/" alt=""> <br>
+      </p>
+
+      <p><u>Transferencias</u><br>
+        Dependiendo si se tratara de una compra o una venta, esta opción ingresará o egresará dinero de sus cuentas bancarias. 
+        Ingrese, entonces, el número de transferencia, la cuenta involucrada y el importe. En el ejemplo, se trata de una venta, por lo tanto dice “Originado por” y un cliente, 
+         en caso de una compra, la leyenda sería “A favor de” y un proveedor.
+         Presione Confirmar para guardar la operación.<br>
+         <!--FALTA-->
+         <img class="img-fluid border" src="assets/images/" alt=""> <br>
+      </p>
+      
+      <p><u>Tarjetas de Crédito</u><br>
+        <!--FALTA-->
+        <img class="img-fluid border" src="assets/images/" alt=""> <br>
+        Este tipo de valor se utiliza en las ventas. El sistema permite cargar pagos con tarjeta de crédito. Para ello ingrese la tarjeta de crédito, 
+         las cuotas, el titular, las unidades (importe), Nro. de documento del titular y presione Confirma.
+         Las tarjetas de crédito se cargan en el menú Fondos, submenú datos, opción Tarjetas de Crédito. <br>
+      </p>
+
+      <p><u>Débitos Internos</u><br>
+        <img class="img-fluid border" src="assets/images/" alt=""> <br>
+        Para realizar un débito, ingrese el número de débito, la cuenta bancaria y el importe. Presione Confirma para guardar los cambios. 
+      </p>
+
+    </section>
+
+    
+    <!-- Datos de la Empresa ->
+		============================ -->
+    <section id="man_datos_empresa">
+      <h3>Datos de la Empresa</h3>
+
+      <p>
+        Se accede desde el menú Parámetros, botón Datos de la Empresa <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Datos Empresa.png" alt=""> <br>
+        Es posible ingresar todos los datos correspondientes a la empresa, como muestra la imagen siguiente:<br>
+        <!--FALTA-->
+        <img class="img-fluid border" src="assets/images/Parametros/" alt=""> <br>
+        Buscar logo: El logo de la empresa se inserta desde esta opción. Se abre una ventana donde se elige el archivo.<br>
+        <img class="img-fluid border" src="assets/images/Parametros/Buscar Logo.png" alt=""> <br>
+      </p>
+
+    </section>
+
+        <!-- 
+		============================ -->
+    <section id="man_sucursales">
+      <h3>Sucursales</h3>
+
+      <p>
+        Se accede desde el menú Parámetros, botón Sucursales. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Sucursales.png" alt=""> <br>
+        Desde esta opción se pueden cargar las diferentes sucursales que componen a la empresa. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Sucursales.png" alt=""> <br>
+        Recargo: Esta opción es usada cuando se quiere utilizar un recargo en el costo de la mercadería según la sucursal. 
+        Los recargos utilizados en este sistema son: por sucursal, por condición de venta y por depósito. 
+        Estos recargos sumados al costo de la mercadería dan el precio final de venta del producto. 
+        Por eso, si el recargo elegido es por sucursal, aquí es donde se pone el porcentaje. Vale aclarar que se puede trabajar con varios recargos en un mismo producto.
+      </p>
+
+    </section>
+
+            <!-- 
+		============================ -->
+    <section id="man_comprobantes">
+      <h3>Comprobantes</h3>
+
+      <p>
+        Se accede desde el menú Parámetros, botón Comprobantes. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Comprobantes.png" alt=""> <br>
+        En esta pantalla se cargan los comprobantes que se utilizan en la empresa.  <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Comprobantes del Sistema.png" alt=""> <br>
+        <ul>
+          <li>Código: se carga automáticamente y se utiliza para referenciar unívocamente a ese comprobante. 
+            </li>
+          <li>
+              Tipo de comprobante: se elige qué va a ser ese comprobante. Estas opciones ya vienen cargados por defecto en el sistema. <br>
+              <img class="img-fluid border" src="assets/images/Parametros/Tipo Comprobante.png" alt=""> <br>
+            </li>
+          <li>
+            Clase de comprobante: Se puede poner una sigla que lo represente. 
+            Por ejemplo, si se trata de una Factura “A”, se puede representar con FA. Consta solamente de dos dígitos. 
+          </li>
+          <li>
+            Denominación: Se detalla el nombre del comprobante. Por ejemplo, Factura de Contado “A”.  
+          </li>
+          <li>
+            Sucursal: Detalla la sucursal a la que pertenece el comprobante.
+          </li>
+          <li>
+            Tipo de numeración: Se especifica si es un comprobante de venta, compra o ambos y qué tipo de numeración va a llevar.
+          </li>
+          <li>
+            Letra / Prefijo / Número: Estará habilitado sólo cuando se trate de un comprobante con Numeración Propia. Se detalla como será la numeración.
+          </li>
+          <li>
+            Enumera desde: Sólo habilitado igual que en el caso anterior, se especifica desde qué número se empieza a numerar.
+          </li>
+          <li>
+            Archivo del reporte: Permite poner la ruta del reporte asociado a este comprobante. <br>
+            <img class="img-fluid border" src="assets/images/Parametros/Archivo del Reporte.png" alt=""> <br>
+          </li>
+          <li>            
+            Afecta Libro IVA / Afecta Cta. Cte. / Desglosa IVA / Imprimir: Dependiendo de qué clase de comprobante se trate, aquí se puede elegir qué comportamiento va a tener el comprobante.
+             Por ejemplo, si es una Factura de Compra A, todas las opciones serán seleccionadas, pero si se trata de un comprobante de Cobro de Cheque, sólo se seleccionará Imprimir.
+          </li>
+          <li>
+            Copias a imprimir: En esta opción se puede especificar si se trata de un comprobante por duplicado, triplicado, etc. 
+          </li>
+        </ul>
+      </p>
+
+    </section>
+    
+            <!-- 
+		============================ -->
+    <section id="man_alicuotasiva">
+      <h3>Alícuotas de IVA</h3>
+
+      <p>
+        Se accede desde Parámetros, botón Parámetros de Impuestos, opción Alícuotas de IVA. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Alicuotas IVA.png" alt=""> <br>
+        Esta pantalla permite el ingreso de las diferentes alícuotas de IVA con las que trabaja la empresa. El ingreso de la información es similar a los vistos anteriormente.<br>
+        <img class="img-fluid border" src="assets/images/Parametros/Alicuotas de IVA.png" alt=""> <br>
+
+      </p>
+
+    </section>
+
+            <!-- 
+		============================ -->
+    <section id="man_tipos_inscripcion">
+      <h3>Tipos de Inscripción</h3>
+
+      <p>
+        Se accede desde Parámetros, botón Parámetros de Impuestos, opción Inscripcion en IVA. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Inscripcion IVA.png" alt=""> <br>
+        En esta pantalla se permite la carga de las diferentes inscripciones en IVA y el comportamiento correspondiente a esa inscripción. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Tipos de Inscripciones.png" alt=""> <br>
+      </p>
+
+    </section>
+
+    
+            <!-- 
+		============================ -->
+    <section id="man_datos_geo">
+      <h3>Datos Geográficos</h3>
+
+      <p>
+        Desde Parámetros, menú Parámetros Geográficos, podemos acceder a distintas ventanas para configurar los datos geográficos que usará el sistema. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Parametros Geograficos.png" alt=""> <br>
+        En estas opciones se ingresan los datos que serán utilizados en el resto del sistema cuando sea necesario referenciar una provincia, zona o localidad. 
+        Presione Agregar, complete los datos y presione Confirma para guardar los cambios. El mecanismo es igual en los cuatro casos.
+      </p>
+
+      <p><u>Localidades</u><br>
+        Se accede desde el menú Parámetros, submenú Datos geográficos, opción Localidades.<br>
+        <img class="img-fluid border" src="assets/images/Parametros/Localidades.png" alt=""> <br>
+      </p>
+
+      <p><u>Provincias</u><br>
+        Se accede desde el menú Parámetros, submenú Datos geográficos, opción Provincias.<br>
+        <img class="img-fluid border" src="assets/images/Parametros/Provincias.png" alt=""> <br>
+      </p>
+
+      <p><u>Zonas</u><br>
+        Se accede desde el menú Parámetros, submenú Datos geográficos, opción Zonas.<br>
+        <img class="img-fluid border" src="assets/images/Parametros/Zonas.png" alt=""> <br>
+      </p>
+
+      <p><u>Paises</u><br>
+        Se accede desde el menú Parámetros, submenú Datos geográficos, opción Países.<br>
+        <img class="img-fluid border" src="assets/images/Parametros/Paises.png" alt=""> <br>
+      </p>
+
+    </section>
+
+            <!-- 
+		============================ -->
+    <section id="man_cond_pago">
+      <h3>Condiciones de Pago</h3>
+
+      <p>
+        Se accede desde Parámetros, botón Condiciones de Pago. <br></br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Cond Pago.png" alt=""> <br>
+        En esta pantalla se cargan las diferentes condiciones de pago que se asociarán con los clientes a la hora de ingresarlos al sistema. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Condiciones de Pago.png" alt=""> <br>
+        Se puede cargar un descuento por cada forma de pago. 
+        Como vimos en Sucursal, también es posible cargarle un recargo, para ello se ingresa en descuento, pero con número negativo.
+      </p>
+
+    </section>
+    
+
+            <!-- 
+		============================ -->
+    <section id="man_config_local">
+      <h3>Configuración del Equipo Local</h3>
+
+      <p>
+        Se accede desde Inicio, botón Configuracion Local. <br>
+        <img class="img-fluid border" src="assets/images/Inicio/Boton Config Local.png" alt=""> <br>
+        Desde esta opción se configurará el equipo local, o sea, el equipo donde se está trabajando actualmente. 
+        Aquí se detalla en qué sucursal está, con qué depósito trabaja por defecto, el nombre de la base de datos a la que está referenciando, cuál es su caja por defecto, 
+        algunos controles de stock y caja, los intervalos de cuenta corriente (por ejemplo, 30 días: mensual, 60 días: bimestral, etc.) y las impresoras. <br> 
+        <img class="img-fluid border" src="assets/images/Inicio/Config Local.png" alt=""> <br>
+        Si está activa la casilla de verificación Controla Código de Stock, el sistema le propondrá el código del artículo al ingresarlo al sistema. 
+        Si la empresa tiene una codificación interna de los artículos, desactive esta opción. Igualmente, más adelante entraremos en detalle en Stock -> Artículos.
+      </p>
+
+    </section>
+
+
+            <!-- 
+		============================ -->
+    <section id="man_tipos_retenciones">
+      <h3>Tipos de Retenciones</h3>
+
+      <p>
+        Se accede desde Parámetros, botón Parámetros de Impuestos, opción Tipos de Retenciones. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Tipos Retenciones.png" alt=""> <br>
+        Aquí se pueden cargar los tipos de retenciones que sufre la empresa. Por ejemplo, retenciones de IVA, Ingresos Brutos, Ganancias, etc.<br>
+        <img class="img-fluid border" src="assets/images/Parametros/" alt=""> <br>
+      </p>
+
+    </section>
+    
+            <!-- 
+		============================ -->
+    <section id="man_percepciones">
+      <h3>Percepciones</h3>
+
+      <p>
+        Esta sección es sólo para empresas que sean agentes de retención. Se accede desde Parámetros, botón Parámetros de Impuestos. 
+        Hay dos opciones: Percepciones de IVA y Percepciones de Ingresos Brutos. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Botones Percepciones.png" alt=""> <br>
+      </p>
+
+    </section>
+    
+
+                <!-- 
+		============================ -->
+    <section id="man_percepcionesiva">
+      <h3>Percepciones de IVA</h3>
+
+      <p>
+        Permite el ingreso de los diferentes porcentajes de IVA. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Percepciones de IVA.png" alt=""> <br>
+        Mínimo imponible: Especifica el importe a partir del cual se hará la percepción. Este es un valor fijo, pero puede cambiarse según el caso particular que se
+         está analizando. <br>
+        Columna: Fija una posición en el Libro IVA Ventas.
+      </p>
+
+    </section>
+
+                <!-- 
+		============================ -->
+    <section id="man_percepcionesiibb">
+      <h3>Percepciones de Ingresos Brutos</h3>
+
+      <p>
+        <img class="img-fluid border" src="assets/images/Parametros/Percepciones de Ingresos Brutos.png" alt=""> <br>
+        Mínimo imponible: Especifica el importe a partir del cual se hará la percepción. Este es un valor fijo, pero puede cambiarse según el caso particular que se 
+         está analizando. <br>
+        Columna: Fija una posición en el Libro IVA Ventas.
+      </p>
+
+    </section>
+
+    <!-- FAQ
 		============================ -->
           <section id="man_faq">
             <h2>Preguntas Frecuentes</h2>
@@ -409,9 +792,37 @@
                         </p>
                         <p>
                           <u>¡Cuidado!</u> un usuario que <b>NO</b> tenga una caja asignada, como en la imagen es el caso del usuario matilupo, <b>no podrá realizar ciertas operaciones de venta
-                            y manejo de fondos</b>. Si tiene algún error al intentar realizar ventas, puede que se deba a que su usuario no tiene ninguna caja asignada.
+                            y manejo de fondos</b>. Si tiene algún error al intentar realizar ventas, o si la caja que busca no le aparece, 
+                            puede que se deba a que su usuario no tiene ninguna caja asignada.
                         </p><br>
                         <p><u>Pasos para crear y abrir una caja</u></p>
+                        <p>
+                          <ol>
+                            <li>Vamos a Fondos y hacemos click en <b>Cuentas de Caja y Bancos</b>. <br>
+                              <img class="img-fluid border" src="assets/images/Fondos/Boton Cuentas de Caja.png" alt=""></li>
+                            <li>
+                                Hacemos click en <b>Agregar</b>, se nos autogenerará un Código que podemos cambiar si así deseamos. Debajo, podremos darle un Nombre a la cuenta.
+                                En el desplegable <b>Tipo de Cta./Caja</b> podemos elegir si se tratará de una cuenta de Caja o de Banco. Si elegimos Banco, debajo se habilitará el botón
+                                <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt=""> donde podremos elegir entre los bancos ingresados en el sistema (ver Fondos -> Bancos).
+                                También podremos ingresar el Número de cuenta bancaria, el Número de CUIT del Banco y la Razón Social. Luego de ingresar los datos, hacemos click en <b>Confirma</b>
+                                 y se guardarán los datos de la nueva Cuenta. <br>
+                                 <img class="img-fluid border" src="assets/images/Fondos/Crear Cajas.png" alt="">
+                            </li>
+                            <li>
+                              Recomendamos realizar los pasos descritos en la <b>Aclaración</b>, donde asignamos la nueva Caja a los usuarios que tendrán permiso para operarla.
+                            </li>
+                            <li>
+                              Nos dirigimos nuevamente a Fondos y hacemos click en <b>Apertura de Cajas</b>.<br>
+                              <img class="img-fluid border" src="assets/images/Fondos/Boton Apertura de Caja.png" alt="">
+                            </li>
+                            <li>
+                              Una vez abierta la ventana, hacemos click en <b>Agregar</b>. Presionamos el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt=""> para 
+                              seleccionar qué cuenta abriremos. Opcionalmente, podemos cambiar la Fecha o agregar Observaciones de ser necesario. Finalmente, hacemos click en <b>Confirmar</b> y
+                               la caja ya estará abierta y disponible para su uso.
+                               <img class="img-fluid border" src="assets/images/Fondos/Apertura de Caja.png" alt="">
+                            </li>
+                          </ol>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -419,71 +830,94 @@
                   <div class="card">
                     <div class="card-header" id="heading2">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
-                          aria-expanded="false" aria-controls="collapse2">What is a single application?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse2">¿Cómo realizo Ingresos/Egresos en la caja?</a> </h5>
                     </div>
                     <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. </div>
+                      <div class="card-body">
+                        <p>Video tutorial <a href="https://www.youtube.com/watch?v=JMJhrNmsv70" target="_blank" rel="noopener noreferrer">aquí</a>. Explicación paso a paso 
+                        próximamente.</p>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card">
                     <div class="card-header" id="heading3">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3"
-                          aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end
-                          products?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse3">¿Cómo doy de alta o modifico un Cliente?</a> </h5>
                     </div>
                     <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                        essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna
-                        imperdiet. </div>
+                      <div class="card-body">
+                        <p>Video tutorial para crear un Cliente <a href="https://www.youtube.com/watch?v=FFev8-T1jRI" target="_blank" rel="noopener noreferrer">aquí</a>. <br>
+                          Video tutorial para modificar un Cliente <a href="https://www.youtube.com/watch?v=naGw2DT46QI" target="_blank" rel="noopener noreferrer">aquí</a>. <br>
+                          Explicación paso a paso 
+                        próximamente.</p>
+
+                      </div>
                     </div>
                   </div>
 
                   <div class="card">
                     <div class="card-header" id="heading4">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4"
-                          aria-expanded="false" aria-controls="collapse4">I'm not sure if my use is covered. What should
-                          I do?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse4">Crear una Factura de Cuenta Corriente</a> </h5>
                     </div>
                     <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
-                      <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-                        it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. </div>
+                      <div class="card-body">
+                        <p>Video tutorial <a href="https://www.youtube.com/watch?v=xMlg6bAzjG8" target="_blank" rel="noopener noreferrer">aquí</a>. Explicación paso a paso 
+                        próximamente.</p>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card">
                     <div class="card-header" id="heading5">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5"
-                          aria-expanded="false" aria-controls="collapse5">What is a single application?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse5">Crear una Factura de venta de Contado</a> </h5>
                     </div>
                     <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#popularTopics">
-                      <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-                        it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-                        craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                        vice lomo. </div>
+                      <div class="card-body">
+                        <p>Video tutorial <a href="https://www.youtube.com/watch?v=BGHOx6TgHiQ" target="_blank" rel="noopener noreferrer">aquí</a>. Explicación paso a paso 
+                        próximamente.</p>
+                      </div>
                     </div>
                   </div>
 
                   <div class="card">
                     <div class="card-header" id="heading6">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6"
-                          aria-expanded="false" aria-controls="collapse6">Am I allowed to modify the item that I
-                          purchased?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse6">¿Cómo crear una Lista de Precios?</a> </h5>
                     </div>
                     <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
-                      <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-                        it squid single-origin coffee nulla assumenda shoreditch et. Ad vegan excepteur butcher vice
-                        lomo. </div>
+                      <div class="card-body">
+                        <p>Video tutorial <a href="https://www.youtube.com/watch?v=v45Td2OqPCM" target="_blank" rel="noopener noreferrer">aquí</a>. Explicación paso a paso 
+                        próximamente.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="heading7">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse7"
+                          aria-expanded="false" aria-controls="collapse6">¿Cómo edito una Lista de Precios y agrego Recargos?</a> </h5>
+                    </div>
+                    <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#popularTopics">
+                      <div class="card-body">
+                        <p>Video tutorial <a href="https://www.youtube.com/watch?v=K4ThFfPrp7Q" target="_blank" rel="noopener noreferrer">aquí</a>. Explicación paso a paso 
+                        próximamente.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="heading8">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse8"
+                          aria-expanded="false" aria-controls="collapse6">¿Cómo clono una Lista de Precios?</a> </h5>
+                    </div>
+                    <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#popularTopics">
+                      <div class="card-body">
+                        <p>Video tutorial <a href="https://www.youtube.com/watch?v=lqpXonYFFw4" target="_blank" rel="noopener noreferrer">aquí</a>. Explicación paso a paso 
+                        próximamente.</p>
+                      </div>
                     </div>
                   </div>
 
@@ -502,25 +936,140 @@
           <section id="man_stock">
             <h2>Stock</h2>
 
-            <p>
+            <p class="lead">
+              Al hacer click en la solapa Stock, se abrirá la siguiente sección con las herramientas relacionadas a 
+               los artículos de la empresa y su control de stock. <br>
             </p>
 
-            <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-                  src="assets/images/Ventas/" alt=""></a></p>
+            <p><a class="popup-img" href="assets/images/Stock/Solapa Stock.png"><img class="img-fluid border"
+                  src="assets/images/Stock/Solapa Stock.png" alt=""></a></p>
           </section>
 
           <hr class="divider">
 
     <!-- Stock ->
 		============================ -->
-    <section id="man_stock_">
-      <h3></h3>
+    <section id="man_primeros_datos">
+      <h3>Cargar Primeros Datos</h3>
 
       <p>
+        <img class="img-fluid border" src="assets/images/Stock/Otros Datos Stock.png" alt=""><br>
+        Dentro del submenú Otros Datos, se encuentran las opciones necesarias para cargar esta información que será utilizada posteriormente en el ingreso de los artículos, 
+        estas son: 
       </p>
 
-      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-            src="assets/images/Ventas/" alt=""></a></p>
+      <p><u>Marcas</u> <br>
+        <img class="img-fluid border" src="assets/images/Stock/Marcas.png" alt=""><br>
+      </p>
+
+      <p><u>Rubros</u> <br>
+        <img class="img-fluid border" src="assets/images/Stock/Rubros.png" alt=""><br>
+      </p>
+
+      <p><u>Subrubros</u> <br>
+        <img class="img-fluid border" src="assets/images/Stock/Subrubros.png" alt=""><br>
+      </p>
+
+      <p><u>Depósitos</u> <br>
+        <img class="img-fluid border" src="assets/images/Stock/Deposito.png" alt=""><br>
+      </p>
+
+      <p><u>Unidades de Stock</u> <br>
+        A diferencia de las otras opciones, se accede desde Parámetros, botón Unidades de Stock. <br>
+        <img class="img-fluid border" src="assets/images/Parametros/Boton Unidades Stock.png" alt=""><br>
+        <img class="img-fluid border" src="assets/images/Parametros/Unidades Stock.png" alt=""><br>
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Stock/"><img class="img-fluid border"
+            src="assets/images/Stock/" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+
+          <!-- 
+		============================ -->
+    <section id="man_articulos">
+      <h3>Artículos</h3>
+
+      <p>Se accede desde el menú Stock, opción Artículos. <br>
+        <img class="img-fluid border" src="assets/images/Stock/Boton Articulos.png" alt=""> <br>        
+        Las solapas principales para la definición de los artículos son:
+      </p>
+
+      <p><u>Datos Principales</u><br>
+        <p><a class="popup-img" href="assets/images/Stock/Articulos.png"><img class="img-fluid border"
+          src="assets/images/Stock/Articulos.png" alt=""></a></p>
+
+        <p><ul>
+          <li>Código: El sistema sugiere uno, conformado según los códigos del rubro y subrubro. Si la empresa tiene su propia codificación, 
+            asegúrese que esté desactivada la opción Controla Código de Stock en Configuración del equipo local del menú Parámetros, ver Primeros Pasos -> Configuracion Local. </li>
+          <li>
+            Detalle: Nombre del producto.</li>
+          <li>Código de Barras: Opcionalmente, se ingresa el número correspondiente al código de barras, directamente con el lector de código de barras.</li>
+          <li>Marca / Rubro / Subrubro / Unidad de Venta: Definidos en el punto anterior, son las características del artículo.  </li>
+          <li>Controla Stock: Significa que el ingreso o egreso de este producto se verá reflejado en los saldos de Stock.</li>
+          <li>Actualiza costo con la compra: Si esta opción está activada, cada vez que se ejecute una compra, se actualizará el costo de la misma con el monto de la compra. 
+            De no ser así, el costo será el  mismo desde su carga inicial o desde alguna eventual modificación manual. </li>
+          <li>Código de proveedor: El código del artículo según el proveedor.</li>
+          <li>Código de reemplazo: Puede ingresarse el código de algún artículo que pueda servir como reemplazo de éste. </li>
+          <li>Tabla: Se detallan los depósitos donde se van a almacenar los artículos. Volviendo a lo explicado en Sucursales, aquí también se puede cargar un recargo por depósito, desde la columna % Recargo. Se detallan además el stock inicial, o sea, de cuánto fue la primer compra. En el stock medio se ingresa el punto de pedido o stock crítico. El stock mínimo, que es el mínimo
+             que puede haber en stock de ese artículo, llegando a ese valor se necesita reponer la mercadería urgentemente. El stock actual, que es el stock que hay en este momento.</li>
+        </ul>
+       </p>
+      </p>
+
+      <p><u>Costos/Impuestos</u><br>
+        <p><a class="popup-img" href="assets/images/Stock/Articulos - Costo Impuestos.png"><img class="img-fluid border"
+          src="assets/images/Stock/Articulos - Costo Impuestos.png" alt=""></a></p>
+      </p>
+
+      <p>
+        <ul>
+          <li>Modo de Gravamen: Se especifica si está gravado, exento o con impuestos internos. </li>
+          <li>Costo no Gravado: Si se tratara de un artículo no gravado, aquí se especifica su costo.</li>
+          <li>Precio no Gravado: Si se tratara de un artículo no gravado, aquí se fija su precio. </li>
+          <li>Tasa: Aquí se especifica la tasa de IVA que corresponde al artículo.</li>
+          <li>Costo Gravado: Si se trata de un artículo gravado, aquí se especifica su costo.</li>
+          <li>Precio Gravado: Si se trata de un artículo  gravado, aquí se especifica su precio.  </li>
+          <li>Sobre Tasa: Esta Sobre Tasa se utiliza cuando el cliente es Responsable No Inscripto. En este caso, si el artículo es gravado, 
+            esta Sobre Tasa se suma al precio del artículo más la tasa correspondiente. Este comportamiento está configurado en el menú Parámetros -> Inscripciones en IVA. <br>
+            <img class="img-fluid border" src="assets/images/Parametros/IVA Con Sobretasa.png" alt="">
+          </li>
+          <li>Costo Total: Calculo del costo total.</li>
+          <li>F. Precio Total: Calculo de precio total.</li>
+          <li>Tabla: Lista todos los proveedores de ese artículo. </li>
+        </ul>
+      </p>
+
+      <p><u>Movimientos de Stock</u><br>
+        <p><a class="popup-img" href="assets/images/Stock/Articulos - Costo Impuestos.png"><img class="img-fluid border"
+          src="assets/images/Stock/Articulos - Costo Impuestos.png" alt=""></a></p>
+      </p>
+
+      <p>
+        <ul>
+          <li>Tabla: Detalla los diferentes movimientos en el stock de ese artículo según el depósito elegido en el período seleccionado. 
+            Para listarlos, pulsar Ver Movimientos o F3.</li>
+          <li>Tipo de Operación: Filtra la tabla dependiendo de qué clase sea la operación. 
+            Si la tabla no se actualiza automáticamente según la operación elegida, presione Ver Movimientos nuevamente. </li>
+        </ul>
+      </p>
+    </section>
+
+    <hr class="divider">
+
+          <!-- 
+		============================ -->
+    <section id="man_">
+      <h3></h3>
+
+      <p> <br>
+      </p>
+
+
+      <p><a class="popup-img" href="assets/images/Stock/"><img class="img-fluid border"
+        src="assets/images/Stock/" alt=""></a></p>
     </section>
 
     <hr class="divider">
