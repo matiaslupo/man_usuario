@@ -98,13 +98,13 @@
 
       <!-- Sidebar Navigation
 	============================ -->
-      <div class="idocs-navigation bg-blue docs-navigation-dark">
+      <div class="idocs-navigation bg-blue docs-navigation-dark text-2">
         <ul class="nav flex-column ">
           <li class="nav-item">
             <p class="text-center texto-indice"><b>INDICE</b></p>
           </li>
           <li class="nav-item"><a class="nav-link active" href="#man_acercade">Acerca del Producto</a>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column text-2">
               <li class="nav-item"><a class="nav-link" href="#man_requerimientos">Requerimientos del Sistema</a></li>
               <li class="nav-item"><a class="nav-link" href="#man_consideraciones_tec">Consideraciones Técnicas</a></li>
               <li class="nav-item"><a class="nav-link" href="#man_soporte_tec">Soporte Técnico</a></li>
@@ -113,10 +113,10 @@
 
           <!--SECCION PRIMEROS PASOS-->
           <li class="nav-item"><a class="nav-link" href="#man_primeros_pasos">Primeros Pasos</a>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column text-2">
               <li class="nav-item"><a class="nav-link" href="#man_ingreso_sistema">Ingresar al Sistema</a></li>
               <li class="nav-item"><a class="nav-link" href="#man_aspectos_generales">Aspectos Generales</a>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link" href="#man_aspgen_barraherram">Barra de Herramientas</a>
                   <li class="nav-item"><a class="nav-link" href="#man_aspgen_barraestado">Barra de Estado</a>
                   <li class="nav-item"><a class="nav-link" href="#man_aspgen_reportes">Reportes</a>
@@ -141,38 +141,56 @@
 
           <!--SECCION STOCK-->
           <li class="nav-item"><a class="nav-link" href="#man_stock">Artículos y Stock</a>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column text-2">
               <li class="nav-item"><a class="nav-link" href="#man_primeros_datos">Carga de Primeros Datos</a></li>
               <li class="nav-item"><a class="nav-link" href="#man_articulos">Artículos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_opstock">Operaciones de Stock</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link" href="#man_stock_consulta">Consulta</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_stock_existencia">Existencias</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_stock_transf">Transferencias</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_stock_ajustes">Ajustes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#man_precios">Precios</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link" href="#man_actprecios_gen">Actualizacion de Precios General</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_actprecios_man">Actualizacion de Precios Manual</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_listapreciospers">Lista de Precios Personalizada</a></li>
+                </ul>
+              </li>              
+              <li class="nav-item"><a class="nav-link" href="#man_rentabilidad">Rentabilidad</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_exentos_vendidos">Artículos Exentos Vendidos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_rubsubrub">Listado de Rubros y Subrubros de Stock</a></li>
             </ul>
           </li>
 
           <!--SECCION VENTAS-->
           <li class="nav-item"><a class="nav-link" href="#man_ventas">Ventas</a>
-            <ul class="nav flex-column">
+            <ul class="nav flex-column text-2">
               <li class="nav-item"><a class="nav-link" href="#man_clientes">Clientes</a>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link" href="#man_clientes_listados">Listados</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#man_clientes_garantes">Garantes</a></li>
+             <!-- <li class="nav-item"><a class="nav-link" href="#man_clientes_garantes">Garantes</a></li>
                   <li class="nav-item"><a class="nav-link" href="#man_clientes_ctrlmorosidad">Control de Morosidad</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="#man_clientes_ordtrabajo">Órdenes de Trabajo</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_clientes_ordtrabajo">Órdenes de Trabajo</a></li> -->
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_presupuestos">Presupuestos</a>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_listpresupuestoxcli">Listado de
                       Presupuestos por Cliente</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_remitos">Remitos</a>
-                <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link" href="#">Facturación Individual</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Facturación Agrupada</a></li>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link" href="#man_remito_facindv">Facturación Individual</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#man_remito_facagru">Facturación Agrupada</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_facturacion">Facturas de Venta</a>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_facturacionctacte">Facturacion en Cuenta
                       Corriente</a></li>
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_notascredydeb">Notas de Credito y
@@ -186,26 +204,28 @@
               </li>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_notaventa">Notas de Venta</a></li>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_hojacarga">Hojas de Carga</a></li>
+              <li class="nav-item"><a class="nav-link" href="#man_ventas_reciboexpss">Recibo Express</a></li>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_cobroclientes">Cobro a Clientes</a>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_recibocobro">Recibo de Cobro</a></li>
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_imputaciones">Imputaciones</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link" href="#man_ventas_preespcli">Precios Especiales por Cliente</a>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_ctactecliente">Cuentas Corrientes de
                   Clientes</a>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_ajustes">Ajustes</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_saldos">Saldos</a>
-              <ul class="nav flex-column">
+              <ul class="nav flex-column text-2">
                 <li class="nav-item"><a class="nav-link" href="#man_ventas_deudacliente">Deuda del Cliente</a></li>
                 <li class="nav-item"><a class="nav-link" href="#man_ventas_saldosmensuales">Saldos Mensuales</a></li>
               </ul>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_libroiva">Libro IVA de Ventas</a>
               <li class="nav-item"><a class="nav-link" href="#man_ventas_otroslistados">Otros Listados</a>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_comprobxsucursal">Comprobantes Emitidos por Sucursal</a></li>
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_comprobxcliente">Comprobantes Emitidos por Cliente</a></li>
                   <li class="nav-item"><a class="nav-link" href="#man_ventas_reciboxsucursal">Recibos de Cobro por Sucursal</a></li>
@@ -977,6 +997,7 @@
       <p><u>Unidades de Stock</u> <br>
         A diferencia de las otras opciones, se accede desde Parámetros, botón Unidades de Stock. <br>
         <img class="img-fluid border" src="assets/images/Parametros/Boton Unidades Stock.png" alt=""><br>
+        Se nos abrirá la siguiente ventana, donde podremos configurar los distintos tipos de unidades de stock que utilizará el sistema.
         <img class="img-fluid border" src="assets/images/Parametros/Unidades Stock.png" alt=""><br>
       </p>
 
@@ -1061,15 +1082,262 @@
 
           <!-- 
 		============================ -->
-    <section id="man_">
-      <h3></h3>
+    <section id="man_opstock">
+      <h3>Operaciones de Stock</h3>
+      <p>
+        <img class="img-fluid border"
+        src="assets/images/Stock/Operaciones Stock.png" alt="">
+      </p>
 
-      <p> <br>
+    </section>
+
+
+              <!-- 
+		============================ -->
+    <section id="man_stock_consulta">
+      <h4>Consulta</h4>
+
+      <p><a class="popup-img" href="assets/images/Stock/Consulta de Stock.png"><img class="img-fluid border"
+        src="assets/images/Stock/Consulta de Stock.png" alt=""></a></p>
+
+      <p> 
+        Seleccionando el depósito (Paso 1), se detallarán todos los productos existentes en la tabla principal. Este resultado se puede filtrar por marca,
+         rubro y subrubro (Paso 2). Seleccionado un determinado producto en la tabla principal (Paso 3), se detalla en la tabla Existencia Actual el stock actual del 
+         artículo de todos los depósitos. <br>
+        Con el botón Buscar se puede buscar un producto de la lista de artículos resultante de las búsquedas anteriores.
+      </p>
+    </section>
+
+
+              <!-- 
+		============================ -->
+    <section id="man_stock_existencia">
+      <h4>Existencias</h4>
+
+      
+      <p><a class="popup-img" href="assets/images/Stock/Existencias de Stock.png"><img class="img-fluid border"
+        src="assets/images/Stock/Existencias de Stock.png" alt=""></a></p>
+
+      <p> Detalla por depósito los costos de los artículos. Es posible filtrar la información por marca, rubro y subrubro, y ordenarla haciendo click sobre el nombre
+         de las columnas. <br>
+        Presionando Imprimir, se verá la siguiente pantalla:
+      </p>
+      <!--FALTA IMAGEN IMPRIMIR-->
+
+      <p>
+        Las columnas y el detalle de la información estarán ligados a las opciones: Muestra con stock cero, Imprime stock valorizado, Ver punto de pedido. 
+         La opción Imprime stock valorizado genera el reporte con el precio de los artículos y la opción Ver punto de pedido toma el stock medio que fue cargado en 
+         Artículos.
+        Para ver más información sobre los reportes consulte la sección Primeros Pasos -> Reportes.
+      </p>
+
+    </section>
+
+
+                  <!-- 
+		============================ -->
+    <section id="man_stock_transf">
+      <h4>Transferencias</h4>
+
+      <p>Desde esta opción es posible transferir artículos de un depósito a otro. Esta operación generará un comprobante que se podrá imprimir desde la opción Imprimir. </p>
+
+      <p><a class="popup-img" href="assets/images/Stock/Transferencia Stock.png"><img class="img-fluid border"
+        src="assets/images/Stock/Transferencia Stock.png" alt=""></a></p>
+
+      <p> 
+        Para llevarla a cabo se deben seguir los siguientes pasos: 
+        <ol>
+          <li>Se selecciona una fecha, por defecto el sistema pondrá la fecha actual, pero pulsando sobre la pestaña, 
+            se abre un calendario donde se puede seleccionar la fecha deseada</li>
+          <li>Se selecciona el depósito haciendo click sobre el buscador o presionando Ctrl + Enter.  </li>
+          <li>Se selecciona el tipo de comprobante, por defecto, es un comprobante de Transferencia, 
+            pero pueden usarse comprobantes personalizados definidos anteriormente en Comprobantes (ver Primeros Pasos -> Comprobantes).
+             La numeración se pondrá automáticamente.</li>
+          <li>Se seleccionan los depósitos Origen y Destino de la misma manera.</li>
+          <li>En el Detalle, se seleccionan los artículos a transferir, cantidad y precio.
+             El precio por defecto es el costo actual del artículo, pero puede modificarse.</li>
+          <li>En observaciones se pueden describir detalles de la operación o, simplemente, la información que se considere necesaria para la transferencia.</li>
+          <li>Con Confirma, acepta y guarda la operación.</li>
+        </ol>
+      </p>
+
+    </section>
+
+
+                  <!-- 
+		============================ -->
+    <section id="man_stock_ajustes">
+      <h4>Ajustes</h4>
+
+      <p><a class="popup-img" href="assets/images/Stock/Ajustes.png"><img class="img-fluid border"
+        src="assets/images/Stock/Ajustes.png" alt=""></a></p>
+
+      <p> 
+        Desde esta opción se puede ajustar el stock existente de un determinado depósito. En el detalle se agrega el artículo a ajustar, 
+        el sistema muestra el stock actual y en Cantidad se ingresa el ajuste deseado. Si este valor es un número positivo, 
+        se agregará al stock; de ser número negativo, se restará.         
       </p>
 
 
+    </section>
+
+    <hr class="divider">
+
+                  <!-- 
+		============================ -->
+    <section id="man_precios">
+      <h3>Precios</h3>
+
+      <p>Las opciones de ajustes de precios de los artículos se encuentran en el submenú <b>Actualización Precios</b>.<br>
+        <p><a class="popup-img" href="assets/images/Stock/Seccion Actualizacion Precios.png"></a></p>
+      </p>
+
+    </section>
+
+    <hr class="divider">
+
+                      <!-- 
+		============================ -->
+    <section id="man_actprecios_gen">
+      <h4>Actualización de Precios General</h4>
+      
+      <p>Mediante esta operación se pueden actualizar todos los precios de los artículos.</p>
+
       <p><a class="popup-img" href="assets/images/Stock/"><img class="img-fluid border"
         src="assets/images/Stock/" alt=""></a></p>
+
+      <p> 
+        Se pueden seleccionar por marcas, rubros o subrubros. Al activar la casilla, se habilita el buscador para poder ingresarlos.
+         Presione Consultar para desplegar el listado de los artículos según la selección elegida. <br>
+         En el apartado de Columnas Visibles están las diferentes opciones que podemos actualizar. Por cada una de ellas que seleccionemos, 
+          se agregarán dos columnas a la tabla, una con el valor actual y la otra con el nuevo valor que surge de aplicar la Variación en %. 
+          Para ello, active la casilla que corresponda, ingrese el porcentaje, que puede ser positivo o negativo dependiendo si quiere aumentar o disminuir el valor, 
+          y presione Calcular. Presione Confirma para guardar los cambios. <br>
+         Si se desea cambiar el margen de ganancia, al activar esta casilla, se deberá ingresar además el depósito al que corresponde.         
+      </p>
+
+    </section>
+
+    <hr class="divider">
+
+                      <!-- 
+		============================ -->
+    <section id="man_actprecios_man">
+      <h4>Actualizacion de Precios Manual</h4>
+
+      <p> Mediante esta opción se pueden actualizar los precios de los artículos, pero manualmente. Para ello, se listan los artículos 
+        (que también se puede filtrar por marcas, rubros y subrubros) y en la columna Fijación Precio Total Nuevo se ingresa el nuevo precio. <br>
+        El botón Buscar Todos trae todos los artículos o sea, todas las marcas, todos los rubros y todos los subrubros. 
+        Una vez ingresado todos los precios que se querían cambiar, presione Aplica Cambios para guardar los nuevos datos.        
+      </p>
+
+
+      <p><a class="popup-img" href="assets/images/Stock/Cambio de Precios Manual.png"><img class="img-fluid border"
+        src="assets/images/Stock/Cambio de Precios Manual.png" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+                      <!-- 
+		============================ -->
+    <section id="man_listapreciospers">
+      <h4>Lista de Precios Personalizada</h4>
+
+      <p> Se encuentra en el submenú Stock Listados, opción Lista de Precios Personalizada. <br>
+        <img class="img-fluid border" src="assets/images/Stock/Boton Lista Pre Pers.png" alt="">
+      </p>
+
+      <p>
+        Esta opción permite generar una lista de precios que se adapte a las necesidades del momento. 
+         La tabla superior muestra todos los subrubros del depósito elegido y la tabla inferior el detalle de los artículos que lo componen y su costo. <br>
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Stock/Lista de Precios Personalizada.png"><img class="img-fluid border"
+        src="assets/images/Stock/Lista de Precios Personalizada.png" alt=""></a></p>
+
+      <p>
+        Para generar una lista de precios personalizada se deben seguir los siguiente pasos: 
+        <ol>
+          <li>Elegir el depósito y presionar Iniciar.</li>
+          <li>Se puede modificar el orden de las columnas, haciendo click sobre el nombre de las columnas.</li>
+          <li>Para seleccionar qué rubros estarán presentes en la lista, haga click sobre las casillas de verificación de la columna Imprime de cada subrubro. 
+            O puede presionar Selecc. Todos para seleccionar todos o Desel. Todos para quitar la selección actual.</li>
+          <li>Presiona Imprimir para generar la lista. Con Imprimir P. con IVA,  se mostrará el precio con IVA, caso contrario, lo mostrará sin IVA.</li>
+        </ol>
+      </p>
+    </section>
+
+    <hr class="divider">
+
+
+                      <!-- 
+		============================ -->
+    <section id="man_rentabilidad">
+      <h3>Rentabilidad</h3>
+
+      <p>Se accede desde Stock, submenú Stock Listados, opción Rentabilidad <br>
+        <img class="img-fluid border" src="assets/images/Stock/Boton Rentabilidad.png" alt="">
+      </p>
+      
+      <p> Esta pantalla muestra los artículos vendidos en un período determinado, comparando precios de compra y venta, 
+        dando un porcentaje de la rentabilidad obtenida. En el cuadro % Promedio se puede ver el porcentaje promedio de ganancia de todas las operaciones realizadas. 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Stock/Rentabilidad.png"><img class="img-fluid border"
+        src="assets/images/Stock/Rentabilidad.png" alt=""></a></p>
+
+      <p>
+        Los pasos a seguir son los siguientes:
+        <ol>
+          <li>Seleccione un período.</li>
+          <li>Presione Buscar. En la tabla debajo se detallarán los artículos vendidos en ese período.</li>
+          <li>Posiciónese sobre un artículo y presione el botón <b>+</b> (también puede hacer doble click sobre el artículo). 
+            Aparecerá una nueva subtabla donde se detallarán todos los comprobantes de las ventas realizadas y los precios de costos y venta y el porcentaje de ganancia. <br>
+            <img class="img-fluid border" src="assets/images/Stock/Rentabilidad - Detalle.png" alt="">
+          </li>
+          <li>Presione Imprimir para listar todos los artículos vendidos.</li>
+        </ol>
+      </p>
+
+      <!--FALTA IMAGEN REPORTE-->
+    </section>
+
+    <hr class="divider">
+
+                      <!-- 
+		============================ -->
+    <section id="man_exentos_vendidos">
+      <h3>Artículos Exentos Vendidos</h3>
+
+      <p> Se accede desde el submenú Stock Listados, opción Informe de Artículos Exentos Vendidos.
+        <img class="img-fluid border" src="assets/images/Stock/Boton Articulos Exentos.png" alt="">
+      </p>
+
+      <p>
+        Lista todos los artículos exentos vendidos en un período determinado. Seleccione el período y presione Buscar. Con Imprimir generará el reporte.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Stock/Articulos Exentos.png"><img class="img-fluid border"
+        src="assets/images/Stock/Articulos Exentos.png" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+                      <!-- 
+		============================ -->
+    <section id="man_rubsubrub">
+      <h3>Listado de Rubros y Subrubros de Stock</h3>
+
+      <p>Se encuentra en el submenú Stock Listados, opción Listado de Rubros y Subrubros de Stock
+        <img class="img-fluid border" src="assets/images/Stock/Boton Rubros Subrubros.png" alt="">
+      </p>
+
+      <p> Muestra un listado de todos los rubros y subrubros de stock. Presione Consultar para iniciar el listado, puede tomar un tiempo.
+         Este listado puede imprimirse, para ello, presione Imprimir. 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Stock/Rubros y SubRubros.png"><img class="img-fluid border"
+        src="assets/images/Stock/Rubros y SubRubros.png" alt=""></a></p>
     </section>
 
     <hr class="divider">
@@ -1296,8 +1564,10 @@
 
           <hr class="divider">
 
-          <!-- Clientes -> Garantes
-		============================ -->
+          <!--
+
+           Clientes -> Garantes
+		============================ 
           <section id="man_clientes_garantes">
             <h3>Garantes</h3>
 
@@ -1311,8 +1581,8 @@
 
           <hr class="divider">
 
-          <!-- Clientes -> Control Morosidad
-		============================ -->
+           Clientes -> Control Morosidad
+		============================ 
           <section id="man_clientes_ctrlmorosidad">
             <h3>Control de Morosidad</h3>
 
@@ -1327,8 +1597,8 @@
 
           <hr class="divider">
 
-          <!-- Clientes -> O. Trabajo
-		============================ -->
+           Clientes -> O. Trabajo
+		============================ 
           <section id="man_clientes_ordtrabajo">
             <h3>Órdenes de Trabajo</h3>
 
@@ -1340,7 +1610,7 @@
                   alt=""></a></p>
           </section>
 
-          <hr class="divider">
+          <hr class="divider"> -->
 
           <!-- Ventas -> General 
 		============================ -->
@@ -1458,9 +1728,12 @@
           <section id="man_ventas_listpresupuestoxcli">
             <h3>Listado de Presupuestos por Cliente</h3>
 
-            <p>
+            <p>Se accede desde el submenú Listados Relacionados a Comprobantes, opción Listar presupuestos por cliente <br>
+              <img class="img-fluid border"
+                  src="assets/images/Ventas/Boton Listar Presupuestos.png" alt="">
             </p>
 
+            <p>Mediante esta opción puede listar los presupuestos pendientes de un cliente determinado en un período determinado. Para ello deberá elegir el cliente y presionar Ver.</p>
             <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
                   src="assets/images/Ventas/" alt=""></a></p>
           </section>
@@ -1507,28 +1780,52 @@
 
           <!-- Ventas -> Remitos -> Facturación Indv.
 		============================ -->
-          <section id="man_ventas_remfacindiv">
+          <section id="man_remito_facindv">
             <h3>Facturación de Remito Individual</h3>
 
-            <p class="lead">
+            <p>
+              Se accede desde el submenú Otros Remitos, opción Facturar Remitos. <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Boton Facturar Remitos.png" alt="">
             </p>
 
+            <p>
+              Esta opción permite facturar uno a uno los remitos preparados en el punto anterior. 
+              Para ello se debe elegir la sucursal a la que pertenecen, el depósito y presionar el botón Buscar. 
+            </p>
             <p><a class="popup-img" href="assets/images/Ventas/Facturacion de Remitos Individual.png">
                 <img class="img-fluid border" src="assets/images/Ventas/Facturacion de Remitos Individual.png"
                   alt=""></a></p>
+            <p>
+              Seleccione un remito y presione Confirma. De esta manera se abrirá la pantalla de facturación en cuenta corriente.
+               Si los precios ingresados de los artículos fueron modificados el sistema pedirá confirmación de cada uno con el precio actual y el nuevo. 
+               El tipo de comprobante que se generará estará determinado por lo que se haya configurado en el ABM de clientes (ver Ventas -> Clientes). 
+               Verifique que los datos sean correctos y presione Confirmar. De esta manera se registra la venta en cuenta corriente de estos artículos. 
+               El detalle de este tipo de Facturación lo veremos más adelante en Facturación en Cuenta Corriente. La confirmación de la venta implica también la impresión del 
+               comprobante. <br>
+              Si desea Imprimir la factura presione Yes, caso contrario presione No.
+            </p>
           </section>
 
           <hr class="divider">
 
           <!-- Ventas -> Remitos -> Facturación Agrp.
 		============================ -->
-          <section id="man_ventas_remfacagrup">
+          <section id="man_remito_facagru">
             <h3>Facturación de Remitos Agrupados</h3>
 
-            <p class="lead">
-
+            <p>
+              Se accede desde el submenú Otros Remitos, opción Facturar Remitos Agrupados.<br>
+              <img class="img-fluid border" src="assets/images/Ventas/Boton Facturar Remitos Agrupados.png"
+                  alt="">
             </p>
 
+            <p>
+              Esta operación permite facturar en cuenta corriente varios remitos de un mismo cliente en una sola factura. 
+              Para ello se debe seleccionar la sucursal, el depósito y presionar Buscar. En la tabla se detallarán todos los remitos de esa sucursal y ese depósito que no han 
+              sido facturados todavía. Seleccione los remitos que desee facturar haciendo un click sobre ellos teniendo presionada la tecla Ctrl. Los remitos deben pertenecer 
+              al mismo cliente, sino el sistema mostrará un mensaje de error. Presione A Facturar cuando haya seleccionado todos los remitos. Al igual que el punto anterior, 
+              se abrirá la pantalla de facturación en cuenta corriente y en el detalle de los artículos se encontrarán detallados aquellos que componen cada uno de los remitos.
+            </p>
             <p><a class="popup-img" href="assets/images/Ventas/Facturacion de Remitos Agrupados.png">
                 <img class="img-fluid border" src="assets/images/Ventas/Facturacion de Remitos Agrupados.png"
                   alt=""></a></p>
@@ -1536,28 +1833,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Facturación de ventas
-		============================ -->
-          <section id="man_ventas_facturacion">
-            <h2>Facturas de venta</h2>
-
-            <p class="lead">
-              En esta sección se describen las funcionalidades para realizar la facturación y fiscalización de las
-              ventas de su negocio.
-              Las herramientas descritas en las siguientes secciones se encuentran aquí:
-            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion.png" alt=""></p>
-            </p>
-
-            <p>
-            <ol>
-              <li><b>Facturacion de Venta en Cuenta Corriente.</b></li>
-              <li><b>Facturacion de Venta al Contado.</b></li>
-              <li><b>Ticket / Factura.</b></li>
-            </ol>
-            </p>
-          </section>
-
-          <hr class="divider">
+          
 
           <!-- Ventas -> Facturación -> Cta Cte
 		============================ -->
@@ -1619,11 +1895,10 @@
               movimiento en su cuenta corriente a favor de él. <br>
               Para crearla se siguen los mismos pasos que en la facturación en cuenta corriente, pero en Tipo de
               Comprobante se deberá elegir Nota de Crédito.
-              El resto de los datos se ingresan de igual manera. Al igual que las notas de crédito que vimos en Compras,
+              El resto de los datos se ingresan de igual manera. Al igual que las notas de crédito que veremos en Compras,
               éstas deberán ser imputadas a las facturas correspondientes
-              desde Imputaciones (ver página 98). Si la nota de crédito es al contado, se deberá habilitar la opción NC
-              de Contado. De ser así, se habilitará la opción de
-              elegir la caja a la que corresponderá.
+              desde Imputaciones (ver Cobro a Clientes -> Imputaciones). Si la nota de crédito es al contado, se deberá habilitar la opción NC
+              de Contado. De ser así, se habilitará la opción de elegir la caja a la que corresponderá.
             </p>
 
             <!--IMAGEN DE NOTAS DE CREDITO-->
@@ -1636,8 +1911,7 @@
               Las Notas de Débito por venta se cargan también desde esta opción. Éstas implican una disminución en el
               stock y un movimiento que agregará deuda en la cuenta
               corriente del cliente. Luego, se deberán imputar los recibos o notas de crédito (según corresponda) a
-              estas notas de débito, desde el menú Ventas,
-              opción Imputaciones (ver <!-- ¿Existe Ventas -> Imputaciones? Falta referencia -->).
+              estas notas de débito, desde el menú Ventas, opción Imputaciones (ver Ventas -> Cobro a Clientes -> Imputaciones).
             </p>
 
           </section>
@@ -1793,6 +2067,8 @@
 
           </section>
 
+          <hr class="divider">
+
           <!-- Ventas -> Hoja de Carga
 		============================ -->
           <section id="man_ventas_hojacarga">
@@ -1818,6 +2094,41 @@
 
           <hr class="divider">
 
+          <!-- Ventas -> Recibo Express
+          ============================ -->
+          <section id="man_ventas_reciboexpss">
+            <h3>Recibo Express</h3>
+
+            <p>
+              Se encuentra en la sección Ventas, botón Recibo Express.<br>
+              <img class="img-fluid border" src="assets/images/Ventas/Boton Recibo Express.png" alt="">
+            </p>
+            
+            <p>Esta herramienta permite generar recibos de forma rápida y sencilla:
+              <ol>
+                <li>Seleccionamos la Sucursal (1), el tipo de Comprobante (2), la Caja donde se registrará la venta (3) y el Modo de Pago (4).</li>
+                <li>Buscamos al Cliente y seleccionamos una fecha (5).</li>
+                <li>Ingresamos el Número de Recibo (6).</li>
+                <li>Finalmente, ingresamos el importe (7) y hacemos click en el botón <img class="img-fluid border" src="assets/images/Ventas/Recibo Express - OK.png" alt="">.</li>
+              </ol>
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Recibo Express.png">
+              <img class="img-fluid border" src="assets/images/Ventas/Recibo Express.png"  alt=""></a></p>
+
+            <p>
+              Al hacer doble click en el recibo, se abrirá una nueva ventana donde podremos realizar la facturación e impresión del comprobante.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Recibo Express - Doble Click.png">
+              <img class="img-fluid border" src="assets/images/Ventas/Recibo Express - Doble Click.png"  alt=""></a></p>
+        
+            <p>Si hacemos click en la sección <b>Cta. Cte.</b> debajo, veremos un listado de los comprobantes en la Cuenta Corriente del cliente que seleccionamos. <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Recibo Express - Cta Cte.png"  alt="">
+            </p>
+          </section>
+
+          <hr class="divider">
 
           <!-- Ventas -> Cobro a Clientes
 		============================ -->
@@ -1982,6 +2293,50 @@
           </section>
 
           <hr class="divider">
+
+    <!-- Ventas -> Precio Especiales Clientes
+		============================ -->
+    <section id="man_ventas_preespcli">
+      <h3>Precios Especiales por Cliente</h3>
+
+      <p> Se encuentra en la sección Ventas, submenú Otras Acciones, opción Precios Especiales Clientes.
+        <img class="img-fluid border" src="assets/images/Ventas/Boton Pre Esp Clie.png" alt="">
+      </p>
+
+      <p>
+        Con esta herramienta se puede definir una lista de precios especial por cada cliente. 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Precios Especiales Cliente.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Precios Especiales Cliente.png" alt=""></a></p>
+
+      <p>
+        Los pasos a seguir son:
+        <ol>
+          <li>Haga click en Agregar.</li>
+          <li>Seleccione un cliente utilizando el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt="">.</li>
+          <li>Ingrese el artículo, precio especial y fecha. El precio de venta es ingresado por el sistema y la fecha sugerida es la fecha actual,
+             pero puede modificarla. Para guardar presione Confirma. </li>
+        </ol>
+      </p>
+
+      <p>
+        Si el cliente ya tiene precios especiales,
+         el camino a seguir es el siguiente:
+         <ol>
+          <li>Presione Buscar, elija el cliente y presione OK.</li>
+          <li>Presione Modificar, para que el sistema le permita agregar otro precio.</li>
+          <li>Posiciónese sobre el último precio y presione Tab. Esta acción le agregará un registro a la tabla, como se ve en la figura: <br>
+            <img class="img-fluid border" src="assets/images/Ventas/Precios Especiales Cliente - Modificar.png" alt="">
+          </li>
+          <li>Ingrese el artículo, precio especial y fecha. El precio de venta es ingresado por el sistema y la fecha sugerida 
+            es la fecha actual, pero puede modificarla. Para guardar presione Confirma. </li>
+         </ol>
+      </p>
+
+    </section>
+
+    <hr class="divider">
 
           <!-- Ventas -> Presupuesto -> Listado
 		============================ -->
