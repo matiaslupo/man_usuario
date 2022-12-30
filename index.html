@@ -208,6 +208,11 @@
                   <li class="nav-item"><a class="nav-link text-2" href="#man_transf_cheques">Cheques</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_cobro_cheques">Cobro de Cheques a Caja</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_reemplazo_cheques">Reemplazo de Cheques</a></li>
+                </ul>
+              </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_planilla_terceros">Libro de Cheques de Terceros</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_gastos">Gastos y Listados</a></li>
             </ul>
@@ -333,25 +338,58 @@
               <li class="nav-item"><a class="nav-link text-2" href="#man_pagos_proveedores">Pagos a Proveedores</a>
                 <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link text-2" href="#man_orden_pago">Órden de Pago</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_pagos_imputaciones">Imputaciones</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_proveedores_ctacte">Cuenta Corriente Proveedores</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_detalle_ctacte">Detalle de Cuenta Corriente</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ajuste_ctacte">Ajustes de Cuenta Corriente</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_saldos">Saldos</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_deuda_proveedores">Saldos de Deuda de Proveedores</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_saldo_mensual">Saldo de Proveedores Mensual</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_listados_impositivos">Listados</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_listado_percepciones">Listado de Percepciones</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_compras_xrubro">Listado de Compras por Rubro</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_libroiva_compras">Libro IVA de Compras</a></li>
             </ul>
           </li>
 
-          <!--SECCION BANCOS
+          <!--SECCION BANCOS      -->
                       
-          <li class="nav-item"><a class="nav-link text-2" href="#man_personal">Personal</a>
+          <li class="nav-item"><a class="nav-link text-2" href="#man_bancos">Bancos</a>
             <ul class="nav flex-column text-2">
-              <li class="nav-item"><a class="nav-link text-2" href="#man_datos_personal">Datos de Personal</a>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_bancos_datos_iniciales">Datos Iniciales</a>
                 <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_cargos">Cargos</a></li>
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_categorias">Categorías</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_entidades_bancarias">Entidades Bancarias</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_conceptos_bancarios">Conceptos Bancarios</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_abm_personal">Altas, Bajas y Modificaciones (ABM)</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_chequeras">Chequeras</a></li>   
+              <li class="nav-item"><a class="nav-link text-2" href="#man_movimientos">Movimientos</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_depositos">Depositos</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_gastos_ingresos">Gastos e Ingresos</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_conciliacion">Conciliacion</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_control_cheques_emitidos">Control de Cheques Emitidos</a></li>
+                </ul>
+              </li>   
+              <li class="nav-item"><a class="nav-link text-2" href="#man_cheques_propios">Cheques Propios</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_anulacion_cheques">Anulacion de Cheques</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_cheques_emitidos">Listado de Cheques Emitidos</a></li>
+                </ul>
+              </li>         
             </ul>
           </li>
-          -->
 
           <!--SECCION PERSONAL-->
           <li class="nav-item"><a class="nav-link text-2" href="#man_personal">Personal</a>
@@ -924,11 +962,7 @@
               a la que está referenciando, cuál es su caja por defecto,
               algunos controles de stock y caja, los intervalos de cuenta corriente (por ejemplo, 30 días: mensual, 60
               días: bimestral, etc.) y las impresoras. <br>
-              <img class="img-fluid border" src="assets/images/Inicio/Config Local.png" alt=""> <br>
-              Si está activa la casilla de verificación Controla Código de Stock, el sistema le propondrá el código del
-              artículo al ingresarlo al sistema.
-              Si la empresa tiene una codificación interna de los artículos, desactive esta opción. Igualmente, más
-              adelante entraremos en detalle en Stock -> Artículos.
+              <img class="img-fluid border" src="assets/images/Inicio/Config Local.png" alt=""> 
             </p>
 
           </section>
@@ -1218,7 +1252,7 @@
                   <div class="card">
                     <div class="card-header" id="heading8">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse8"
-                          aria-expanded="false" aria-controls="collapse6">¿Cómo clono una Lista de Precios?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse6">¿Cómo creo una nueva Lista de Precios a partir de otra?</a> </h5>
                     </div>
                     <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#popularTopics">
                       <div class="card-body">
@@ -1685,7 +1719,7 @@
           <section id="man_fondos">
             <h2>Fondos</h2>
 
-            <p>Haciendo click en la sección <b>Fondos</b>, se abrirá la siguiente solapa con las herramientas
+            <p class="lead">Haciendo click en la sección <b>Fondos</b>, se abrirá la siguiente solapa con las herramientas
               relacionadas al manejo de cuentas de fondos, cajas, bancos, transferencias y gastos.</p>
 
             <p><a class="popup-img" href="assets/images/Fondos/Solapa Fondos.png"><img class="img-fluid border"
@@ -2176,10 +2210,8 @@
             elegir la forma de pago,
             sólo se aceptará Valores de Terceros o Cheque Propio, según lo que se haya seleccionado en Cheques de. El
             resto de la operación es
-            igual a lo detallado en Valores, página 11. Si la opción es Cheques de Terceros, se abrirá una pantalla
-            donde
-            se listan los cheques de terceros que hay en cartera actualmente. Se elige el cheque y los datos se reflejan
-            en la solapa.
+            igual a lo detallado en Valores (ver Primeros Pasos -> Aspectos Generales). Si la opción es Cheques de Terceros, se abrirá una pantalla
+            donde se listan los cheques de terceros que hay en cartera actualmente. Se elige el cheque y los datos se reflejan en la solapa.
             Si la opción es un cheque propio, desde la solapa se deberán ingresar los datos. <br>
 
             Presione Confirma para guardar los cambios.
@@ -2188,6 +2220,37 @@
           </section>
 
           <hr class="divider">
+
+                            <!-- Fondos ->
+            ============================ -->
+            <section id="man_reemplazo_cheques">
+              <h4>Reemplazo de Cheques</h4>
+
+              <p>Se accede desde la sección Fondos, botón Reemplazo de Cheques</p>
+              <p><img class="img-fluid border" src="assets/images/Fondos/Boton Reemplazo de Cheques.png" alt=""></p>
+
+              <p>
+                Mediante esta opción se registran los reemplazos de los cheques emitidos. Es importante tener en cuenta que el cheque luego puede ser anulado desde
+                 Anular cheque, pero nunca antes. <br>
+                Para reemplazar un cheque presione Agregar y complete la siguiente información:
+              </p>
+
+              <p><a class="popup-img" href="assets/images/Fondos/Reemplazo de Cheques.png"><img class="img-fluid border"
+                    src="assets/images/Fondos/Reemplazo de Cheques.png" alt=""></a></p>
+
+              <p>Ingrese el Banco al que corresponde el cheque, presione Buscar Cheque.
+                 Se listarán todos los cheques emitidos, elija uno y sus datos se completarán en el apartado siguiente. </p>
+
+              <p><img class="img-fluid border" src="assets/images/Fondos/Buscador de Cheques.png" alt=""></p>
+
+              <p>
+                Las observaciones se completan automáticamente, pero puede ser reemplazada en caso que se necesite.
+                 El cheque puede ser reemplazado por efectivo, por un cheque de terceros, la emisión de un nuevo cheque, transferencias o débitos.
+                  La selección de la forma de pago y demás fue detallada en Valores (ver Primeros Pasos -> Aspectos Generales). <br>
+                Presione Confirma para guardar los cambios. 
+              </p>
+
+            </section>
 
           <!-- Planilla de Cheques de Terceros
     ============================ -->
@@ -3957,7 +4020,7 @@
 
     <hr class="divider">
 
-        <!-- Compras ->
+        <!-- Compras -> Ordenes de Compra
 		============================ -->
     <section id="man_ordenes_compra">
       <h3>Órdenes de Compra</h3>
@@ -3973,7 +4036,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Orden de Compra (Formulario para Comprobante)
 		============================ -->
     <section id="man_orden_compra">
       <h3>Órden de Compra</h3>
@@ -4027,7 +4090,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Listado de Ordenes de Compra Nuevas
 		============================ -->
     <section id="man_ordenes_nuevas">
       <h3>Órdenes de Compra Nuevas</h3>
@@ -4044,7 +4107,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Listado de Ordenes de Compra a Autorizar
 		============================ -->
     <section id="man_ordenes_autorizar">
       <h3>Órdenes de Compra a Autorizar</h3>
@@ -4070,7 +4133,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Impresion de Ordenes Autorizadas
 		============================ -->
     <section id="man_impresion_autorizadas">
       <h3>Impresión de Órdenes Autorizadas</h3>
@@ -4096,7 +4159,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Recepcion de Ordenes de Compra
 		============================ -->
     <section id="man_recepcion_compra">
       <h3>Recepción de Órdenes de Compra</h3>
@@ -4121,7 +4184,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Listado de Ordenes de Compra Realizadas
 		============================ -->
     <section id="man_listado_realizadas">
       <h3>Listado de Órdenes de Compra Realizadas</h3>
@@ -4142,7 +4205,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Facturas de Compra (Formularios)
 		============================ -->
     <section id="man_facturas_compra">
       <h3>Facturas de Compra</h3>
@@ -4154,7 +4217,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> En Cuenta Corriente
 		============================ -->
     <section id="man_compra_ctacte">
       <h3>Facturación de Compra en Cuenta Corriente</h3>
@@ -4184,7 +4247,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Notas de Credito y Debito
 		============================ -->
     <section id="man_compras_credydeb">
       <h3>Notas de Crédito y Débito</h3>
@@ -4219,7 +4282,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Al Contado
 		============================ -->
     <section id="man_compra_contado">
       <h3>Facturación de Compra al contado</h3>
@@ -4245,7 +4308,7 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Pagos a Proveedores
 		============================ -->
     <section id="man_pagos_proveedores">
       <h3>Pagos a Proveedores</h3>
@@ -4257,10 +4320,10 @@
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Orden de Pago
 		============================ -->
     <section id="man_orden_pago">
-      <h3>Orden de Pago</h3>
+      <h3>Órden de Pago</h3>
 
       <p>Luego de la facturación en cuenta corriente, es necesario registrar el pago de las mismas. Esta operación se registra mediante una orden de pago.
          En ella cancelaremos las facturas pendientes. La operación se realiza a través de la siguiente ventana, a la que accedemos desde Compras -> Orden de Pago.</p>
@@ -4276,9 +4339,9 @@
           src="assets/images/Compras/Orden de Pago - Nueva.png" alt=""></a></p>
 
       <p>
-        La cuestión ahora es cómo distribuir el importe total a pagar en las diferentes facturas. Hay dos formas,  la primera es la siguiente:
+        La cuestión ahora es cómo distribuir el importe total a pagar en las diferentes facturas. Hay dos formas, la primera es la siguiente:
         <ol>
-          <li>Se selecciona con botón derecho la factura, de tal modo que se genera la siguiente marca:<br>
+          <li>Se selecciona con botón derecho la factura, de tal modo que quede resaltada de la siguiente forma:<br>
             <img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Seleccionar Factura.png" alt="">
           </li>
           <li>Se debe arrastrar con botón izquierdo hasta la tabla de la izquierda, de modo que la factura aparezca en ella. <br>
@@ -4287,7 +4350,7 @@
         </ol>
       </p>
 
-      <p>La segunda es utilizando la ventana de Sumar Aplicaciones, esta se abre con el botón amarillo marcado en la imagen.
+      <p>La segunda es utilizando la ventana de Sumar Aplicaciones, esta se abre con el botón amarillo marcado en la siguiente imagen.
          Esta forma es más útil cuando necesitamos seleccionar múltiples facturas.
       </p>
       <p><img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Sumar Aplicaciones.png" alt=""></p>
@@ -4300,44 +4363,542 @@
          En saldo a Cta., se van descontando las facturas aplicadas del total a pagar.
           Con respecto a la factura en la tabla derecha, pueden ocurrir dos cosas: si el saldo a cuenta es suficiente para saldarla por completo,
            la factura aparecerá con saldo cero, como muestra el ejemplo de la figura anterior.  Si el saldo no alcanza, la factura mostrará el saldo
-            actualizado según la resta entre el saldo a Cta. y el importe de la factura.
+            actualizado según la resta entre el saldo a Cta. y el importe de la factura, como se muestra en la siguiente imagen.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Compras/Orden de Pago - Saldo Insuficiente.png"><img class="img-fluid border"
+        src="assets/images/Compras/Orden de Pago - Saldo Insuficiente.png" alt=""></a></p>
+
+      <p>En este ejemplo, como el saldo no era suficiente para saldar por completo la factura,
+         se le imputa sólo el saldo que quedaba, como muestra la tabla izquierda, y se actualiza el nuevo saldo en la tabla de la derecha. <br>
+         Podremos continuar agregando facturas hasta saldar todas las facturas que se desean, hasta que el saldo a Cta. quede en cero o hasta que el Total Aplicado equivalga al Importe Total.
+         Llegado a uno de los dos últimos casos, el sistema no nos permitirá agregar más facturas.
+          En caso que se salden todas las facturas y aún así quede resto, éste se guardará como saldo a favor y podrá ser imputado a facturas
+           posteriores como veremos en el siguiente punto: Imputaciones.
+      </p>
+
+      <p><u>Valores</u></p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Valores.png" alt=""></p>
+      <p>El formulario también permite el ingreso de valores desde caja. Esta sección es explicada en Primeros Pasos -> Aspectos Generales -> Valores</p>
+
+      <p><u>Retenciones</u></p>
+      <p>Si la empresa es agente de retención, en las siguientes solapas se pueden detallar los porcentajes de las retenciones
+         de las diferentes facturas saldadas que le haremos al proveedor.</p>
+      <ol>
+        <li><u>Ingresos Brutos</u><br>
+          <img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Retenciones IIBB.png" alt="">
+        </li>
+        <li><u>IVA</u> <br>
+          <img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Retenciones IVA.png" alt="">
+        </li>
+        <li><u>Impuesto a las Ganancias</u> <br>
+          <img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Retenciones Ganan.png" alt="">
+        </li>
+      </ol>        
+
+      <p><u>Movimientos Auxiliares</u></p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Mov Aux.png" alt=""></p>
+      <p>En esta pestaña podemos indicar movimientos auxiliares relacionados al pago, indicando la fecha, el tipo de movimiento y el haber.</p>
+
+      <p>Cuando finalicemos de ingresar las facturas y valores relacionados al pago, hacemos click en Confirma para guardar la operación y podremos imprimir el comprobante.</p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Orden de Pago - Reporte.png" alt=""></p>
+      
+    </section>
+
+    <hr class="divider">
+
+            <!-- Compras -> Aplicaciones a Cuenta de Proveedores (Imputaciones)
+		============================ -->
+    <section id="man_pagos_imputaciones">
+      <h3>Imputaciones</h3>
+
+      <p>Se accede desde la sección Compras, botón <b>Aplicaciones Cta.Prov</b>.
+        En el caso de que el proveedor tenga saldo a favor, una vez que se le factura en cuenta corriente (ver Compras -> Facturas de Compra -> En Cuenta Corriente) 
+        se le puede imputar a esta factura dicho saldo. También desde aquí se imputan las notas de crédito. 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Compras/Imputaciones.png"><img class="img-fluid border"
+        src="assets/images/Compras/Imputaciones.png" alt=""></a></p>
+
+      <p><img class="img-fluid border" src="assets/images/Compras/" alt=""></p>
+
+      <p>El procedimiento es el siguiente: </p>
+      <ol>
+        <li>Se selecciona el proveedor. Se desplegará el detalle de la cuenta corriente. En la tabla de la izquierda
+           figurarán todas las facturas en cuenta corriente sin pagar, en la tabla de la derecha figurarán
+            todas las órdenes de pago que componen su saldo a favor. Por ejemplo: <br>
+            <p><a class="popup-img" href="assets/images/Compras/Imputaciones - Proveedor (max).png"><img class="img-fluid border"
+              src="assets/images/Compras/Imputaciones - Proveedor.png" alt=""></a></p>
+            Haciendo click derecho sobre la orden de pago aparecerá la opción de ver el comprobante: <br>
+            <img class="img-fluid border" src="assets/images/Compras/Imputaciones - Ver Comprobante.png" alt=""> <br>
+            El comprobante se verá de la siguiente manera: <br>
+            <img class="img-fluid border" src="assets/images/Compras/Imputaciones - Comprobante.png" alt="">
+        </li>
+        <li>
+          Arrastrar la orden de pago sobre la factura a pagar. De esta manera puede ser saldada por completo o sólo una parte.
+            Haciendo click sobre la cruz en la factura se pueden ver qué órdenes componen su pago.
+            <p><img class="img-fluid border" src="assets/images/Compras/Imputaciones - Composicion Pago.png" alt=""></p>
+        </li>
+        <li>Presione Confirma para guardar los cambios.</li>
+      </ol>
+
+      <ul>
+        <li>Muestra con saldo 0: Mostrará aquellas facturas que ya fueron pagadas. Para refrescar la cuenta corriente presione Ver CCte. </li>
+        <li>Imprimir: Imprime un resumen de las facturas saldadas. </li>
+        <li>Imprimir detalle: Imprimirá un resumen de las facturas con las órdenes de pago correspondientes. </li>
+      </ul>
+
+    </section>
+
+    <hr class="divider">
+
+            <!-- Compras -> Cuenta Corriente de Proveedores
+		============================ -->
+    <section id="man_proveedores_ctacte">
+      <h3>Cuenta Corriente de Proveedores</h3>
+
+      <p>Las cuentas corrientes de los proveedores se administran desde los formularios <b>Cta. Corrientes de Proveedores</b> y 
+      <b>Ajustes de Cta.Cte.Proveedores</b>.</p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Cuentas Corrientes Prov.png" alt=""></p>
+
+    </section>
+
+    <hr class="divider">
+
+            <!-- Compras -> Detalles de Cta Cte
+		============================ -->
+    <section id="man_detalle_ctacte">
+      <h3>Detalle de la cuenta corriente</h3>
+
+      <p>Se accede desde la opción Cta. Cte. Proveedores. Muestra un detalle de los movimientos en la cuenta corriente del proveedor.
+         Se debe elegir un proveedor, un rango de fechas y presionar el botón Ver CC. </p>
+      <p><img class="img-fluid border" src="assets/images/Compras/CtaCte de Proveedores.png" alt=""></p>
+
+      <p>El botón Imprimir abre un reporte como vista previa de impresión. </p>
+      <p><img class="img-fluid border" src="assets/images/Compras/CtaCte de Proveedores - Reporte.png" alt=""></p>
+    </section>
+
+    <hr class="divider">
+
+            <!-- Compras -> Ajuste de Cta Cte
+		============================ -->
+    <section id="man_ajuste_ctacte">
+      <h3>Ajuste de cuenta corriente</h3>
+
+      <p>Se accede desde la opción Ajustes Cta. Cte. Proveedores. Mediante esta operación se pueden realizar ajustes en la cuenta corriente del proveedor. </p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Ajuste Cta Cte Proveedores.png" alt=""></p>
+
+      <p>Como primer paso se debe presionar Agregar, automáticamente se define en Fecha la fecha actual, en Sucursal la sucursal desde donde se está operando,
+         el Tipo de Comprobante como Ajuste Cta. Cte. con su numeración correspondiente. Seguido de eso se debe ingresar el proveedor. <br>
+        Los movimientos pueden realizarse desde el Debe o desde el Haber. Agregando un importe en Debe, estará agregando saldo a favor del proveedor,
+         que luego puede ser imputado a facturas desde Imputaciones. Agregando un importe en Haber, estará agregándole deuda. <br>
+        En Detalle y Observaciones se puede describir la operación. Presione Confirma para guardar los cambios.
+         </p>
+
+      <p><a class="popup-img" href="assets/images/Compras/Ajuste Cta Cte Proveedores - Ejemplo.png"><img class="img-fluid border"
+            src="assets/images/Compras/Ajuste Cta Cte Proveedores - Ejemplo.png" alt=""></a></p>
+      
+      <p>
+        Estos ajustes deben imputarse a comprobantes emitidos desde Imputaciones.
       </p>
     </section>
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Listados de Saldos
 		============================ -->
-    <section id="man_">
-      <h3></h3>
+    <section id="man_saldos">
+      <h3>Saldos</h3>
 
-      <p></p>
-      <p><img class="img-fluid border" src="assets/images/Compras/" alt=""></p>
+      <p>Se encuentran en el submenú Listados Saldos.</p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Listados Saldos.png" alt=""></p>
 
-      <p> </p>
-
-      <p><a class="popup-img" href="assets/images/Compras/"><img class="img-fluid border"
-            src="assets/images/Compras/" alt=""></a></p>
     </section>
 
     <hr class="divider">
 
-            <!-- Compras ->
+            <!-- Compras -> Saldo Deuda Prov.
 		============================ -->
-    <section id="man_">
-      <h3></h3>
+    <section id="man_deuda_proveedores">
+      <h3>Saldo de Deuda de Proveedores</h3>
 
-      <p></p>
-      <p><img class="img-fluid border" src="assets/images/Compras/" alt=""></p>
+      <p>Se accede desde la opción Saldo de Deuda de Proveedores.</p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Boton Saldo deuda proveedores.png" alt=""></p>
+      
+      <p>Muestra todos los proveedores con deuda en una sola planilla. Seleccione una fecha de corte y presione Traer Saldos para visualizar la información.</p>
 
-      <p> </p>
+      <p><a class="popup-img" href="assets/images/Compras/Saldo deuda proveedores.png"><img class="img-fluid border"
+        src="assets/images/Compras/Saldo deuda proveedores.png" alt=""></a></p>
 
-      <p><a class="popup-img" href="assets/images/Compras/"><img class="img-fluid border"
-            src="assets/images/Compras/" alt=""></a></p>
+      <p>Haciendo click sobre la pestaña se despliega la siguiente información. </p>
+
+      <p><a class="popup-img" href="assets/images/Compras/Saldo deuda proveedores - Extra.png"><img class="img-fluid border"
+            src="assets/images/Compras/Saldo deuda proveedores - Extra.png" alt=""></a></p>
+
+      <p>En ella se detallan los movimientos de cuenta corriente del cliente seleccionado en la tabla de la izquierda.</p>
     </section>
 
     <hr class="divider">
 
+            <!-- Compras -> Saldo Deuda Mensual
+		============================ -->
+    <section id="man_saldo_mensual">
+      <h3>Saldo de Proveedores Mensual</h3>
+
+      <p>Se accede desde la opción Saldo de Proveedores Mensual.</p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Boton Saldo Proveedores Mensual.png" alt=""></p>
+
+      <p>Esta pantalla muestra los saldos mensuales de todos los proveedores. Presionando Buscar se despliega la información:</p>
+
+      <p><a class="popup-img" href="assets/images/Compras/Saldo Proveedores Mensual.png"><img class="img-fluid border"
+            src="assets/images/Compras/Saldo Proveedores Mensual.png" alt=""></a></p>
+
+    </section>
+
+    <hr class="divider">
+
+            <!-- Compras -> Listados
+		============================ -->
+    <section id="man_listados_impositivos">
+      <h3>Listados</h3>
+
+    </section>
+
+            <!-- Compras -> Listado Percepciones
+		============================ -->
+    <section id="man_listado_percepciones">
+      <h4>Listado de Percepciones</h4>
+
+      <p>Se accede desde la sección Compras, submenú Listados Impositivos, opción Listado de Percepciones en las Fc. de Compra. </p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Boton Listado de Percepciones.png" alt=""></p>
+
+      <p>A partir de un rango definido de fechas, se detalla las percepciones de IVA o Ingresos Brutos obtenidas a través de los comprobantes de compra.
+         Seleccione la fecha y presione Buscar para obtener la información:</p>
+      <p><a class="popup-img" href="assets/images/Compras/Listado de Percepciones.png"><img class="img-fluid border"
+            src="assets/images/Compras/Listado de Percepciones.png" alt=""></a></p>
+
+    </section>
+
+    <hr class="divider">
+
+            <!-- Compras -> Listado Compras por Rubro
+		============================ -->
+    <section id="man_compras_xrubro">
+      <h4>Listado de Compras por Rubro</h4>
+
+      <p>Se accede desde la sección Compras, submenú Otros Listados, opción Listado de Compras por Rubro.</p>
+
+      <p><img class="img-fluid border" src="assets/images/Compras/Boton Listado Compras x Rubro.png" alt=""></p>
+
+      <p>Lista por rubro en un período específico las compras que se hayan realizado.
+         Para ello debe seleccionar el Rubro y la(s) sucursal(es) (Paso 1) y luego el período (Paso 2). Presione Buscar para obtener la información (Paso 3). </p>
+      
+      <p><a class="popup-img" href="assets/images/Compras/Listado de Compras por Rubro.png"><img class="img-fluid border"
+            src="assets/images/Compras/Listado de Compras por Rubro.png" alt=""></a></p>
+
+    </section>
+
+    <hr class="divider">
+
+            <!-- Compras -> Libro IVA Compras
+		============================ -->
+    <section id="man_libroiva_compras">
+      <h3>Libro IVA de Compras</h3>
+
+      <p>Se accede desde la sección Compras, submenú Listados Impositivos, opción Libro de IVA Compras.</p>
+      <p><img class="img-fluid border" src="assets/images/Compras/Boton Libro IVA Compra.png" alt=""></p>
+
+      <p>Mediante esta opción se puede preparar el Libro de IVA Compras. La pantalla se presenta de la siguiente manera:</p>
+
+      <p><img class="img-fluid border" src="assets/images/Compras/Libro IVA Compra Vacio.png" alt=""></p>
+
+      <p>Seleccione el período al que pertenece el libro y presione OK. En la tabla se mostrará la siguiente información</p>
+      <p><a class="popup-img" href="assets/images/Compras/Libro IVA Compra (max).png"><img class="img-fluid border"
+            src="assets/images/Compras/Libro IVA Compra.png" alt=""></a></p>
+
+      <p>La tabla detalla por comprobante el total neto, la alícuota y el importe de impuesto a favor.
+         Con las opciones de Ordenado por Fecha o por Razón Social, ordena a su gusto el listado desplegado por Imprimir. En el ejemplo, está ordenado por fechas. </p>
+
+      <p><u>Créditos/Débitos</u></p>
+      <p><a class="popup-img" href="assets/images/Compras/Libro IVA Compra - Cred y Deb.png"><img class="img-fluid border"
+        src="assets/images/Compras/Libro IVA Compra - Cred y Deb.png" alt=""></a></p>
+      <p>Esta tabla muestra en detalle los créditos y débitos que forman parte del período fiscal detallado en el Libro IVA de Compras.</p>
+
+      <p><u>Artículos</u></p>
+      <p><a class="popup-img" href="assets/images/Compras/Libro IVA Compra - Articulos.png"><img class="img-fluid border"
+        src="assets/images/Compras/Libro IVA Compra - Articulos.png" alt=""></a></p>
+      <p>Genera un listado por Rubro y Subrubro de los artículos vendidos en el período fiscal especificado. 
+        Haga click en <b>Traer Det. de Artículos</b> para generar el listado.</p>
+
+      <p>Listado de Comprobantes por Sucursal</p>
+      <p><a class="popup-img" href="assets/images/Compras/Libro IVA Compra "><img class="img-fluid border"
+        src="assets/images/Compras/Libro IVA Compra" alt=""></a></p>
+      <p>En esta sección se muestra un listado ordenado por Sucursal de todos los comprobantes que forman parte de este período fiscal.</p>
+
+      <p>Al hacer click en el botón <img class="img-fluid border" src="assets/images/Compras/Libro IVA Compra - Boton Cierre Fiscal.png" alt="">, 
+        se cierra el período de modo que ya no se pueda modificar, ya que, una vez impreso el Libro de IVA Compras, los valores deben mantenerse.<br>
+        Presione Imprimir y verá el siguiente reporte:
+      </p>
+
+      <p><img class="img-fluid border" src="assets/images/Compras/Libro IVA Compra - Reporte.png" alt=""></p>
+
+    </section>
+
+    <hr class="divider">
+
+            <!-- Sección Bancos
+		============================ -->
+    <section id="man_bancos">
+      <h2>Bancos</h2>
+
+      <p class="lead">En esta solapa se encuentran las herramientas relacionadas a la administración de los datos de las entidades y cuentas bancarias
+         que manejará el sistema.</p>
+
+      <p><a class="popup-img" href="assets/images/Bancos/Solapa Bancos.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Solapa Bancos.png" alt=""></a></p>
+
+    </section>
+
+    <hr class="divider">
+
+                <!-- Bancos -> Datos Iniciales
+		============================ -->
+    <section id="man_bancos_datos_iniciales">
+      <h3>Datos Iniciales de Bancos</h3>
+
+      <p><img class="img-fluid border" src="assets/images/Bancos/Datos Iniciales.png" alt=""></p>
+
+      <p>Para comenzar a trabajar con bancos, necesitamos tener la siguiente información almacenada:</p>
+
+    </section>
+
+                   <!-- Bancos -> Entidades Bancarias
+		============================ -->
+    <section id="man_entidades_bancarias">
+      <h4>Entidades Bancarias</h4>
+
+      <p>Mediante esta opción podemos ingresar todos los bancos con los que trabajamos. </p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Entidades Bancarias.png" alt=""></p>
+      <p>Presione Agregar, ingrese los datos del banco y confirme.</p>      
+
+    </section>
+
+                    <!-- Bancos -> Conceptos Bancarios
+		============================ -->
+    <section id="man_conceptos_bancarios">
+      <h4>Conceptos Bancarios</h4>
+
+      <p>Estos conceptos representan todos los movimientos que sufrirán las cuentas bancarias. Ingréselos del mismo modo que ingresó los bancos. </p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Conceptos Bancarios.png" alt=""></p>
+      
+
+    </section>
+
+    <hr class="divider">
+
+                    <!-- Bancos -> Chequeras
+		============================ -->
+    <section id="man_chequeras">
+      <h3>Chequeras</h3>
+
+      <p>Se accede desde la sección Bancos, botón Chequeras.</p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Boton Chequeras.png" alt=""></p>
+
+      <p>Mediante esta opción se cargan todas las chequeras, para luego poder trabajar con ellas.
+         De esta manera, se registra cada vez que se emite un cheque. Los movimientos de chequeras están detallados a continuación.</p>
+      <p><a class="popup-img" href="assets/images/Bancos/Chequeras.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Chequeras.png" alt=""></a></p>
+
+      <p>Como se puede ver, los datos ingresados los provee mismo la chequera emitida por el banco. Veamos en detalle:</p>
+      <ul>
+        <li><b>Código</b>: Este código lo propone directamente el sistema. Con él identificará a esta chequera.</li>
+        <li><b>Descripción/Nombre</b>: Ingrese con qué nombre va a identificar a la chequera</li>
+        <li><b>Cta. Caja</b>: Aquí se selecciona la cuenta corriente a la que pertenece.
+           Estas cuentas se cargan en Cuentas de Cajas y Bancos en el menú Fondos (ver Fondos -> Cuentas de Caja y Bancos). </li>
+        <li><b>Moneda</b>:  En qué divisa trabaja.</li>        
+        <li><b>Diferido</b>: Active la casilla en caso en que sean cheques diferidos.</li>
+        <li><b>Numeración</b>: Esta numeración la provee la chequera, ingrese la numeración que allí figura.</li>
+        <li><b>Ultimo usado</b>: Si la chequera ya está en uso, aquí figura el último usado.</li>
+        <li><b>Terminada</b>: Cuando se termina, se activa esta casilla.</li>
+        <li><b>Cantidad Emitida</b>: Figura la cantidad emitida de cheques de esta chequera.</li>
+      </ul>
+      
+    </section>
+
+    <hr class="divider">
+
+                    <!-- Bancos -> Movimientos
+		============================ -->
+    <section id="man_movimientos">
+      <h3>Movimientos de Cuentas</h3>
+
+      <p>Mediante estas opciones se registran los diferentes movimientos en las cuentas de los bancos. Ellas son: </p>
+
+    </section>
+
+                       <!-- Bancos -> Depositos Bancarios
+		============================ -->
+    <section id="man_depositos">
+      <h4>Depósitos Bancarios</h4>
+
+      <p>Se encuentra en la sección Bancos, botón Depositos Bancarios.</p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Boton Depositos Bancarios.png" alt=""></p>
+
+      <p>Se registran todos los depósitos hechos en las cuentas de la empresa. Presione Agregar y complete los siguientes datos: </p>
+      <p><a class="popup-img" href="assets/images/Bancos/Depositos Bancarios.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Depositos Bancarios.png" alt=""></a></p>
+
+      <p>
+        <ul>
+          <li><b>Fecha</b>: El sistema pondrá por defecto la fecha actual, pero se debe completar con la fecha real del depósito. </li>
+          <li><b>Cta. Banco</b>: Elija la cuenta en donde se hará el depósito. </li>
+          <li><b>Número</b>: Ingrese aquí el número de depósito.</li>
+          <li><b>Observaciones</b>: Complete aquí el detalle de la operación o información adicional que quiera registrar. </li>
+          <li><b>Depósito de</b>: Elija aquí si será un depósito en cheque o efectivo. Según esta selección, se habilitará la solapa de efectivo o de cheques de terceros. </li>
+          <li><b>Caja</b>: Por defecto, el sistema ingresará la caja que maneja la sucursal.</li>
+          <li><b>Formas de pago</b>: Este detalle lo hemos visto en Valores (ver Primeros Pasos -> Aspectos Generales) y,
+             al igual que en Cobro de cheques (ver Fondos -> Cobro de Cheques a caja), sólo se podrán seleccionar los tipos Efectivo o Cheque de Terceros, según corresponda. </li>
+        </ul>
+        Presione Confirma para guardar los cambios. 
+      </p>
+
+    </section>
+
+
+                       <!-- Bancos -> Gastos e Ingresos
+		============================ -->
+    <section id="man_gastos_ingresos">
+      <h4>Gastos e Ingresos</h4>
+
+      <p>Se accede desde la sección Bancos, botón Gastos e Ingresos Bancarios.</p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Boton Gastos e Ingresos.png" alt=""></p>
+
+      <p>Desde aquí se podrán registrar todos los movimientos que sufren las cuentas a partir de los conceptos bancarios
+         que fueron cargados anteriormente (ver Datos Iniciales de Bancos).</p>
+
+      <p><a class="popup-img" href="assets/images/Bancos/Gastos e Ingresos.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Gastos e Ingresos.png" alt=""></a></p>
+
+      <p>
+        Presione Agregar y la fecha y la cuenta correspondiente. Luego en la tabla de movimientos se ingresan:
+        <ul>
+          <li><b>Fecha</b>: Por defecto, la actual, pero debe ser la fecha real del movimiento.</li>
+          <li><b>Código</b>: Aquí se ingresan los conceptos bancarios que mencionamos recién. Pulse el buscador o la combinación de teclas Ctrl + Enter o, en caso de conocer el código, ingréselo directamente. </li>
+        </ul>
+      </p>
+
+    </section>
+
+                       <!-- Bancos -> Conciliacion Bancaria
+		============================ -->
+    <section id="man_conciliacion">
+      <h4>Conciliación Bancaria</h4>
+
+      <p>Se accede desde la sección Bancos, opción Conciliacion Bancaria.</p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Boton Conciliacion Bancaria.png" alt=""></p>
+
+      <p>Esta opción permite hacer la conciliación bancaria. Para ello, ingrese la cuenta bancaria y un período.
+         En el apartado de Condición de Búsqueda de Movimientos puede elegir si desea ver los movimientos conciliados, no conciliados o todos. Presione Buscar. </p>
+
+      <p><a class="popup-img" href="assets/images/Bancos/Conciliacion Bancaria.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Conciliacion Bancaria.png" alt=""></a></p>
+
+      <p>
+        En la tabla se pueden ver todos los movimientos en la cuenta corriente.
+         Si la condición de búsqueda es todos, podremos distinguir los conciliados de los no conciliados por la casilla de verificación de la última columna.
+          Si está activada, está conciliada. Por lo tanto, si queremos conciliar uno de los movimientos, debemos activar esta columna y presionar Confirma.
+      </p>
+
+    </section>
+
+                       <!-- Bancos -> Control de Cheques Emitidos
+		============================ -->
+    <section id="man_control_cheques_emitidos">
+      <h4>Control de Cheques Emitidos</h4>
+
+      <p>Se accede desde la sección Bancos, opción Control de Cheques Emitidos.</p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Boton Control de Cheques Emitidos.png" alt=""></p>
+
+      <p>Ésta es una planilla mensual donde se pueden ver todos los movimientos de la cuenta bancaria. Para ello, elija una cuenta, el año y mes.</p>
+      <p><a class="popup-img" href="assets/images/Bancos/Control Cheques Emitidos.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Control Cheques Emitidos.png" alt=""></a></p>
+
+      <p>En primer lugar y en color azul, pueden verse los cheques emitidos.
+         Luego vienen los cheques de terceros en cartera en color verde.
+          En tercer lugar están los depósitos en color rosa. Luego están las transferencias realizadas en color violeta.
+           Y por último, en color rosa, las transferencias recibidas. En la última columna están los totales semanales de cada uno de estos ítems.
+            Este calendario puede imprimirse, para ello presione Imprimir y se generará el siguiente: 
+      </p>
+
+      <p><img class="img-fluid border" src="assets/images/Bancos/Control Cheques Emitidos - Impresion.png" alt=""></p>
+
+      
+      <p>En la pestaña Detalles podemos ver la siguiente información:</p>
+
+      <p><img class="img-fluid border" src="assets/images/Bancos/Control Cheques Emitidos - Detalles.png" alt=""></p>
+
+      <p>
+        En las tablas podemos ver el resumen de los movimientos en los mismos colores que se ven en la solapa Movimientos.
+         Este es un resumen del día, por lo tanto, estos saldos pueden estar compuestos por varios movimientos.
+          Si hacemos doble click sobre los cheques y los depósitos se abrirá el detalle de los mismos, y así  podremos ver todos los movimientos del día.
+           Por ejemplo, haciendo doble click sobre el resumen de los cheques de cartera del 27/10/2012, aparecerá la siguiente pantalla:
+      </p>
+
+      <p><img class="img-fluid border" src="assets/images/Bancos/Control Cheques Emitidos - Detalles Extra.png" alt=""></p>
+
+    </section>
+
+    <hr class="divider">
+
+                  <!-- Bancos ->
+		============================ -->
+    <section id="man_cheques_propios">
+      <h3>Cheques Propios</h3>
+
+    </section>
+
+           <!-- Bancos ->
+		============================ -->
+    <section id="man_anulacion_cheques">
+      <h4>Anulacion de Cheques</h4>
+
+      <p>Se accede desde la sección Bancos, opción Anular Cheques Emitidos</p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Boton Anular Cheques Emitidos.png" alt=""></p>
+
+      <p>Mediante esta opción se pueden anular los cheques emitidos o se pueden ver los cheques anulados. </p>
+      <p><a class="popup-img" href="assets/images/Bancos/Anular Cheques Emitidos.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Anular Cheques Emitidos.png" alt=""></a></p>
+
+      <p>Para anular un cheque se debe elegir el banco y presionar Buscar. Se desplegará una ventana con todos los cheques emitidos de ese banco,
+         seleccione el que desea anular con doble click o seleccionándolo y presionando Ok. Presione Anular y el sistema le brindará la posibilidad de ingresar
+          una observación sobre la anulación del cheque. Presione Confirmar para guardar la operación. <br>
+        Para ver los cheques anulados, active la casilla de verificación de Buscar Anulados y presione Buscar.
+         Siempre tenga en cuenta que debe tener seleccionado un Banco. Si lo selecciona puede restituirlo. Este mecanismo es igual al de anular pero devuelve
+          el cheque a su curso normal. <br>
+        Vale aclarar que si se quiere anular un cheque porque éste va a ser reemplazado, primero se debe reemplazar y luego se anula.
+      </p>
+
+    </section>
+
+            <!-- Bancos ->
+		============================ -->
+    <section id="man_cheques_emitidos">
+      <h4>Listado de Cheques Emitidos</h4>
+
+      <p>Se accede desde Bancos, botón Lista de Che. Emitidos.</p>
+      <p><img class="img-fluid border" src="assets/images/Bancos/Boton Listado de Cheques Emitidos.png" alt=""></p>
+
+      <p>Esta opción lista todos los cheques emitidos de una cuenta bancaria en particular, en un período de tiempo determinado. Elija la cuenta y presione Buscar</p>
+      <p><a class="popup-img" href="assets/images/Bancos/Listado de Cheques Emitidos.png"><img class="img-fluid border"
+            src="assets/images/Bancos/Listado de Cheques Emitidos.png" alt=""></a></p>
+
+      <p>Se detallan todos los cheques emitidos. Si se selecciona uno, en el apartado de abajo se ve un resumen más detallado del movimiento. <br>
+        Presione Imprimir para generar el reporte.
+      </p>
+
+    </section>
+
+    <hr class="divider">
 
 
           <!-- Personal
@@ -4519,7 +5080,7 @@
   <!-- Document Wrapper end -->
 
   <!-- Back To Top -->
-  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+  <a id="back-to-top" data-toggle="tooltip" title="Volver al Principio" href="javascript:void(0)"><i
       class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript
