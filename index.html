@@ -56,7 +56,7 @@
           <!-- Logo -->
           <a class="logo ml-md-3" href="index.html" title="Larsoft Logo"> <img src="assets/images/logo-larsoft.png"
               alt="" /> </a>
-          <span class="text-2 ml-2 texto-indice">(En Prod.)</span>
+          <span class="text-2 ml-2 texto-indice">v1.0</span>
           <!-- Logo End -->
 
           <!-- Navbar Toggler -->
@@ -81,7 +81,7 @@
                 <li><a class="dropdown-item" href="#">Something Else Here</a></li>
               </ul>
             </li>-->
-              <li><a target="_blank" href="#"><span class="texto-indice">Soporte Técnico</span> </a></li>
+              <li><a href="#man_soporte_tecnico"><span class="texto-indice">Soporte Técnico</span> </a></li>
             </ul>
           </div>
           <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
@@ -107,8 +107,8 @@
             <ul class="nav flex-column text-2">
               <li class="nav-item"><a class="nav-link text-2" href="#man_requerimientos">Requerimientos del Sistema</a>
               </li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_consideraciones_tec">Envíanos un Mail (próximamente)</a></li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_soporte_tec">Soporte Técnico (próximamente)</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_mails">Envíanos un Mail (próximamente)</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_soporte_tecnico">Soporte Técnico (próximamente)</a></li>
             </ul>
           </li>
 
@@ -391,6 +391,12 @@
             </ul>
           </li>
 
+          <!--SECCION PEDIDOS-->
+          <li class="nav-item"><a class="nav-link text-2" href="#man_pedidos">Pedidos de Clientes</a>
+            <ul class="nav flex-column text-2">
+            </ul>
+          </li>
+
           <!--SECCION PERSONAL-->
           <li class="nav-item"><a class="nav-link text-2" href="#man_personal">Personal</a>
             <ul class="nav flex-column text-2">
@@ -401,6 +407,12 @@
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_abm_personal">Altas, Bajas y Modificaciones (ABM)</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_personal_ctacte">Cuenta Corriente</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_adelantos">Adelantos / Vales</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ingresos">Ingresos</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
 
@@ -490,7 +502,7 @@
 
           <!-- Consideraciones 
 		============================ -->
-          <section id="man_consideraciones_tec">
+          <section id="man_mails">
             <h2>Envíanos tus dudas</h2>
             <p class="lead">Para mantener este manual actualizado, es muy importante la retroalimentación de nuestros usuarios. Envíanos un mail con tu dudas,
                recomendaciones y/o inquietudes a la siguiente dirección e intentaremos contestar y actualizar el manual lo antes posible.
@@ -502,7 +514,7 @@
 
           <!-- Soporte
 		============================ -->
-          <section id="man_soporte_tec">
+          <section id="man_soporte_tecnico">
             <h2>Soporte Técnico</h2>
             <p>(PRÓXIMAMENTE)</p>
           </section>
@@ -825,16 +837,22 @@
                 Sucursal: Detalla la sucursal a la que pertenece el comprobante.
               </li>
               <li>
-                Tipo de numeración: Se especifica si es un comprobante de venta, compra o ambos y qué tipo de numeración
-                va a llevar.
+                Comprobante: Se especifica si es un comprobante de venta o compra.
+              </li>
+              <li>
+                Tipo de numeración: En esta sección se indica qué tipo de numeración va a llevar el comprobante. La primera opción es <b>Numeración Propia</b>,
+                 significa que tendremos que configurar una numeración en las secciones Letra, Prefijo y Número, y que este comprobante tendrá numeración independiente. 
+                 La segunda opción, <b>Toma Número de Otro Comprobante</b>, indica que este comprobante comparte su numeración con otro, que es seleccionado en la 
+                 sección Enumera desde. Por último, la última opción <b>Sin Numeración</b> simplemente indica que el comprobante no tendrá numeración.
               </li>
               <li>
                 Letra / Prefijo / Número: Estará habilitado sólo cuando se trate de un comprobante con Numeración
                 Propia. Se detalla como será la numeración.
               </li>
               <li>
-                Enumera desde: Sólo habilitado igual que en el caso anterior, se especifica desde qué número se empieza
-                a numerar.
+                Enumera desde: Sólo habilitado en el caso de que el comprobante tenga seleccionada la opción <b>Toma Número de Otro Comprobante</b> en la sección Tipo de
+                 Numeración. Utilizando el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt=""> podremos elegir a partir de qué comprobante 
+                 se heredará la numeración.
               </li>
               <li>
                 Archivo del reporte: Permite poner la ruta del reporte asociado a este comprobante. <br>
@@ -847,7 +865,7 @@
                 un comprobante de Cobro de Cheque, sólo se seleccionará Imprimir.
               </li>
               <li>
-                Copias a imprimir: En esta opción se puede especificar si se trata de un comprobante por duplicado,
+                Copias a imprimir: Indica cuantas copias del comprobante serán impresas. En esta opción se puede especificar si se trata de un comprobante por duplicado,
                 triplicado, etc.
               </li>
             </ul>
@@ -1036,19 +1054,63 @@
                 <!--  Primeros Pasos -> Formularios de Comprobantes
           ============================ -->
           <section id="man_formularios_comprobantes">
-            <h3>Formularios de Comprobantes (en producción)</h3>
+            <h3>Formularios de Comprobantes</h3>
 
-            <p>En esta sección se detallarán características generales que comparten la mayoría de los formularios del sistema que detallan transacciones, ya sean ventas,
-               compras o transferencias relacionadas a cuentas de caja o banco.
+            <p>En esta sección se detallan características generales que comparten la mayoría de los formularios del sistema que detallan transacciones, ya sean ventas,
+               compras o transferencias relacionadas a cuentas de caja o banco, y generan comprobantes.
             </p>
 
-            <p><img class="img-fluid border" src="assets/images/General/Ejemplo Formulario de Comprobante.png" alt=""></p>
+            <p><a class="popup-img" href="assets/images/General/Ejemplo Formulario de Comprobante.png">
+              <img class="img-fluid border" src="assets/images/General/Ejemplo Formulario de Comprobante.png" alt=""></a></p>
 
+            <ul>
+              <li><b>Encabezado</b>: en esta sección se detallan los datos referidos al comprobante, como la fecha, la sucursal donde será emitido y el tipo y número de comprobante. 
+                El resto de los detalles varía dependiendo del tipo de operación que se esté realizando, como por ejemplo el ente a quien está relacionado el comprobante 
+                (Cliente, Proveedor, etc).
+              </li>
+              <li><b>Tabla de Detalles</b>: aquí se ingresan los ítems que forman parte de la operación. Para que esta sección esté habilitada, debemos completar los
+                 datos de cabecera. Una vez que comencemos a agregar ítems a la tabla, los datos de cabecera ya no podrán ser modificados, por lo que si ocurrió algún error 
+                 en el ingreso de esos datos es recomendable Cancelar y volver a empezar. Para ingresar un ítem, hacemos click en la celda de Código y podremos presionar el botón 
+                 <img class="img-fluid border" src="assets/images/Boton Buscar.png">, que abrirá una ventana donde podremos buscar el ítem a ingresar. Opcionalmente, podemos ingresar 
+                el código del ítem si es que lo recordamos.</li>
+              <li><b>Pie del Formulario</b>: al igual que el encabezado, esta sección también difiere mucho dependiendo del formulario que se esté trabajando. Aquí se encuentran detalles
+               adicionales de la operación, como el total, los impuestos y más. Algunos formularios, como el que se muestra en la imagen de ejemplo, tienen incluso botones para
+               navegar entre distintas solapas donde se muestran o completan otros datos.</li>
+              <li><b>Barras de Herramientas y Estado</b>: finalmente, en la sección inferior de los formularios se encuentran la barra de herramientas y la barra de estado,
+               explicadas en la sección Aspectos Generales.</li>
+            </ul>
+            
             <p><u>Impuestos</u></p>
-            
-            <p><img class="img-fluid border" src="assets/images/General/Ejemplo Formulario de Comprobante - Impuestos.png" alt=""></p>
-            <p><img class="img-fluid border" src="assets/images/General/Ejemplo Formulario de Comprobante - Impuestos con Percepciones.png" alt=""></p>
-            
+            <p>Esta sección se encuentra en los formularios de venta y compra, donde se detallan los valores impositivos que forman parte de la operación. Pueden ser:</p>
+              <p><u>Sin percepciones</u></p>
+                <p>En el caso de que no sea una operación donde se realicen percepciones, la sección Impuestos se verá de la siguiente forma:</p>
+                <p><img class="img-fluid border" src="assets/images/General/Ejemplo Formulario de Comprobante - Impuestos.png" alt=""></p>
+                <p>
+                  El comportamiento de esta solapa depende de las alícuotas de IVA de los artículos y
+                   del tipo de inscripción del proveedor. En la sección 1 se detallan los totales sin impuestos:
+                   <ul>
+                    <li><b>Gravado</b>: Los totales de los artículos gravados van aquí.</li>
+                    <li><b>Exento</b>: Los totales de los artículos exentos van aquí.</li>
+                    <li><b>Monotributo</b>: Si el proveedor es monotributista, el total irá aquí. </li>
+                    <li><b>Importe Excluido</b>: Aquí irán los totales de aquellos artículos que fueron cargados con Impuestos Internos. </li>
+                    <li><b>Descuento</b>: En caso de que la operación tenga alguna clase de bonificación, puede detallarse aquí.
+                       Los nuevos valores serán calculados y mostrados en la sección 3. </li>
+                   </ul>
+                   La descripción y el tipo de gravamen de los artículos que condiciona en cual de estos totales aparecerá se configura en Artículos
+                    en la solapa de Costos/Impuestos (ver Stock -> Artículos). <br>
+                    En la sección 2 se detallan el cálculo de los impuestos. En el ejemplo los artículos ingresados tienen un IVA del 21%,
+                     por lo tanto se muestra la tabla IVA con la alícuota 21 y el porcentaje del impuesto. El cálculo del IVA es sobre el total con el descuento,
+                      mostrado en la sección 3. En la sección 4 se muestra el total de la operación, o sea, el total de la sección 3 más la sección 2. 
+                </p>
+              <p><u>Con percepciones</u></p>
+                <p>Si es posible que se realicen percepciones en la operación, la sección Impuestos se verá así:</p>
+                <p><img class="img-fluid border" src="assets/images/General/Ejemplo Formulario de Comprobante - Impuestos con Percepciones.png" alt=""></p>
+                <p>
+                  En el ejemplo se detalla la sección Impuestos en una Factura de Compra en Cuenta Corriente. Como el proveedor fue declarado como Agente
+                   de Retención de IVA y de IIBB (ver Compras -> Proveedores), se detallan los porcentajes en las tablas Percepciones de IVA y Percepciones IIBB.
+                    El cálculo de los impuestos fue tomado a partir del total Gravado de la sección 3. Por lo tanto, la sección 4 muestra el total a pagar, conformado por
+                     el total de la sección 3 y los totales de impuestos de la sección 2.  
+                </p>       
 
           </section>
           <hr class="divider">
@@ -1332,7 +1394,7 @@
           <hr class="divider">
 
 
-          <!-- 
+          <!-- Atrículos
 		============================ -->
           <section id="man_articulos">
             <h3>Artículos</h3>
@@ -1421,7 +1483,7 @@
 
           <hr class="divider">
 
-          <!-- 
+          <!-- Operaciones de Stock
 		============================ -->
           <section id="man_opstock">
             <h3>Operaciones de Stock</h3>
@@ -1432,7 +1494,7 @@
           </section>
 
 
-          <!-- 
+          <!-- Operaciones de Stock -> Consulta
 		============================ -->
           <section id="man_stock_consulta">
             <h4>Consulta</h4>
@@ -1452,7 +1514,7 @@
           </section>
 
 
-          <!-- 
+          <!-- Operaciones de Stock -> Existencias
 		============================ -->
           <section id="man_stock_existencia">
             <h4>Existencias</h4>
@@ -1480,7 +1542,7 @@
           </section>
 
 
-          <!-- 
+          <!-- Operaciones de Stock -> Transferencias
 		============================ -->
           <section id="man_stock_transf">
             <h4>Transferencias</h4>
@@ -1514,7 +1576,7 @@
           </section>
 
 
-          <!-- 
+          <!-- Operaciones de Stock -> Ajustes
 		============================ -->
           <section id="man_stock_ajustes">
             <h4>Ajustes</h4>
@@ -1535,7 +1597,7 @@
 
           <hr class="divider">
 
-          <!-- 
+          <!-- Precios 
 		============================ -->
           <section id="man_precios">
             <h3>Precios</h3>
@@ -1549,7 +1611,7 @@
 
           <hr class="divider">
 
-          <!-- 
+          <!-- Precios -> Actualizacion de Precios General
 		============================ -->
           <section id="man_actprecios_gen">
             <h4>Actualización de Precios General</h4>
@@ -1578,7 +1640,7 @@
 
           <hr class="divider">
 
-          <!-- 
+          <!-- Precios -> Actualizacion de Precios Manual
 		============================ -->
           <section id="man_actprecios_man">
             <h4>Actualizacion de Precios Manual</h4>
@@ -4901,6 +4963,20 @@
     <hr class="divider">
 
 
+              <!-- Pedidos de Clientes
+		============================ -->
+    <section id="man_pedidos">
+      <h2>Pedidos de Clientes</h2>
+
+      <p class="lead">(PROXIMAMENTE)</p>
+
+      <p><a class="popup-img" href="assets/images/Pedidos/Solapa Pedidos.png"><img class="img-fluid border"
+            src="assets/images/Pedidos/Solapa Pedidos.png" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+
           <!-- Personal
 		============================ -->
           <section id="man_personal">
@@ -4977,7 +5053,75 @@
 
     <hr class="divider">
 
-          <!--
+          <!-- Personal -> Cuenta Corriente
+		============================ -->
+    <section id="man_personal_ctacte">
+      <h3>Cuenta Corriente de Personal</h3>
+
+      <p>Se encuentra en la sección Personal, botón Cta.Cte. de Personal.</p>
+      <p><img class="img-fluid border" src="assets/images/Personal/Boton Cta Cte Personal.png" alt=""></p>
+
+      <p>
+        Mediante esta opción se puede consultar la cuenta corriente de cada empleado. Para ello ingrese el empleado, el período correspondiente y presione Ver CC.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Personal/Cta Cte de Personal.png"><img class="img-fluid border"
+        src="assets/images/Personal/Cta Cte de Personal.png" alt=""></a></p>
+
+      <p>
+        Persionando el botón de <b>Listado</b> se abrirá una nueva ventana donde podremos obtener un listado que incluya todas las cuentas corrientes del personal. 
+        Seleccione un período y presione Ver. Haciendo click en el botón <b>+</b> en uno de los ítems se ampliará con mayor detalle sobre la cuenta corriente del empleado.
+      </p>
+      <p><a class="popup-img" href="assets/images/Personal/Lista Cta Cte Personal.png"><img class="img-fluid border"
+            src="assets/images/Personal/Lista Cta Cte Personal.png" alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+          <!-- Personal -> Adelantos
+		============================ -->
+    <section id="man_adelantos">
+      <h3>Adelantos / Vales</h3>
+
+      <p>Se encuentra en la sección Personal, botón Adelantos Vales</p>
+      <p><img class="img-fluid border" src="assets/images/Personal/Boton Adelantos.png" alt=""></p>
+
+      <p>
+        Desde aquí se registran las entradas a la cuenta corriente que tienen que ver con adelantos, vales, sueldos y honorarios; 
+        es decir, toda aquella entrada donde intervenga un comprobante. Los comprobantes fueron ingresados en Comprobantes (ver Primeros Pasos). 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Personal/Adelantos.png"><img class="img-fluid border"
+        src="assets/images/Personal/Adelantos.png" alt=""></a></p>
+
+      <p>Presione Agregar, ingrese el tipo de comprobante, el detalle, empleado y motivo. Luego, ingrese los valores correspondientes como detallamos en Primeros Pasos -> Valores.
+        Finalmente, presione Confirma para guardar la operación. Puede presionar Imprimir para generar un reporte. </p>
+    </section>
+
+    <hr class="divider">
+
+              <!--
+		============================ -->
+    <section id="man_ingresos">
+      <h3>Ingresos</h3>
+
+      <p>Se encuentra en la sección Personal, botón Ingresos en Cta. de Personal</p>
+      <p><img class="img-fluid border" src="assets/images/Personal/Boton Ingresos.png" alt=""></p>
+
+      <p>
+        Mediante esta opción se pueden cargar otro tipo de ingresos que no llevan comprobante.
+        Presione Agregar, ingrese el empleado, el detalle del ingreso y el importe. Para control interno puede, también, llevar un número de comprobante.
+         Presione Confirma para guardar los cambios.        
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Personal/Ingresos.png"><img class="img-fluid border"
+            src="assets/images/Personal/Ingresos.png" alt=""></a></p>
+      
+    </section>
+
+    <hr class="divider">
+
+              <!--
 		============================ -->
     <section id="man_">
       <h3></h3>
@@ -4994,7 +5138,7 @@
 
     <hr class="divider">
 
-          <!--
+              <!--
 		============================ -->
     <section id="man_">
       <h3></h3>
