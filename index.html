@@ -156,6 +156,7 @@
                   <li class="nav-item"><a class="nav-link text-2" href="#man_stock_existencia">Existencias</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_stock_transf">Transferencias</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_stock_ajustes">Ajustes</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_toma_inventario">Toma de Inventario</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_precios">Precios</a>
@@ -394,6 +395,7 @@
           <!--SECCION PEDIDOS-->
           <li class="nav-item"><a class="nav-link text-2" href="#man_pedidos">Pedidos de Clientes</a>
             <ul class="nav flex-column text-2">
+              <li class="nav-item"><a class="nav-link text-2" href="#man_nota_pedido">Notas de Pedido</a></li>
             </ul>
           </li>
 
@@ -411,6 +413,13 @@
                 <ul class="nav flex-column">
                   <li class="nav-item"><a class="nav-link text-2" href="#man_adelantos">Adelantos / Vales</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ingresos">Ingresos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_comisiones">Comisiones</a>
+                <ul class="nav flex-column">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_vendedores_facturas">Asignación de Facturas a Vendedores</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_liquidacion_comisiones">Liquidación de Comisiones</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_facturasxvendedor">Listado de Facturas por Vendedor</a></li>
                 </ul>
               </li>
             </ul>
@@ -646,7 +655,7 @@
             <p>
               <img class="img-fluid border" src="assets/images/Barra de Estado.png" alt=""> <br>
               En ella se encontrarán los estados de los formularios. Por ejemplo, en este caso, el formulario está en
-              modo de Consulta porque no se modificará ningún dato.
+              modo de Consulta (Browse) porque no se modificará ningún dato.
               En caso de estar agregando o modificando, estará en modo Agregando Registros. También muestra mensajes del
               estado de la información, por ejemplo, en este caso,
               muestra que el Comprobante ya fue impreso por lo que no puede ser modificado.
@@ -1579,23 +1588,66 @@
           <!-- Operaciones de Stock -> Ajustes
 		============================ -->
           <section id="man_stock_ajustes">
-            <h4>Ajustes</h4>
+            <h4>Ajustes de Stock</h4>
 
             <p><a class="popup-img" href="assets/images/Stock/Ajustes.png"><img class="img-fluid border"
                   src="assets/images/Stock/Ajustes.png" alt=""></a></p>
 
             <p>
               Desde esta opción se puede ajustar el stock existente de un determinado depósito. En el detalle se agrega
-              el artículo a ajustar,
-              el sistema muestra el stock actual y en Cantidad se ingresa el ajuste deseado. Si este valor es un número
-              positivo,
-              se agregará al stock; de ser número negativo, se restará.
+              el artículo a ajustar, el sistema muestra el stock actual y en Cantidad se ingresa el ajuste deseado. Si este valor es un número
+              positivo, se agregará al stock; de ser número negativo, se restará.
             </p>
 
 
           </section>
 
           <hr class="divider">
+
+          <!-- Operaciones de Stock -> Toma de Inventario
+		============================ -->
+          <section id="man_toma_inventario">
+            <h4>Toma de Inventario</h4>
+
+            <p>Se accede desde el submenú Otras Opciones, botón Toma de Inventario.</p>
+
+            <p><img class="img-fluid border" src="assets/images/Stock/Boton Toma de Inventario.png" alt=""></p>
+
+            <p>
+              Se abrirá la siguiente ventana, donde podremos registrar una lectura de inventario. Al presionar Agregar, podremos comenzar la operación.
+               En el encabezado, el Número es asignado automáticamente, por lo que sólo debemos especificar la Fecha y el Depósito donde se realiza el inventario. 
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Stock/Toma de Inventario.png"><img class="img-fluid border"
+                  src="assets/images/Stock/Toma de Inventario.png" alt=""></a></p>
+
+            <p>
+              Existen varias formas de agregar ítems a la tabla de detalles. La primera y más simple es ingresando manualmente los artículos, haciendo click en la celda
+               de Código e ingresando el código del artículo o buscandolo con el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt="">. 
+               Cuando comencemos a agregar artículos, ya no podremos modificar el Depósito donde se realiza la operación. <br>
+              Haciendo doble click sobre el artículo ingresado, se abrirá su Planilla de Stock como vimos en Artículos. <br>
+              La columna <b>Stk. Actual</b> indica las existencias actuales del artículo ingresado. La columna <b>Stock</b> indica la actualización, es decir los 
+              nuevos artículos ingresados al inventario. La columna <b>Stk. Dif</b> indica las unidades de stock de diferencia entre el stock actual y el stock actualizado. <br>
+              Luego está el Costo del artículo (fijado en su Planilla de Stock, sección Costos/Impuestos), un indicador sobre si el artículo controla stock o no y
+               finalmente una casilla con el Motivo del ajuste (opcional).
+              <br><img class="img-fluid border" src="assets/images/Stock/Toma de Inventario - Ejemplo.png" alt=""><br>
+              Otra forma de ingresar los datos es haciendo click en el botón <b>Toma Inventario Actual</b>. Esto ingresará el inventario actual de todos los artículos en
+               el depósito indicado de forma automática. <br>
+              Finalmente, también podemos hacer click en el botón <b>Leer Borrador</b> que nos permitirá levantar los datos de inventario que hayamos
+               escaneado y generar la tabla de detalles automáticamente. <br> Presionando el botón Confirma guardamos la operación.
+            </p>
+
+            <p>Desde esta misma ventana, podremos realizar un <b>Ajuste de Stock</b> sobre tomas de inventario confirmadas haciendo click en el botón Hacer Ajuste. 
+              Se abrirá una ventana como la vista en la sección Ajustes que vimos anteriormente. Las unidades de stock en la columna <b>Stk. Dif</b> serán añadidas
+             automáticamente al ajuste, como vemos en la siguiente imagen. <br>
+             <img class="img-fluid border" src="assets/images/Stock/Toma de Inventario - Ejemplo Ajuste.png" alt=""> <br>
+             Tener en cuenta que si el valor en <b>Stk. Dif</b> es negativo, también lo será en el Ajuste.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
 
           <!-- Precios 
 		============================ -->
@@ -1662,7 +1714,7 @@
 
           <hr class="divider">
 
-          <!-- 
+          <!-- Precios -> Lista de Precios Personalizada
 		============================ -->
           <section id="man_listapreciospers">
             <h4>Lista de Precios Personalizada</h4>
@@ -1698,7 +1750,7 @@
           <hr class="divider">
 
 
-          <!-- 
+          <!-- Rentabilidad
 		============================ -->
           <section id="man_rentabilidad">
             <h3>Rentabilidad</h3>
@@ -1736,7 +1788,7 @@
 
           <hr class="divider">
 
-          <!-- 
+          <!-- Articulos Exentos Vendidos
 		============================ -->
           <section id="man_exentos_vendidos">
             <h3>Artículos Exentos Vendidos</h3>
@@ -1756,7 +1808,7 @@
 
           <hr class="divider">
 
-          <!-- 
+          <!-- Listado de Rubros y Subrubros de Stock
 		============================ -->
           <section id="man_rubsubrub">
             <h3>Listado de Rubros y Subrubros de Stock</h3>
@@ -2678,7 +2730,7 @@
           <hr class="divider"> -->
 
           <!-- Ventas -> General 
-		============================ -->
+		============================ 
           <section id="man_ventas_general">
             <h3>General (A Hacer)</h3>
 
@@ -2691,7 +2743,25 @@
 
             <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
                   src="assets/images/Ventas/" alt=""></a></p>
-          </section>
+          </section> -->
+
+          <!-- Ventas -> Politicas de Precios
+        ============================ -->
+        <section id="man_">
+          <h2>Políticas de Precio</h2>
+
+          <p>
+            <br>
+            <img class="img-fluid border" src="assets/images/Ventas/" alt="">
+          </p>
+
+          <p></p>
+          <p><a class="popup-img" href="assets/images/Ventas/">
+              <img class="img-fluid border" src="assets/images/Ventas/"
+                alt=""></a></p>
+        </section>
+
+        <hr class="divider">
 
           <!-- Ventas -> Presupuestos
 		============================ -->
@@ -2835,7 +2905,7 @@
             </p>
 
             <p><b><u>Detalles de Impuestos</u></b> </p>
-            <p>El El detalle mostrado es igual al que hemos visto en Presupuestos </p>
+            <p>El detalle mostrado es igual al que hemos visto en Presupuestos </p>
             <p><a class="popup-img" href="assets/images/Ventas/Presupuestos - Impuestos.png"><img
                   class="img-fluid border" src="assets/images/Ventas/Presupuestos - Impuestos.png" alt=""></a></p>
 
@@ -2875,10 +2945,27 @@
               comprobante. <br>
               Si desea Imprimir la factura presione Yes, caso contrario presione No.
             </p>
+            <p>
+              También puede hacer click derecho sobre un Remito para ver nu menú acciones adicionales: <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Facturacion de Remitos Individual - Adicional.png" alt=""> <br>
+              <ul>
+                <li><b>Ver Remito</b>: abre una nueva ventana donde muestra el remito original.</li>
+                <li><b>Facturar de Fc. de Contado</b>: abre una nueva ventana para seleccionar el comprobante
+                   de venta de contado para generar con los detalles del remito (ver Facturas de Venta -> Facturacion de Contado).</li>
+                <li><b>Facturar en Tk/Fc</b>: abre una nueva ventana para seleccionar el comprobante
+                   de venta con ticket para generar con los detalles del remito (ver Facturas de Venta -> Ticket / Factura).</li>
+                <li><b>Anular Remito</b>: anula el remito seleccionado.</li>
+                <li><b>Marcar Remito para No Facturarlo</b>: quita el remito de la lista y lo marca para no facturarlo. También podemos realizar esta acción
+                   seleccionando el remito y presionando la tecla F4.</li>
+                <li><b>Configurar Parametros</b>: abre una nueva ventana para configurar artículos que por defecto estarán gravados o exentos en la facturación del remito. <br>
+                  <img class="img-fluid border" src="assets/images/Ventas/Facturacion de Remitos Individual - Parametros.png" alt=""> 
+                </li>
+              </ul>
+            </p>
           </section>
 
           <hr class="divider">
-
+    
           <!-- Ventas -> Remitos -> Facturación Agrp.
 		============================ -->
           <section id="man_remito_facagru">
@@ -2909,6 +2996,42 @@
           <hr class="divider">
 
 
+
+                  <!-- Ventas -> Remitos -> Asignacion de Remitos a Facturas
+            ============================ -->
+            <section id="man_">
+              <h3></h3>
+
+              <p>
+                <br>
+                <img class="img-fluid border" src="assets/images/Ventas/" alt="">
+              </p>
+
+              <p></p>
+              <p><a class="popup-img" href="assets/images/Ventas/">
+                  <img class="img-fluid border" src="assets/images/Ventas/"
+                    alt=""></a></p>
+            </section>
+
+            <hr class="divider">
+
+                  <!-- Ventas -> Remitos -> Remitos Pendientes de Facturación
+          ============================ -->
+          <section id="man_">
+          <h3></h3>
+
+          <p>
+            <br>
+            <img class="img-fluid border" src="assets/images/Ventas/" alt="">
+          </p>
+
+          <p></p>
+          <p><a class="popup-img" href="assets/images/Ventas/">
+              <img class="img-fluid border" src="assets/images/Ventas/"
+                alt=""></a></p>
+          </section>
+
+          <hr class="divider">
           
           <!-- Ventas -> Facturación -> Cta Cte
 		============================ -->
@@ -4968,7 +5091,7 @@
     <section id="man_pedidos">
       <h2>Pedidos de Clientes</h2>
 
-      <p class="lead">(PROXIMAMENTE)</p>
+      <p class="lead">En esta sección se detallan herramientas para el registro y listado de Pedidos de Clientes.</p>
 
       <p><a class="popup-img" href="assets/images/Pedidos/Solapa Pedidos.png"><img class="img-fluid border"
             src="assets/images/Pedidos/Solapa Pedidos.png" alt=""></a></p>
@@ -4976,6 +5099,87 @@
 
     <hr class="divider">
 
+
+      <!-- Pedidos de Clientes -> Nota de Pedido
+		============================ -->
+    <section id="man_nota_pedido">
+      <h3>Notas de Pedido de Clientes</h3>
+
+      <p>Se accede desde la sección Pedido Clientes:</p>
+
+      <p><img class="img-fluid border" src="assets/images/Pedidos/Boton Notas de Pedido.png" alt=""></p>
+
+      <p>Con este comprobante, podemos guardar en el sistema un pedido del cliente. Su funcionamiento es como está indicado en la sección <b>Formularios de Comprobantes</b>
+       en <b>Primeros Pasos</b>. En el pie podemos ver una sección donde se indica el Estado de la nota de pedido y el usuario que Generó el comprobante, además del Total 
+       de la transacción.</p>
+
+      <p><a class="popup-img" href="assets/images/Pedidos/Nota de Pedido.png"><img class="img-fluid border"
+            src="assets/images/Pedidos/Nota de Pedido.png" alt=""></a></p>
+
+      <p>En la Barra de Herramientas, podemos ver algunas opciones adicionales. Estas, de izquierda a derecha, son:</p>
+      <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - Adicionales.png" alt=""></p>
+      <ul>
+        <li>
+          <b>Dar por Cumplida o Terminada</b>: Marca la nota de pedido como cumplida. Si en el detalle hay items pendientes, los completa. También cambia el estado de 
+          la nota de pedido a "Cumplido". <br>
+          <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - Dar por Cumplida.png" alt=""></p>
+        </li>
+        <li>
+          <b>Copiar Nota de Pedido</b>: Esta opción se habilita en notas de pedido cuyo estado es Pendiente, y donde se haya generado al menos una factura o remito pero 
+          el pedido no se haya comletado. Crea una nueva nota de pedido con los faltantes, y marca la factura original como Cumplido. También, debajo de la sección "N. 
+          de Pedido Anteri." en la cabecera del formulario, aparecerá el número de la nota de pedido a partir de la cual se realizó la copia.
+          <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - NP Ant.png" alt=""></p> <br>
+          Haciendo click en el número o presionando las teclas Alt + A, se abrirá en la misma ventana la nota de pedido vinculada.
+        </li>
+        <li>
+          <b>Generar Remito</b>: Si no hay cantidades entregadas, no permite realziar esta acción. Genera un remito en una nueva ventana con los items entregados y enlaza esta
+           nota de pedido a él. Debajo de la sección "Cpbt. de Entrega" en la cabecera del formulario de la nota de pedido original, aparecerá el número de este remito.
+           <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - CE Remito.png" alt=""></p> <br>
+           Haciendo click en el número o presionando las teclas Alt + E, se abrirá el remito en otra ventana.
+        </li>
+        <li>
+          <b>Imprimir</b>: Genera un reporte para imprimir la Nota de Pedido.
+        </li>
+        <li>
+          <b>Generar Factura</b>: Si no hay cantidades entregadas, no permite realizar esta acción. Genera una factura de cuenta corriente con los items entregados y enlaza esta
+           nota de pedido a ella. Debajo de la sección "Cbpt. de Entrega" en la cabecera del formulario de la nota de pedido original, aparecerá el número de esta factura.
+           <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - CE Factura.png" alt=""></p> <br>
+           Haciendo click en el número o presionando las teclas Alt + E, se abrirá la factura en otra ventana.
+        </li>
+      </ul>
+    </section>
+
+    <hr class="divider">
+
+        <!-- Pedidos de Clientes
+		============================ -->
+    <section id="man_">
+      <h3></h3>
+
+      <p></p>
+
+      <p><img class="img-fluid border" src="assets/images/Pedidos/" alt=""></p>
+
+      <p><a class="popup-img" href="assets/images/Pedidos/"><img class="img-fluid border"
+            src="assets/images/Pedidos/" alt=""></a></p>
+    </section>
+
+  <!--  <hr class="divider">
+
+       Pedidos de Clientes
+		============================ 
+    <section id="man_">
+      <h3></h3>
+
+      <p></p>
+
+      <p><img class="img-fluid border" src="assets/images/Pedidos/" alt=""></p>
+
+      <p><a class="popup-img" href="assets/images/Pedidos/"><img class="img-fluid border"
+            src="assets/images/Pedidos/" alt=""></a></p>
+    </section>
+
+    <hr class="divider"> -->
 
           <!-- Personal
 		============================ -->
@@ -5100,7 +5304,7 @@
 
     <hr class="divider">
 
-              <!--
+              <!-- Personal -> Ingresos
 		============================ -->
     <section id="man_ingresos">
       <h3>Ingresos</h3>
@@ -5121,36 +5325,62 @@
 
     <hr class="divider">
 
-              <!--
+              <!-- Personal -> Comisiones
 		============================ -->
-    <section id="man_">
-      <h3></h3>
-
-      <p><img class="img-fluid border" src="assets/images/Personal/" alt=""></p>
-
-      <p>
-
-      </p>
-
-      <p><a class="popup-img" href="assets/images/Personal/"><img class="img-fluid border"
-            src="assets/images/Personal/" alt=""></a></p>
+    <section id="man_comisiones">
+      <h3>Comisiones</h3>
     </section>
 
-    <hr class="divider">
-
               <!--
 		============================ -->
-    <section id="man_">
-      <h3></h3>
+    <section id="man_vendedores_facturas">
+      <h4>Asignación de Vendedores a Facturas</h4>
 
-      <p><img class="img-fluid border" src="assets/images/Personal/" alt=""></p>
+      <p><img class="img-fluid border" src="assets/images/Personal/Boton Asignar Facturas.png" alt=""></p>
 
       <p>
-
+        Esta opción lista todas las facturas de venta que fueron emitidas en el rango de fechas seleccionado que no tuvieron un vendedor asignado.
+         El sistema permite elegir un vendedor para cada una de estas facturas, para ello,
+         elíjalo desde la columna Vendedor que, haciendo click sobre la pestaña, desplegará el listado de vendedores. Presione Confirmar para guardar los cambios. 
       </p>
 
-      <p><a class="popup-img" href="assets/images/Personal/"><img class="img-fluid border"
-            src="assets/images/Personal/" alt=""></a></p>
+      <p><a class="popup-img" href="assets/images/Personal/Asginar Vendedores a Facturas.png"><img class="img-fluid border"
+            src="assets/images/Personal/Asginar Vendedores a Facturas.png" alt=""></a></p>
+    </section>
+
+                  <!--
+		============================ -->
+    <section id="man_liquidacion_comisiones">
+      <h3>Liquidación de Comisiones</h3>
+
+      <p><img class="img-fluid border" src="assets/images/Personal/Boton Liquidacion a Vendedores.png" alt=""></p>
+
+      <p>
+        Mediante esta opción se liquidan las comisiones de las facturas a los vendedores. Ingrese el vendedor, el período y presione Buscar. 
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Personal/Liquidacion de Comisiones.png"><img class="img-fluid border"
+            src="assets/images/Personal/Liquidacion de Comisiones.png" alt=""></a></p>
+
+      <p>El sistema listará todas las facturas de ese período que le corresponden al vendedor y que no han sido liquidadas.
+         Para liquidarle comisión sobre estas facturas, active la opción Liquida (última columna de la derecha) y presione Confirma. </p>
+    </section>
+
+                      <!--
+		============================ -->
+    <section id="man_facturasxvendedor">
+      <h3>Listado de Facturas por Vendedor</h3>
+
+      <p><img class="img-fluid border" src="assets/images/Personal/Boton Listado Facturas x Vendedor.png" alt=""></p>
+
+      <p>
+        Esta opción lista todas las facturas de venta realizadas por un vendedor. Para ello elija el vendedor, el período correspondiente y presione Buscar. 
+        Si hacemos doble click sobre la factura, se abre una vista de ella.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Personal/Listado de Facturas por Vendedor.png"><img class="img-fluid border"
+            src="assets/images/Personal/Listado de Facturas por Vendedor.png" alt=""></a></p>
+      
     </section>
 
     <hr class="divider">
