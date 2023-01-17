@@ -231,6 +231,10 @@
                   <li class="nav-item"><a class="nav-link" href="#man_clientes_ordtrabajo">Órdenes de Trabajo</a></li> -->
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_politicas_precio">Politicas de Precio</a>
+                <ul class="nav flex-column text-2">
+                </ul>
+              </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_presupuestos">Presupuestos</a>
                 <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_listpresupuestoxcli">Listado de
@@ -242,6 +246,10 @@
                   <li class="nav-item"><a class="nav-link text-2" href="#man_remito_facindv">Facturación Individual</a>
                   </li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_remito_facagru">Facturación Agrupada</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_pendientes_facturacion">Remitos Pendientes de Facturación</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_asignar_remitos">Asignacion de Remitos a Facturas</a>
                   </li>
                 </ul>
               </li>
@@ -849,6 +857,10 @@
                 Comprobante: Se especifica si es un comprobante de venta o compra.
               </li>
               <li>
+                Código de AFIP: Permite seleccionar el código de AFIP que estará relacionado a este comprobante. En caso de tratarse de un comprobante con peso fiscal, se recomienda no dejar en blanco. Para más información, consultar la siguiente web: <br>
+                <b><a href="https://www.afip.gob.ar/fe/documentos/TABLACOMPROBANTES.xls" target="_blank">Tabla de Comprobantes de AFIP</a></b> (descarga un documento de excel)
+              </li>
+              <li>
                 Tipo de numeración: En esta sección se indica qué tipo de numeración va a llevar el comprobante. La primera opción es <b>Numeración Propia</b>,
                  significa que tendremos que configurar una numeración en las secciones Letra, Prefijo y Número, y que este comprobante tendrá numeración independiente. 
                  La segunda opción, <b>Toma Número de Otro Comprobante</b>, indica que este comprobante comparte su numeración con otro, que es seleccionado en la 
@@ -1081,7 +1093,9 @@
                  datos de cabecera. Una vez que comencemos a agregar ítems a la tabla, los datos de cabecera ya no podrán ser modificados, por lo que si ocurrió algún error 
                  en el ingreso de esos datos es recomendable Cancelar y volver a empezar. Para ingresar un ítem, hacemos click en la celda de Código y podremos presionar el botón 
                  <img class="img-fluid border" src="assets/images/Boton Buscar.png">, que abrirá una ventana donde podremos buscar el ítem a ingresar. Opcionalmente, podemos ingresar 
-                el código del ítem si es que lo recordamos.</li>
+                el código del ítem si es que lo recordamos. <br>
+                Al hacer click derecho en la tabla de detalles, se abrirá un menú de contexto con opciones adicionales. Estas opciones varían dependiendo del formulario que estemos utilizando.
+              </li>
               <li><b>Pie del Formulario</b>: al igual que el encabezado, esta sección también difiere mucho dependiendo del formulario que se esté trabajando. Aquí se encuentran detalles
                adicionales de la operación, como el total, los impuestos y más. Algunos formularios, como el que se muestra en la imagen de ejemplo, tienen incluso botones para
                navegar entre distintas solapas donde se muestran o completan otros datos.</li>
@@ -1254,9 +1268,7 @@
                             target="_blank" rel="noopener noreferrer">aquí</a>. <br>
                           Video tutorial para modificar un Cliente <a href="https://www.youtube.com/watch?v=naGw2DT46QI"
                             target="_blank" rel="noopener noreferrer">aquí</a>. <br>
-                          Explicación paso a paso
-                          próximamente.</p>
-
+                          También puede dirigirse a la sección Ventas -> Clientes.</p>
                       </div>
                     </div>
                   </div>
@@ -1634,7 +1646,7 @@
               Otra forma de ingresar los datos es haciendo click en el botón <b>Toma Inventario Actual</b>. Esto ingresará el inventario actual de todos los artículos en
                el depósito indicado de forma automática. <br>
               Finalmente, también podemos hacer click en el botón <b>Leer Borrador</b> que nos permitirá levantar los datos de inventario que hayamos
-               escaneado y generar la tabla de detalles automáticamente. <br> Presionando el botón Confirma guardamos la operación.
+               escaneado con un colector y generar la tabla de detalles automáticamente. <br> Presionando el botón Confirma guardamos la operación.
             </p>
 
             <p>Desde esta misma ventana, podremos realizar un <b>Ajuste de Stock</b> sobre tomas de inventario confirmadas haciendo click en el botón Hacer Ajuste. 
@@ -1877,7 +1889,7 @@
 
           <hr class="divider">
 
-          <!-- Fondos -> Datos Iniciales -> tarjetas de Credito
+          <!-- Fondos -> Datos Iniciales -> Tarjetas de Credito
 		============================ -->
           <section id="man_tarjetas_credito">
             <h3>Tarjetas de Crédito</h3>
@@ -1887,7 +1899,7 @@
 
             <p><img class="img-fluid border" src="assets/images/Fondos/Fondos - Tarjetas de Credito.png" alt=""></p>
 
-            <p>También disponemos de otro menú para inrgesar tarjetas de crédito de compra:</p>
+            <p>También disponemos de otro menú para ingresar tarjetas de crédito de compra:</p>
 
             <p><img class="img-fluid border" src="assets/images/Fondos/Fondos - Tarjetas de Credito de Compra.png"
                 alt=""></p>
@@ -2335,9 +2347,9 @@
 
           <hr class="divider">
 
-                            <!-- Fondos ->
-            ============================ -->
-            <section id="man_reemplazo_cheques">
+          <!-- Fondos ->
+          ============================ -->
+          <section id="man_reemplazo_cheques">
               <h4>Reemplazo de Cheques</h4>
 
               <p>Se accede desde la sección Fondos, botón Reemplazo de Cheques</p>
@@ -2364,7 +2376,7 @@
                 Presione Confirma para guardar los cambios. 
               </p>
 
-            </section>
+          </section>
 
           <!-- Planilla de Cheques de Terceros
     ============================ -->
@@ -2681,55 +2693,209 @@
 
           <hr class="divider">
 
-          <!--
+          <!-- Ventas -> Politicas de Precios
+        ============================ -->
+        <section id="man_politicas_precio">
+          <h2>Políticas de Precio</h2>
 
-           Clientes -> Garantes
-		============================ 
-          <section id="man_clientes_garantes">
-            <h3>Garantes</h3>
+          <p>
+            Las opciones de listados de precios se encuentran en el submenú Políticas de Precio dentro de la solapa Ventas.
+            <br>
+            <img class="img-fluid border" src="assets/images/Ventas/Seccion Politicas Precio.png" alt=""> <br>
+            Antes de acceder a esta sección, es necesario tener artículos cargados, además de Rubros y Subrubros de Stock. Ver la sección Artículos y Stock -> Carga de Primeros Datos
+             para más información.<br>
+            Las listas de precios son bases de datos que agrupan los artículos ingresados en rubros y subrubros, utilizadas internamente por el sistema para obtener el precio de venta de 
+            un artículo. Por este motivo, <b>todas</b> las listas de precios contienen a <b>todos</b> los artículos ingresados en el sistema, y no es posible eliminar artículos de la misma.
+          </p>
 
-            <p>
+          <p><u>¿Cómo inciden las listas de precios en las ventas?</u></p>
+          <p>
+            Las listas de precios sólo afectan a los comprobantes de venta: facturas de cuenta corriente, facturas de venta al contado, tickets, presupuestos, remitos y notas de pedido. 
+            Dependiendo de qué lista de precios esté seleccionada en el formulario (y del tipo de comprobante), es el precio que se mostrará en el detalle del comprobante. El sistema 
+            ya tiene creada una Lista de Precios 1, que es la que utiliza por defecto, pero pueden crearse listas de precios adicionales como veremos en la siguiente sección. 
+            En este ejemplo, vemos como en esta lista, el precio final del artículo "Cosas", dentro del subrubro "Gresificados" en el rubro "Ladrillos", es de $113.50 (100 gravados + 13.50 de IVA).
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Ej Lista Precios.png" alt=""></p>
+          <p>
+            Mientras tanto, en esta lista llamada "Otra Lista de Precios", habíamos decidido que el precio final de este artículo debía ser exactamente $100, por lo que lo cambiamos 
+            manualmente (el precio gravado se ajusta automáticamente). Vemos como la columna "Recargo", que era cero en la lista anterior, tiene un valor en esta lista. Lo explicaremos en la 
+            siguiente sección.
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Ej Lista Precios - Otra Lista.png" alt=""></p>
+          <p>El funcionamiento de las listas de precios es sencillo. Para este ejemplo, utilizaremos una factura de venta de contado: </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Ej Lista Precios - Con Lista 1.png" alt=""></p>
+          <p>Como podemos observar, la lista de precios seleccionada es la lista por defecto 1, "Lista de Precios", donde el precio final con IVA del artículo "Cosas" es de $113.50.
+             Veremos ahora que sucede si seleccionamos la otra lista de precios que tenemos creada:
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Ej Lista Precios - Con Lista 2.png" alt=""></p>
+          <p>El precio ha cambiado al que definimos en la lista de precios 2. De esta forma, el sistema nos permite almacenar distintas fuentes de las cuales consultar precios de venta.</p>
 
-            </p>
+        </section>
 
-            <p><a class="popup-img" href="assets/images/Clientes/Clientes - Garantes.png.png"><img
-                  class="img-fluid border" src="assets/images/Clientes/Clientes - Garantes.png.png" alt=""></a></p>
-          </section>
+        <hr class="divider">
 
-          <hr class="divider">
+                  <!-- Ventas -> Creacion Listas de Precios
+        ============================ -->
+        <section id="man_listados_precios">
+          <h3>Creación de Listados de Precios</h3>
 
-           Clientes -> Control Morosidad
-		============================ 
-          <section id="man_clientes_ctrlmorosidad">
-            <h3>Control de Morosidad</h3>
+          <p>
+            Desde la opción Creacion Listas de Precios, se abrirá un formulario donde podremos crear, modificar, clonar y eliminar listas de precios. Para crear una nueva lista de 
+            precios, hacemos click en el botón "Agregar" en la barra de herramientas, o bien podemos hacer click en el botón "Buscar" y editar una lista ya existente presionando el 
+            botón "Modificar".
+          </p>
 
-            <p>
+          <p><a class="popup-img" href="assets/images/Ventas/Creacion de Listas de Precios.png">
+              <img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios.png" alt=""></a></p>
+          
+          <p>
+            En la sección 1, la cabecera del formulario, se encuentran los datos generales de la lista de precios (número de lista y nombre) junto con algunas opciones:            
+          </p>
+          <ul>
+            <li><b>Lista por defecto</b>: Si esta opción está seleccionada, esta lista será seleccionada por defecto en los formularios de venta. Solo puede haber una lista 
+              por defecto, por lo que si chequeamos esta opción y Confirmamos los cambios, se le destildará esta opción a la lista que estaba previamente seleccionada por defecto.
+            </li>
+            <li><b>Dscto. Exclusivo Ctdo. Efectivo</b>: Si esta opción está seleccionada, los descuentos aplicados en la sección "Control Descuentos" sólo aplicarán a pagos en efectivo.</li>
+            <li><b>Forma de Pago Asociada</b>: Selecciona una forma de pago a la que se asociará ésta lista de precios.</li>
+            <li><b>Recargo Base</b>: Indica el recargo general aplicado a la lista de precios completa, explicado a continuación.</li>
+            <li><b>Fecha</b>: Indica la fecha para la que se indicarán los cambios de precios realizados en esta lista, en caso de que sucedan.</li>
+            <li><b>Filtrado por Marcas</b>: Selecciona una marca para filtrar la lista de precios. Si bien sólo se mostrarán los artículos de la marca seleccionada, 
+              el resto de los artículos sigue perteneciendo a la lista.
+            </li>
+          </ul>
 
-            </p>
+          <p>
+            En la sección 2, se muestra una tabla con los rubros cargados en el sistema. <br>
+            En la sección 3, aparecen los subrubros relacionados al rubro seleccionado en la tabla anterior. <br>
+            Finalmente, en la sección 4, aparecen los artículos pertenecientes al subrubro seleccionado en la sección 3. En esta tabla podemos encontrar el precio gravado del 
+            artículo, la tasa de IVA que le corresponde y el precio final (con IVA incluído). Los únicos campos que podemos modificar son %Recargo, %Descuento, %Recargo a Aplicar, 
+            Precio gravado, Precio exento y Precio final. Tener en cuenta que si modificamos el precio final, el resto de los precios y el recargo se modificarán automáticamente. 
+            Si hacemos doble click sobre el artículo, se abrirá su Planilla de Stock en una nueva ventana (ver Stock -> Artículos). En el panel debajo de la tabla, 
+            podemos observar la fecha de alta y de la última modificación del artículo seleccionado, además de su precio exento, gravado, el importe de IVA y el precio final 
+            con IVA, como estan indicados en su Planilla de Stock. Estos valores no pueden ser modificados, ni tampoco cambian respecto de los precios 
+            indicados en la lista de precios.
+          </p>
 
-            <p><a class="popup-img" href="assets/images/Clientes/Clientes - Control de Morosidad.png.png"><img
-                  class="img-fluid border" src="assets/images/Clientes/Clientes - Control de Morosidad.png.png"
-                  alt=""></a></p>
-          </section>
+          <p><u>Recargos</u></p>
+          <p>
+            Los recargos son la forma principal de modificar los precios de los artículos en una lista de precios. Existen cuatro niveles de recargos: Base, Por Rubro, Por Subrubro 
+            e Individual. Al aplicar un recargo en un nivel superior, este también se aplica a los niveles inferiores. Por ejemplo, si aplicamos un recargo del 10% en un Rubro, 
+            este se aplicará al mismo tiempo en todos los Subrubros que pertenezcan a él también. De todas formas, podemos modificar individualmente estos recargos en el caso de que, 
+            por ejemplo, queramos que uno de estos subrubros tenga un recargo del 15% en vez de 10%. <br>
+            Mientras más específico sea el nivel del recargo, más peso tiene. Es decir que si la lista de precios tiene un recargo base del 10%, 
+            pero un artículo tiene un recargo individual del 5%, el artículo tomará el recargo individual por encima del recargo base. Además, a cada artículo se le aplican recargos 
+            de Rubros y Subrubros sólo si pertenece a ellos. Veamos un ejemplo: aquí tenemos el artículo "Varios", dentro del Subrubro "Varios" en el Rubro "Ladrillos". De momento, no 
+            hay ningún recargo aplicado.
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Ej Recargo.png" alt=""></p>
+          <p>
+            Si ingresamos un recargo base del 5%, veremos que este se aplicará a todos los Rubros y Subrubros, y por ende a todos los artículos. Vemos que el precio final del artículo 
+            "Varios" aumentó en un 5%, como lo indica la columna %Rec.
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Ej Recargo Base.png" alt=""></p>
+          <p>
+            Ahora, cambiaremos el recargo del rubro "Ladrillos" al 10% y el del rubro "Hierros" al 8%. Veremos como el segundo recargo no afecta al artículo "Varios" ya que este no 
+            pertenece a dicho rubro. El precio del artículo "Varios" ha aumentado un 10% respecto de su precio original.
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Ej Recargo Rubro.png" alt=""></p>
+          <p>
+            Ahora, cambiaremos el recargo del subrubro "Varios" al 15% y el del subrubro "Huecos" al 12%. Veremos como el segundo recargo no afecta al artículo "Varios" ya que este no 
+            pertenece a dicho subrubro. El precio del artículo "Varios" ha aumentado un 15% respecto de su precio original. 
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Ej Recargo Subrubro.png" alt=""></p>
+          <p>Finalmente, veremos las dos formas de cambiar el precio de un producto en específico. La primero es simplemente aplicando un recargo de la misma forma que hicimos con los 
+            rubros y subrubros: modificando el campo %Rec. Aplicaremos un recargo del 20% por sobre su precio original al artículo "Varios".
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Ej Recargo Individual.png" alt=""></p>
+          <p>La otra forma es modificando el precio final. Imaginemos que queremos que en esta lista, el precio final del artículo "Varios" sea de 
+            $150. Podemos modificar el campo de Precio final a 150, y el resto de los precios y el recargo se ajustarán automáticamente:
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Ej Recargo PreF.png" alt=""></p>
+          
 
-          <hr class="divider">
+          <p><u>Descuentos</u></p>
+          <p>De forma análoga a la aplicación de recargos, es posible aplicar descuentos. Podemos modificar el campo %Dscto en los Rubros, Subrubros y/o artículos individuales, 
+            ya sea desde la vista anterior o desde la vista de descuentos:
+          </p>
+          <p><a class="popup-img" href="assets/images/Ventas/Creacion de Listas de Precios - Desc.png">
+            <img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Desc.png" alt=""></a></p>
 
-           Clientes -> O. Trabajo
-		============================ 
-          <section id="man_clientes_ordtrabajo">
-            <h3>Órdenes de Trabajo</h3>
+          <p><u>Lista simplificada</u></p>
+          <p>Al hacer click en la pestaña "--", se mostrará una lista de precios simplificada ordenada por rubros y subrubros:    </p>
+          <p><a class="popup-img" href="assets/images/Ventas/Creacion de Listas de Precios - Simple.png">
+            <img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Simple.png" alt=""></a></p>
 
-            <p>
-            </p>
+          <p><u>Herramientas adicionales</u></p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Adicionales.png" alt=""></p>
+          <p>En la barra de herramientas, se encuentran botones con acciones especiales para realizar con la lista de precios seleccionada. Estas herramientas, de izquierda a 
+            derecha, son:
+          </p>
+          <ul>
+            <li><b>Recalcular Lista segun Porcentajes</b>:</li>
+            <li><b>Clonar Lista de Precios</b>:</li>
+            <li><b>Recalcular Listas Clonadas</b>:</li>
+            <li><b>Exportar a Documento</b>:</li>
+            <li><b>Redondeos</b>:</li>
+            <li><b>Importar Porcentajes desde Excel</b>:</li>
+            <li><b>Exportar a Excel Código-Recargo</b>:</li>
+            <li><b>Aplicar el Nuevo Recargo</b>:</li>
+            <li><b>Actualización Recargos Listas Clonadas</b>:</li>
+          </ul>
+        </section>
 
-            <p><a class="popup-img" href="assets/images/Clientes/Clientes - Ordenes de Trabajo.png.png"><img
-                  class="img-fluid border" src="assets/images/Clientes/Clientes - Ordenes de Trabajo.png.png"
-                  alt=""></a></p>
-          </section>
+        <hr class="divider">
 
-          <hr class="divider"> -->
+        
+                  <!-- Ventas -> Listar Politicas de Precios
+        ============================ -->
+        <section id="man_listados_politicas">
+          <h3>Listados de Políticas de Precios</h3>
 
-          <!-- Ventas -> General 
+          <p>
+            Desde la opción Listado Politicas de Precios podemos visualizar los precios de los artículos en las distintas listas de precios.
+          </p>
+
+          <p><a class="popup-img" href="assets/images/Ventas/Listado de Politicas de Precios.png">
+              <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios.png" alt=""></a></p>
+
+          <p>Debajo de la tabla se encuentran dos menús desplegables que nos permiten filtrar los artículos por Rubro y Subrubro. Al hacer click en el botón Imprimir, 
+            se generará un reporte con un listado de los artículos ordenados por rubro y subrubro, con sus precios gravados. Los filtros mencionados se aplican a este reporte.
+          </p>
+          
+          <p><u>Lista avanzada</u></p>
+          <p>Al hacer click en la pestaña "Lst.Cruz", se mostrará una tabla donde podremos generar</p>
+
+          <!--Lst.Cruz-->
+          <p><a class="popup-img" href="assets/images/Ventas/">
+            <img class="img-fluid border" src="assets/images/Ventas/" alt=""></a></p>
+        </section>
+
+        <hr class="divider">
+
+                    <!-- Ventas -> Listar Politicas de Precios
+        ============================ -->
+        <section id="man_listaxdefecto_sucursal">
+          <h3>Lista de Precios por Defecto por Sucursal</h3>
+
+          <p>
+            En esta ventana podremos asignar listas de precio por defecto a las sucursales ingresadas.
+          </p>
+
+          <p><a class="popup-img" href="assets/images/Ventas/Lista de Precio por Defecto por Sucursal.png">
+              <img class="img-fluid border" src="assets/images/Ventas/Lista de Precio por Defecto por Sucursal.png" alt=""></a></p>
+          
+          <p>
+            
+          </p>
+
+          <!--Lst.Cruz-->
+          <p><a class="popup-img" href="assets/images/Ventas/">
+            <img class="img-fluid border" src="assets/images/Ventas/" alt=""></a></p>
+        </section>
+
+        <hr class="divider">      
+
+          <!-- Ventas -> Generalidades 
 		============================ 
           <section id="man_ventas_general">
             <h3>General (A Hacer)</h3>
@@ -2745,27 +2911,8 @@
                   src="assets/images/Ventas/" alt=""></a></p>
           </section> -->
 
-          <!-- Ventas -> Politicas de Precios
-        ============================ -->
-        <section id="man_">
-          <h2>Políticas de Precio</h2>
-
-          <p>
-            <br>
-            <img class="img-fluid border" src="assets/images/Ventas/" alt="">
-          </p>
-
-          <p></p>
-          <p><a class="popup-img" href="assets/images/Ventas/">
-              <img class="img-fluid border" src="assets/images/Ventas/"
-                alt=""></a></p>
-        </section>
-
-        <hr class="divider">
-
           <!-- Ventas -> Presupuestos
-		============================ -->
-          <!-- Para mejor redacción, estaria bueno crear una sección "Facturación" que explique los componentes y acciones compartidas entre todos los tipos de venta."-->
+		============================ -->          
           <section id="man_ventas_presupuestos">
             <h2>Presupuestos</h2>
 
@@ -2905,10 +3052,38 @@
             </p>
 
             <p><b><u>Detalles de Impuestos</u></b> </p>
-            <p>El detalle mostrado es igual al que hemos visto en Presupuestos </p>
-            <p><a class="popup-img" href="assets/images/Ventas/Presupuestos - Impuestos.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Presupuestos - Impuestos.png" alt=""></a></p>
+            <p>El detalle mostrado es una versión simplificada de la vista en Primeros Pasos -> Formularios de Comprobantes:</p>
+            <p><a class="popup-img" href="assets/images/Ventas/Remitos - Impuestos.png"><img
+                  class="img-fluid border" src="assets/images/Ventas/Remitos - Impuestos.png" alt=""></a></p>
 
+            <p><b><u>Herramientas adicionales</u></b></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Remitos - Herramientas Adicionales.png" alt=""></p>
+            <p>
+              En el pie del formulario, se encuentran otras herramientas adicionales. De izquierda a derecha, estas son:
+            </p>
+            <ul>
+              <li><b>Anular Comprobante</b>: anula el comprobante.</li>
+              <li><b>Enviar Comprobante al Correo</b>: envía el comprobante al correo configurado en la Configuración Local (ver Primeros Pasos).</li>
+              <li><b>Facturar Remito</b>: genera una factura de cuenta corriente y la relaciona al remito. <br>
+                <img class="img-fluid border" src="assets/images/Ventas/Remitos - Factura Cta Cte Rel.png" alt=""><br>
+                En el remito original, aparecerá en el encabezado el número de la factura al que está relacionado. Haciendo click en él, se abrirá la factura en otra ventana. <br>
+                <img class="img-fluid border" src="assets/images/Ventas/Remitos - Nro Factura.png" alt="">
+              </li>
+              <li><b>Impresión del Rótulo para Transporte</b>: genera un documento para imprimir con el rótulo para transporte. <br>
+                <img class="img-fluid border" src="assets/images/Ventas/Remitos - Rotulo Transporte.png" alt="">
+              </li>
+            </ul>
+
+            <p><b><u>Transporte y Pedido</u></b></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Remitos - Transporte y Pedido.png" alt=""></p>
+            <p>En esta sección, se muestran detalles relacionados a la entrega:</p>
+            <ul>
+              <li>En la sección a la izquierda, aparece el número de la nota de pedido a la que está relacionada este remito. Al hacerle click, se mostrará
+                 la nota de pedido en otra ventana.
+              </li>
+              <li>En el desplegable del medio, se puede seleccionar un transporte de terceros al que será asignado el remito.</li>
+              <li>Finalmente, al hacer click en el botón a la derecha, se abrirá una ventana donde podremos asignar un chofer y unidad de transporte al remito.</li>
+            </ul>
 
           </section>
 
@@ -2995,43 +3170,65 @@
 
           <hr class="divider">
 
+                  <!-- Ventas -> Remitos -> Remitos Pendientes de Facturación
+          ============================ -->
+          <section id="man_pendientes_facturacion">
+            <h3>Remitos Pendientes de Facturacion</h3>
+  
+            <p>
+              Se accede desde el submenú Otros Remitos, opción Rtos Pendientes de Facturacion. Aquí podremos ver aquellos remitos que no tengan una factura asignada.
+              <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Boton Remitos Pendientes de Fact.png" alt="">
+            </p>
+  
+            <p>En la parte superior del formulario se encuentran los filtros de búsqueda. Es posible filtrar tanto por sucursal, utilizando el menú desplegable "Sucursal de Venta",
+               y por cliente, destildando la opción "Todos los Clientes" y utilizando el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt="">. 
+               Presionando el botón Buscar en la barra de herramientas se aplicarán los filtros y se listarán los remitos.
+            </p>
+            <p><a class="popup-img" href="assets/images/Ventas/Remitos Pendientes de Facturacion.png">
+                <img class="img-fluid border" src="assets/images/Ventas/Remitos Pendientes de Facturacion.png"
+                  alt=""></a></p>
+            <p>
+              En la primera tabla aparecen los remitos individuales, cada uno con su nº de comprobante, el cliente al que corresponde y el importe.  <br>
+              En las dos tablas en la parte inferior del formulario, aparecen los artículos en los detalles de los remitos. En la tabla de la izquierda,
+               se muestran los items y sus cantidades agrupados por comprobante, mientras que en la tabla de la derecha se muestran las cantidades totales de los items.
+            </p>            
+          </section>
+  
+          <hr class="divider">
 
 
                   <!-- Ventas -> Remitos -> Asignacion de Remitos a Facturas
             ============================ -->
-            <section id="man_">
-              <h3></h3>
+            <section id="man_asignar_remitos">
+              <h3>Asignación de Remitos a Facturas</h3>
 
               <p>
+                Se accede desde el botón "Control de Asignacion de Rto con Factura", dentro del submenú Otros Remitos.
                 <br>
-                <img class="img-fluid border" src="assets/images/Ventas/" alt="">
+                <img class="img-fluid border" src="assets/images/Ventas/Asignacion Rtos a Facturas.png" alt="">
               </p>
 
-              <p></p>
-              <p><a class="popup-img" href="assets/images/Ventas/">
-                  <img class="img-fluid border" src="assets/images/Ventas/"
-                    alt=""></a></p>
+              <p>En esta ventana podremos asignar remitos que no esten relacionados a una factura a las facturas de un cliente. </p>
+              <p><a class="popup-img" href="assets/images/Ventas/Control de Asignacion de Remitos a Facturas.png">
+                  <img class="img-fluid border" src="assets/images/Ventas/Control de Asignacion de Remitos a Facturas.png" alt=""></a></p>
+
+              <p>En la sección de la derecha, podremos indicar un período de tiempo en el cual buscaremos los remitos que queremos asignar. En la tabla de detalles aparecerán
+                 todos los remitos que correspondan. Debajo está el botón "Ver Rto", al hacerle click abrirá una nueva ventana donde mostrará los detalles del remito seleccionado en la tabla.
+              </p>
+              <p>En la sección a la izquierda, podremos seleccionar un cliente con el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png">. En la tabla debajo,
+                se mostrarán todas las facturas disponibles de este cliente. Si chequeamos la casilla "Filtra Remitos Cliente", en la tabla a la derecha se mostrarán sólo los remitos
+                 del cliente seleccionado.
+              </p>
+              <p>
+                Para asignar un remito a una factura, simplemente seleccionamos un remito de la tabla de la derecha con el click izquierdo y lo arrastramos a una de las facturas de la tabla
+                 de la derecha. Los remitos asignados aparecerán debajo de las facturas a las que pertenecen. Si nos equivocamos al asignar un remito, simplemente hacemos click derecho 
+                 sobre el remito que asignamos mal y hacemos click en "Borrar Rto". Esto deshará nuestra acción y regresará el remito a la tabla de la derecha.
+              </p>
             </section>
 
             <hr class="divider">
-
-                  <!-- Ventas -> Remitos -> Remitos Pendientes de Facturación
-          ============================ -->
-          <section id="man_">
-          <h3></h3>
-
-          <p>
-            <br>
-            <img class="img-fluid border" src="assets/images/Ventas/" alt="">
-          </p>
-
-          <p></p>
-          <p><a class="popup-img" href="assets/images/Ventas/">
-              <img class="img-fluid border" src="assets/images/Ventas/"
-                alt=""></a></p>
-          </section>
-
-          <hr class="divider">
+          
           
           <!-- Ventas -> Facturación -> Cta Cte
 		============================ -->
@@ -3079,7 +3276,7 @@
           </section>
           <hr class="divider">
 
-          <!-- Ventas -> Facturación de ventas
+          <!-- Ventas -> Notas de Cred y Deb
 		============================ -->
           <section id="man_ventas_notascredydeb">
             <h3>Notas de Crédito y Débito</h3>
@@ -3182,9 +3379,6 @@
             </p>
           </section>
 
-          <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border" src="assets/images/Ventas/"
-                alt=""></a></p>
-
           <hr class="divider">
 
           <!-- Ventas -> Ticket
@@ -3213,8 +3407,6 @@
             </p>
           </section>
 
-          <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border" src="assets/images/Ventas/"
-                alt=""></a></p>
 
           <hr class="divider">
 
@@ -3241,13 +3433,13 @@
                 <img class="img-fluid border" src="assets/images/Ventas/Ventana Comp No Impreso.png" alt=""></a></p>
 
             <p>
-              Este proceso mostrará todas las vistas previas de las facturas listas para imprimir.
+              Este proceso mostrará todas las vistas previas de las facturas listas para imprimir. Para imprimir uno de estos comprobantes, lo seleccionamos en la lista y  
+              presionamos el botón Imprimir. Para imprimir todos los comprobantes, en la lista, hacemos click en el botón Imprimir Todo. Para quitar un comprobante de la lista, 
+              lo seleccionamos y hacemos click en el botón Marcar. Si está tildada la opción "Marcar Todos", al hacer click limpiaremos la lista completa.
             </p>
           </section>
 
           <hr class="divider">
-
-
 
           <!-- Ventas -> Nota de Venta
 		============================ -->
@@ -3480,7 +3672,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Ventas -> Cobro a Clientes -> Imputaciones
 		============================ -->
           <section id="man_ventas_imputaciones">
             <h4>Imputaciones</h4>
@@ -3599,7 +3791,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Ventas -> Cuenta Corriente Clientes
 		============================ -->
           <section id="man_ventas_ctactecliente">
             <h3>Cuentas Corrientes de Clientes</h3>
@@ -3627,7 +3819,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Ventas -> Ajustes de Cta Cte
 		============================ -->
           <section id="man_ventas_ajustes">
             <h3>Ajustes</h3>
@@ -3668,7 +3860,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Ventas -> Saldos
 		============================ -->
           <section id="man_ventas_saldos">
             <h2>Saldos</h2>
@@ -3684,7 +3876,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Ventas -> Deudas de Clientes
 		============================ -->
           <section id="man_ventas_deudacliente">
             <h3>Deuda del Cliente</h3>
@@ -3725,7 +3917,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Ventas -> Saldos Mensuales de Clientes
 		============================ -->
           <section id="man_ventas_saldosmensuales">
             <h3>Saldos Mensuales</h3>
@@ -3752,7 +3944,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
+          <!-- Ventas -> Libro IVA
 		============================ -->
           <section id="man_ventas_libroiva">
             <h2>Libro IVA de Ventas</h2>
@@ -3813,7 +4005,7 @@
 
           <hr class="divider">
 
-          <!--  Ventas -> Otros Listados -> 
+          <!--  Ventas -> Otros Listados -> Comprobantes Emitidos x Sucursal
 		============================ -->
           <section id="man_ventas_comprobxsucursal">
             <h3>Comprobantes Emitidos por Sucursal</h3>
@@ -3843,7 +4035,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Otros Listados ->
+          <!-- Ventas -> Otros Listados -> Comprobantes Emitidos x Cliente
 		============================ -->
           <section id="man_ventas_comprobxcliente">
             <h3>Comprobantes Emitidos por Cliente</h3>
@@ -3871,7 +4063,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Otros Listados ->
+          <!-- Ventas -> Otros Listados -> Recibos de Cobro x Sucursal
 		============================ -->
           <section id="man_ventas_reciboxsucursal">
             <h3>Recibos de Cobro por Sucursal</h3>
@@ -3932,7 +4124,7 @@
 
     <hr class="divider"> -->
 
-          <!-- Ventas -> Otros Listados ->
+          <!-- Ventas -> Otros Listados -> Articulos Vendidos
 		============================ -->
           <section id="man_ventas_artvendidos">
             <h3>Articulos Vendidos</h3>
@@ -3977,7 +4169,7 @@
           <hr class="divider">
 
 
-          <!-- Ventas -> Otros Listados ->
+          <!-- Ventas -> Otros Listados -> Análisi de Cred x Cliente
 		============================ -->
           <section id="man_ventas_credxcliente">
             <h3>Análisis de Crédito por Cliente</h3>
@@ -4017,7 +4209,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Otros Listados ->
+          <!-- Ventas -> Otros Listados -> Ops Realizadas
 		============================ -->
           <section id="man_ventas_oprealizadas">
             <h3>Informe de Operaciones Realizadas</h3>
@@ -4054,22 +4246,6 @@
           </section>
 
           <hr class="divider">
-
-
-          <!-- Ventas -> Otros Listados ->
-		============================ 
-    <section id="man_ventas_gravadoseniibb">
-      <h3>Artículos Gravados en Ingresos Brutos</h3>
-
-      <p>
-        
-      </p>
-      
-      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-        src="assets/images/Ventas/" alt=""></a></p>
-    </section>
-
-    <hr class="divider"> -->
 
      <!-- Sección Compras
 		============================ -->
@@ -5035,14 +5211,14 @@
 
     <hr class="divider">
 
-                  <!-- Bancos ->
+                  <!-- Bancos -> Cheques Propios
 		============================ -->
     <section id="man_cheques_propios">
       <h3>Cheques Propios</h3>
 
     </section>
 
-           <!-- Bancos ->
+           <!-- Bancos -> Anulacion de Cheques
 		============================ -->
     <section id="man_anulacion_cheques">
       <h4>Anulacion de Cheques</h4>
@@ -5065,7 +5241,7 @@
 
     </section>
 
-            <!-- Bancos ->
+            <!-- Bancos -> Listado de Cheques Emitidos
 		============================ -->
     <section id="man_cheques_emitidos">
       <h4>Listado de Cheques Emitidos</h4>
