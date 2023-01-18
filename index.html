@@ -233,6 +233,9 @@
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_politicas_precio">Politicas de Precio</a>
                 <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_listados_precios">Creación de Listas de Precio</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_listados_politicas">Listado de Políticas de Precio</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_listaxdefecto_sucursal">Lista de Precios por Defecto por Sucursal</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_presupuestos">Presupuestos</a>
@@ -821,6 +824,13 @@
               puede trabajar con varios recargos en un mismo producto.
             </p>
 
+            <p><u>Clonar Comprobantes</u></p>
+            <p><img class="img-fluid border" src="assets/images/Parametros/Sucursales.png" alt=""></p>
+            <p>
+              Esta opción permite a distintas sucursales compartir comprobantes. Seleccione una sucursal de destino y una de origen a partir del cual se obtendrán los 
+              comprobantes. Presione el botón Clonar para guardar la operación.
+            </p>
+
           </section>
           <hr class="divider">
 
@@ -1282,8 +1292,8 @@
                     <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
                       <div class="card-body">
                         <p>Video tutorial <a href="https://www.youtube.com/watch?v=xMlg6bAzjG8" target="_blank"
-                            rel="noopener noreferrer">aquí</a>. Explicación paso a paso
-                          próximamente.</p>
+                            rel="noopener noreferrer">aquí</a>. <br>
+                           También puede dirijirse a la sección Ventas -> Facturas de Venta.
                       </div>
                     </div>
                   </div>
@@ -1297,8 +1307,8 @@
                     <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#popularTopics">
                       <div class="card-body">
                         <p>Video tutorial <a href="https://www.youtube.com/watch?v=BGHOx6TgHiQ" target="_blank"
-                            rel="noopener noreferrer">aquí</a>. Explicación paso a paso
-                          próximamente.</p>
+                            rel="noopener noreferrer">aquí</a>. <br>
+                            También puede dirijirse a la sección Ventas -> Facturas de Venta -> Facturación de Contado.
                       </div>
                     </div>
                   </div>
@@ -1311,8 +1321,8 @@
                     <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
                       <div class="card-body">
                         <p>Video tutorial <a href="https://www.youtube.com/watch?v=v45Td2OqPCM" target="_blank"
-                            rel="noopener noreferrer">aquí</a>. Explicación paso a paso
-                          próximamente.</p>
+                            rel="noopener noreferrer">aquí</a>. <br>
+                            También puede dirijirse a la sección Ventas -> Políticas de Precio -> Creación de Listas de Precios.
                       </div>
                     </div>
                   </div>
@@ -1326,8 +1336,8 @@
                     <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#popularTopics">
                       <div class="card-body">
                         <p>Video tutorial <a href="https://www.youtube.com/watch?v=K4ThFfPrp7Q" target="_blank"
-                            rel="noopener noreferrer">aquí</a>. Explicación paso a paso
-                          próximamente.</p>
+                            rel="noopener noreferrer">aquí</a>. <br>
+                            También puede dirijirse a la sección Ventas -> Políticas de Precio -> Creación de Listas de Precios.
                       </div>
                     </div>
                   </div>
@@ -1340,8 +1350,9 @@
                     <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#popularTopics">
                       <div class="card-body">
                         <p>Video tutorial <a href="https://www.youtube.com/watch?v=lqpXonYFFw4" target="_blank"
-                            rel="noopener noreferrer">aquí</a>. Explicación paso a paso
-                          próximamente.</p>
+                            rel="noopener noreferrer">aquí</a>. <br>
+                            También puede dirijirse a la sección Ventas -> Políticas de Precio -> Creación de Listas de Precios, en la sección 
+                            "Herramientas adicionales" -> "Clonar Lista de Precios".
                       </div>
                     </div>
                   </div>
@@ -1646,7 +1657,7 @@
               Otra forma de ingresar los datos es haciendo click en el botón <b>Toma Inventario Actual</b>. Esto ingresará el inventario actual de todos los artículos en
                el depósito indicado de forma automática. <br>
               Finalmente, también podemos hacer click en el botón <b>Leer Borrador</b> que nos permitirá levantar los datos de inventario que hayamos
-               escaneado con un colector y generar la tabla de detalles automáticamente. <br> Presionando el botón Confirma guardamos la operación.
+               escaneado con un colector de datos y generar la tabla de detalles automáticamente. <br> Presionando el botón Confirma guardamos la operación.
             </p>
 
             <p>Desde esta misma ventana, podremos realizar un <b>Ajuste de Stock</b> sobre tomas de inventario confirmadas haciendo click en el botón Hacer Ajuste. 
@@ -2769,7 +2780,8 @@
             En la sección 3, aparecen los subrubros relacionados al rubro seleccionado en la tabla anterior. <br>
             Finalmente, en la sección 4, aparecen los artículos pertenecientes al subrubro seleccionado en la sección 3. En esta tabla podemos encontrar el precio gravado del 
             artículo, la tasa de IVA que le corresponde y el precio final (con IVA incluído). Los únicos campos que podemos modificar son %Recargo, %Descuento, %Recargo a Aplicar, 
-            Precio gravado, Precio exento y Precio final. Tener en cuenta que si modificamos el precio final, el resto de los precios y el recargo se modificarán automáticamente. 
+            Precio gravado, Precio exento y Precio final. Tener en cuenta que si modificamos el precio final, el resto de los precios y el recargo se modificarán automáticamente, 
+            pero si modificamos el precio gravado o exento del artículo no se ajustrá el precio final. <br>
             Si hacemos doble click sobre el artículo, se abrirá su Planilla de Stock en una nueva ventana (ver Stock -> Artículos). En el panel debajo de la tabla, 
             podemos observar la fecha de alta y de la última modificación del artículo seleccionado, además de su precio exento, gravado, el importe de IVA y el precio final 
             con IVA, como estan indicados en su Planilla de Stock. Estos valores no pueden ser modificados, ni tampoco cambian respecto de los precios 
@@ -2831,15 +2843,34 @@
             derecha, son:
           </p>
           <ul>
-            <li><b>Recalcular Lista segun Porcentajes</b>:</li>
-            <li><b>Clonar Lista de Precios</b>:</li>
-            <li><b>Recalcular Listas Clonadas</b>:</li>
+            <li><b>Recalcular Lista segun Porcentajes</b>: En caso de que esta acción no se realice automáticamente, presionando este botón se recalculan los precios de los artículos 
+              en base a los porcentajes de recargo y descuento especificados en la lista de precios.
+            </li>
+            <li><b>Clonar Lista de Precios</b>: Crea una nueva lista de precios que dependerá de la lista seleccionada. 
+              <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Clonar Lista.png" alt=""></p>
+              En esta ventana, podemos definir un coeficiente. Todos los precios de la lista original se multiplicarán por este coeficiente en la lista cloanada. Es decir que si, 
+              como en el ejemplo, definimos un coeficiente de 2, los precios en la lista clonada serán el doble de los precios en la lista original. Como vemos, en la lista clonada 
+              el precio del artículo "Varios" es de $300 cuando en la lista original era de $150.
+              <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Lista Clonada.png" alt=""></p>
+              Podemos identificar que una lista es clonada observando si aparece la etiqueta "Lista con Clones", y que la opción Lista Clonada en la cabecera está tildada. 
+              En el campo "Desde Lista" se indica a partir de qué lista se realizó la clonación, y en el campo "Coeficiente" se muestra el coeficiente mencionado anteriormente. 
+              Ninguno de estos tres valores puede ser editado.
+            </li>
+            <li><b>Recalcular Listas Clonadas</b>: Al presionar este botón, se abrirá una nueva ventana donde podremos seleccionar una lista a partir de la cual sus listas clonadas 
+              serán recalculadas.
+              <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Recalcular Listas Clonados.png" alt=""></p>
+              Al precionar OK, se volverán a calcular los precios en las listas clonadas según el precio en la lista original y el coeficiente definido en la clonación. Por ejemplo, si 
+              cambiamos el precio del producto "Varios" a $175 en la lista original, al realizar esta acción el precio en la lista clonada con coeficiente 2 será de $350.
+            </li>
             <li><b>Exportar a Documento</b>:</li>
             <li><b>Redondeos</b>:</li>
             <li><b>Importar Porcentajes desde Excel</b>:</li>
             <li><b>Exportar a Excel Código-Recargo</b>:</li>
             <li><b>Aplicar el Nuevo Recargo</b>:</li>
-            <li><b>Actualización Recargos Listas Clonadas</b>:</li>
+            <li><b>Actualización Recargos Listas Clonadas</b>: Esta opción permite copiar los recargos de la lista original a las listas clonadas. 
+              Tildamos las listas clonadas a las que queremos trasladar los recargos y presionamos el botón "Trasladar Rec.".
+              <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Trasladar Recargos.png" alt=""></p>
+            </li>
           </ul>
         </section>
 
@@ -2859,15 +2890,46 @@
               <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios.png" alt=""></a></p>
 
           <p>Debajo de la tabla se encuentran dos menús desplegables que nos permiten filtrar los artículos por Rubro y Subrubro. Al hacer click en el botón Imprimir, 
-            se generará un reporte con un listado de los artículos ordenados por rubro y subrubro, con sus precios gravados. Los filtros mencionados se aplican a este reporte.
+            se generará un reporte con un listado de los artículos ordenados por rubro y subrubro, con sus precios sin IVA en su Planilla de Stock. Los filtros mencionados se aplican a este reporte.
           </p>
           
           <p><u>Lista avanzada</u></p>
-          <p>Al hacer click en la pestaña "Lst.Cruz", se mostrará una tabla donde podremos generar</p>
+          <p>Al hacer click en la pestaña "Lst.Cruzado", se mostrará una solapa donde podremos generar un listado más personalizado donde podremos 
+            comparar distintas listas de precios. Al hacer click en el botón Buscar del lado derecho, se generará una tabla con los artículos y las listas de precios.</p>
+          
+          <p><a class="popup-img" href="assets/images/Ventas/Listado de Politicas de Precios - Cruzado.png">
+            <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado.png" alt=""></a></p>
 
-          <!--Lst.Cruz-->
-          <p><a class="popup-img" href="assets/images/Ventas/">
-            <img class="img-fluid border" src="assets/images/Ventas/" alt=""></a></p>
+          <ol>
+            <li><b>Campos disponibles</b>: en esta sección aparecen los campos disponibles que todavía no están en uso. Pueden ser arrastrados a cualquierda de las otras tres secciones.</li>
+            <li><b>Lista de campos agregados a la tabla</b>: campos que aparecen en la tabla de la sección 4. Intercambiando los lugares de los campos también modificamos el orden 
+              en que se muestran.
+            </li>
+            <li><b>Lista de Items</b>: muestra los ítems visualizados en las listas de precios. Haciendo click en la flecha hacia abajo en el campo "Detalle", podremos especificar 
+              qué items se mostrarán en la tabla. <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado Detalles.png" alt=""> <br>
+              Agregando campos en esta sección, podremos agrupar y ordenar los ítems. Por ejemplo, podemos agregar el campo Rubros: <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado Detalles Agregar Campo.png" alt=""> <br>
+              De la misma forma que hicimos con detalles, podemos hacer click en la fecha hacia abajo en el campo para seleccionar qué rubros queremos visualizar.
+            </li>
+            <li><b>Tabla de Listas de Precios</b>: en esta sección es donde finalmente visualizamos la tabla con las listas de precios. De la misma forma que en el resto de las secciones, 
+              podemos agregar campos. Por ejemplo, si agregarmos el campo Subrubros: <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado Tabla Agregar Campo.png.png" alt=""> <br>
+              Al igual que en las otras secciones, podemos personalizar qué items dentro de los campos ver y en qué orden.
+            </li>
+          </ol>
+
+          <p><img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado Adicionales.png" alt=""></p>
+          <p>Debajo de la tabla, se encuentra un menú desplegable donde podremos elegir una vista que ya hayamos guardado previamente. Si no hay vistas guardadas, 
+            podemos guardar la vista que estamos utilizando actualmente con el botón <b>+</b>. En el campo Descripción, escribimos el nombre de la lista y hacemos click en 
+            el botón verde de Aceptar para guardarla. Esto nos permitirá utilziar este formato de lista en el futuro.<br>
+            <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado Guardar Vista.png" alt=""> <br>
+            Presionando el botón Imprimir, se mostrará una ventana con la previsualización para la impresión de la tabla. <br>
+            <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado Impresion.png" alt=""> <br>
+            Presionando el botón Excel, nos permitirá exportar la tabla a una planilla de Excel. <br>
+            <img class="img-fluid border" src="assets/images/Ventas/Listado de Politicas de Precios - Cruzado Excel.png" alt="">
+          </p>
+
         </section>
 
         <hr class="divider">
@@ -2885,12 +2947,21 @@
               <img class="img-fluid border" src="assets/images/Ventas/Lista de Precio por Defecto por Sucursal.png" alt=""></a></p>
           
           <p>
-            
+            En este ejemplo, asignaremos la Otra Lista de Precios como la lista por defecto para la Tercer Sucursal. Para ello, simplemente seleccionamos los valores 
+            en los menús desplegables de Sucursal y Lista de Precios y utilizamos la barra de herramientas debajo para agregar un nuevo registro.
+          </p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Lista de Precio por Defecto por Sucursal - Agregar Registro.png" alt=""></p>
+          <p>
+            Veremos un nuevo registro con fondo verde, donde está indicada la sucursal y la lista por defecto que le corresponde. Presionamos el botón Confima para guardar los cambios. 
+            Ahora, las facturas de venta que se realicen en la Tercer Sucursal tomarán por defecto la Otra Lista de Precios.
           </p>
 
-          <!--Lst.Cruz-->
-          <p><a class="popup-img" href="assets/images/Ventas/">
-            <img class="img-fluid border" src="assets/images/Ventas/" alt=""></a></p>
+          <p><img class="img-fluid border" src="assets/images/Ventas/Lista de Precio por Defecto por Sucursal - Ej Vta.png" alt=""></p>
+
+          <p>En caso de tener más de un registro de lista por defecto agregada para una misma sucursal, tomará prioridad aquella que se agregó primero. 
+            Para cambiar la lista por defecto, simplemente seleccionamos el registro en la lista y presionamos el botón de "Editar Registro".
+          </p>
+
         </section>
 
         <hr class="divider">      
@@ -3017,8 +3088,8 @@
 
             <p>Mediante esta opción puede listar los presupuestos pendientes de un cliente determinado en un período
               determinado. Para ello deberá elegir el cliente y presionar Ver.</p>
-            <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-                  src="assets/images/Ventas/" alt=""></a></p>
+            <p><a class="popup-img" href="assets/images/Ventas/Listar Presupuestos.png"><img class="img-fluid border"
+                  src="assets/images/Ventas/Listar Presupuestos.png" alt=""></a></p>
           </section>
 
           <hr class="divider">
@@ -3752,7 +3823,8 @@
             </p>
 
             <p>
-              Con esta herramienta se puede definir una lista de precios especial por cada cliente.
+              Con esta herramienta se puede definir una lista de precios especial por cada cliente. Se debe tener en cuenta que los precios designados aquí pisarán cualquier otro, 
+              ya sea en las Planillas de Stock o los indicados en Listas de Precios, pero no los afectarán.
             </p>
 
             <p><a class="popup-img" href="assets/images/Ventas/Precios Especiales Cliente.png"><img
