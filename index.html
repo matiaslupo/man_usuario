@@ -301,18 +301,22 @@
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_libroiva">Libro IVA de Ventas</a>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_otroslistados">Otros Listados</a>
                 <ul class="nav flex-column text-2">
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_comprobxsucursal">Comprobantes
-                      Emitidos por Sucursal</a></li>
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_comprobxcliente">Comprobantes
-                      Emitidos por Cliente</a></li>
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_reciboxsucursal">Recibos de Cobro
-                      por Sucursal</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_artvendidos">Artículos Vendidos</a>
                   </li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_credxcliente">Análisis de Crédito
                       por Cliente</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_oprealizadas">Informe de Operaciones
                       Realizadas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_otroslistados_comprobantes">Otros Listados: Comprobantes</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_comprobxsucursal">Comprobantes
+                      Emitidos por Sucursal</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_comprobxcliente">Comprobantes
+                      Emitidos por Cliente</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_reciboxsucursal">Recibos de Cobro
+                      por Sucursal</a></li>
                 </ul>
               </li>
             </ul>
@@ -434,16 +438,14 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li>          
 
-          
-
-          <!--SECCION USUARIOS-->
-          <li class="nav-item"><a class="nav-link text-2" href="#man_usuarios">Usuarios</a>
+          <!--SECCION ADMIN-->
+          <li class="nav-item"><a class="nav-link text-2" href="#man_usuarios">Administracion</a>
             <ul class="nav flex-column text-2">
               <li class="nav-item"><a class="nav-link text-2" href="#man_crear_usaurios">Crear Usuarios</a> </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_perfiles">Perfiles</a> </li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_acciones_emergencia">Acciones de Emergencia (Admins)</a>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_acciones_emergencia">Acciones de Emergencia</a>
                 <ul class="nav flex-column text-2">
 
                 </ul>
@@ -1756,16 +1758,30 @@
                   class="img-fluid border" src="assets/images/Stock/Lista de Precios Personalizada.png" alt=""></a></p>
 
             <p>
+              Antes de generar la lista de precios, debemos seleccionar un esquema utilizando el menú desplegable que se encuentra en la esquina superior izquierda de la ventana. 
+              Si no tenemos esquemas cargados, o si queremos crear uno nuevo, presionamos el botón "Esquemas" y se abrirá la siguiente ventana:
+              <p><img class="img-fluid border" src="assets/images/Stock/Lista de Precios Personalizada - Esquema.png" alt=""></p>
+              Para crear un nuevo esquema, presionamos el botón + en la parte superior. Ingresamos un nombre y hacemos click en "OK". Luego, seleccionamos el nuevo esquema 
+              en el menú desplegable y comenzamos a editarlo.
+              <p><img class="img-fluid border" src="assets/images/Stock/Lista de Precios Personalizada - Nuevo Esquema.png" alt=""></p>
+              Los ítems que estén seleccionados aparecerán en la lista de precios. Es posible seleccionar un artículo individual, un subrubro o un rubro entero, según sea 
+              necesario. Con los botones debajo podemos seleccionar y deseleccionar todos los ítems. Finalmente, con el botón Guardar salvamos el esquema para utilizarlo en 
+              la pantalla anterior.
+            </p>
+
+            <p>
               Para generar una lista de precios personalizada se deben seguir los siguiente pasos:
             <ol>
               <li>Elegir el depósito y presionar Iniciar.</li>
-              <li>Se puede modificar el orden de las columnas, haciendo click sobre el nombre de las columnas.</li>
-              <li>Para seleccionar qué rubros estarán presentes en la lista, haga click sobre las casillas de
-                verificación de la columna Imprime de cada subrubro.
-                O puede presionar Selecc. Todos para seleccionar todos o Desel. Todos para quitar la selección actual.
+              <li>Se puede modificar el orden de las columnas, haciendo click sobre el nombre de las columnasy arrastrándolas.</li>
+              <li>Es posible filtrar por marcas utilizando el Filtro en la parte superior. Aparecerá un menú de contexto donde podremos seleccionar qué marcas 
+                estarán en la lista de precios. También podemos indicar qué artículos individuales serán impresos tildando o destildando la columna Imp. en la fila correspondiente.
               </li>
-              <li>Presiona Imprimir para generar la lista. Con Imprimir P. con IVA, se mostrará el precio con IVA, caso
-                contrario, lo mostrará sin IVA.</li>
+              <li>
+                Seleccionamos las opciones de impresión. Imprime Precios con IVA indica si los precios en la lista irán con IVA  o no al imprimirse. Esto también estará indicado en 
+                la hoja de impresión. También podemos indicar si se imprimirán o no las Marcas, los Rubros y Subrubros.
+              </li>
+              <li>Presiona Imprimir para generar la lista. </li>
             </ol>
             </p>
           </section>
@@ -1987,7 +2003,7 @@
             <p><img class="img-fluid border" src="assets/images/Fondos/Boton Cuentas de Caja.png" alt=""></p>
 
             <p>Con esta herramienta podemos crear nuevas cuentas de Caja y Banco. El uso de las cuentas de Banco es
-              explicado en la sección Bancos (próximamente).</p>
+              explicado en la sección Bancos.</p>
 
             <p><a class="popup-img" href="assets/images/Fondos/Crear Cajas.png"><img class="img-fluid border"
                   src="assets/images/Fondos/Crear Cajas.png" alt=""></a></p>
@@ -2153,27 +2169,53 @@
               todas las cajas.
               Veamos en detalle cada una de las solapas que componen esta consulta.</p>
 
-            <p>Movimientos:</p>
+            <p><b>Movimientos</b>:</p>
+            <p>Esta es la sección principal donde es posible buscar, administrar y cerrar las cajas.</p>
             <p><a class="popup-img" href="assets/images/Fondos/Consulta de Caja.png"><img class="img-fluid border"
                   src="assets/images/Fondos/Consulta de Caja.png" alt=""></a></p>
 
-            <p>Por defecto, el sistema mostrará los datos de la caja que usa la sucursal desde donde se está trabajando.
-              Pero se puede cambiar desde Buscar Cajas Abiertas o Buscar Cajas Cerradas, según el caso. Desde aquí
-              también se puede Imprimir la caja o cerrarla. Una vez cerrada, no podrá trabajar más con ella.
-              Para volver a abrirla, deberá ir a Apertura de Caja, ver página 109. Las tablas de esta solapa muestran lo
-              siguiente:
-            <ul>
-              <li>Saldos iniciales: Detalla todos los valores que componen el saldo inicial.</li>
-              <li>Ingresos: Detalla todos los comprobantes que componen los ingresos. Algunos fueron cargados
-                automáticamente como por ejemplo,
-                los recibos de cobro o las facturas de venta contado y otras fueron cargadas manualmente como se vio en
-                Ingresos de caja en la página 110.</li>
-              <li>Egresos: Detalla los comprobantes que componen los egresos. </li>
-              <li>Formas de Pago: Detalla por forma de pago el saldo de caja. </li>
-            </ul>
+            <p>Por defecto, el sistema mostrará los datos de la caja que usa la sucursal desde donde se está trabajando, pero es posible cambiar de caja como veremos 
+              más adelante. A continuación, describiremos las tres secciones en la que está dividida esta solapa:              
+            </p>
+            <p><u>Cabecera</u>:</p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Cabecera.png" alt=""></p>
+            <p>
+              En esta sección se encuentra el nombre y código de la caja seleccionada. También podemos observar el estado de la caja (Abierta o Cerrada), las fechas de 
+              apertura y cierre y una tabla con los saldos iniciales en su apertura. En el medio, hay dos calendarios "Desde" y “Hasta” con los que podemos habilitar un 
+              filtro de movimientos tildando la opción "Filtrar fechas", esto hará que sólo los movimientos dentro de este período se muestren en la tabla debajo.
             </p>
 
-            <p>Cheques de Terceros:</p>
+            <p><u>Tabla de Movimientos</u>:</p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Tabla Ingresos.png" alt=""></p>
+            <p>
+              En esta sección, se muestran todos los movimientos realizados con esta caja. En la primera solapa, como vemos en la imagen, se muestran los ingresos a la caja, 
+              es decir todos aquellos comprobantes que generaron un movimiento positivo. En la caja de texto a la derecha, se muestra el total de ingresos. Podemos tildar la 
+              opción "Filtrar sólo comprobantes de venta y compra" para que no se muestren otros comprobantes como ingresos de caja y transferencias.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Tabla Egresos.png" alt=""></p>
+            <p>
+              En la siguiente pestaña, se muestran los egresos de caja, es decir los comprobantes y movimientos que generaron saldos negativos. Es posible ingresar manualmente 
+              estos egresos presionando el botón "Ingresar gastos". Se abrirá una nueva ventana donde seleccionaremos el comprobante de gasto, la cuenta de gasto e indicaremos 
+              el importe. Cabe aclarar que esta operación sólo podrá realizarse en una caja abierta.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Ingresar Gasto.png" alt=""></p>
+            <p>
+              Al presionar OK, el gasto ingresado aparecerá en la tabla de egresos y se sumará al total.<br>
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Fc Anul.png" alt=""></p>
+            <p>Aquí se muestran las facturas anuladas.</p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Listar Articulos.png" alt=""></p>
+            <p>En esta pestaña, podemos listar los artículos vendidos en las ventas realizadas en esta caja. Para generar el listado, presionamos el botón 
+              "Listar Art". En el recuadro de texto a la derecha, podemos observar el total de ingresos a partir de estos artículos. 
+            </p>
+
+            <p><u>Pie</u>:</p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Pie.png" alt=""></p>
+            <p>
+              En el pie de la ventana encontramos los saldos finales de la caja, además de herramientas varias. Con el botón de
+            </p>
+
+            <p><b>Cheques de Terceros</b>:</p>
             <p><a class="popup-img" href="assets/images/Fondos/Consulta de Caja - Cheques de 3ros.png"><img
                   class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Cheques de 3ros.png" alt=""></a>
             </p>
@@ -2184,24 +2226,24 @@
               movimientos han sido cargados desde otras operaciones.
             </p>
 
-            <p>Valores:</p>
+            <p><b>Valores</b>:</p>
 
             <p><a class="popup-img" href="assets/images/Fondos/Consulta de Caja - Valores.png"><img
                   class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Valores.png" alt=""></a></p>
 
-            <p>Detalla todos los comprobantes y todos los valores ingresados. Igualmente se puede filtrar esta tabla
-              eligiendo un valor en particular desde Forma de Pago.</p>
+            <p>Detalla todos los comprobantes y todos los valores ingresados. Se puede filtrar esta tabla
+              eligiendo un valor en particular desde el menú desplegable Filtro de Forma de Pago.</p>
 
-            <p>Cheques emitidos:<br>
+            <p><b>Cheques emitidos</b>:<br>
               Lista todos los cheques emitidos por la empresa desde las chequeras configuradas en el menú Bancos, opción
-              Chequeras, ver página 124 más adelante.
+              Chequeras, ver sección Bancos -> Chequeras.
             </p>
 
             <p><a class="popup-img" href="assets/images/Fondos/Consulta de Caja - Cheques Emitidos.png"><img
                   class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Cheques Emitidos.png"
                   alt=""></a></p>
 
-            <p>Transferencias:<br>
+            <p><b>Transferencias</b>:<br>
               Esta solapa detalla las transferencias hechas, las recibidas y los débitos bancarios por pago de facturas.
             </p>
 
@@ -2209,22 +2251,21 @@
                   class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Transferencias.png" alt=""></a>
             </p>
 
-            <p>Retenciones:
+            <p><b>Retenciones</b>:
               Detalla las diferentes retenciones en que se han llevado a cabo en las ventas y en las compras. Estas
-              retenciones fueron cargadas en los Recibos de Cobro,
-              en la solapa Retenciones, o en las Órdenes de Pago, en la solapa retenciones IIBB. Para más información
-              vea las páginas 86 y 52 respectivamente.
+              retenciones fueron cargadas en los Recibos de Cobro, en la solapa Retenciones, o en las Órdenes de Pago, en la solapa retenciones IIBB. 
+              Para más información diríjase a las secciones Ventas -> Cobro a Clientes y Compras -> Pagos a Proveedores respectivamente.
             </p>
             <p><a class="popup-img" href="assets/images/Fondos/Consulta de Caja - Retenciones.png"><img
                   class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Retenciones.png" alt=""></a></p>
 
-            <p>Depósitos:
+            <p><b>Depósitos</b>:
               Detalla los depósitos en efectivo o cheque realizados en las diferentes cuentas bancarias de la empresa.
             </p>
             <p><a class="popup-img" href="assets/images/Fondos/Consulta de Caja - Depositos.png"><img
                   class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Depositos.png" alt=""></a></p>
 
-            <p>Movimientos en Efectivo:
+            <p><b>Movimientos en Efectivo</b>:
               Esta solapa muestra el movimiento de efectivo efectuado en las diferentes operaciones.
             </p>
             <p><a class="popup-img" href="assets/images/Fondos/Consulta de Caja - Movimientos Efectivo.png"><img
@@ -2862,11 +2903,13 @@
               Al precionar OK, se volverán a calcular los precios en las listas clonadas según el precio en la lista original y el coeficiente definido en la clonación. Por ejemplo, si 
               cambiamos el precio del producto "Varios" a $175 en la lista original, al realizar esta acción el precio en la lista clonada con coeficiente 2 será de $350.
             </li>
-            <li><b>Exportar a Documento</b>:</li>
-            <li><b>Redondeos</b>:</li>
-            <li><b>Importar Porcentajes desde Excel</b>:</li>
-            <li><b>Exportar a Excel Código-Recargo</b>:</li>
-            <li><b>Aplicar el Nuevo Recargo</b>:</li>
+            <li><b>Exportar a Documento</b>: Permite exportar la lista de precios a distintos formatos de archivo.</li>
+            <li><b>Redondeos</b>: Redondea los valores de los artículos.</li>
+            <li><b>Importar Porcentajes desde Excel</b>: Ingresa los recargas de los artículos a partir de una planilla de Excel. Debe tener el formato que se muestra en el siguiente punto.</li>
+            <li><b>Exportar a Excel Código-Recargo</b>: Genera una planilla de Excel con los códigos de los artículos y su correspondiente recargo. 
+              <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Exportar Rec a Excel.png" alt=""></p>
+            </li>
+            <li><b>Aplicar el Nuevo Recargo</b>: En caso de que esta acción no se realice automáticamente, presionando este botón se aplican los recargos definidos en la lista de precios.</li>
             <li><b>Actualización Recargos Listas Clonadas</b>: Esta opción permite copiar los recargos de la lista original a las listas clonadas. 
               Tildamos las listas clonadas a las que queremos trasladar los recargos y presionamos el botón "Trasladar Rec.".
               <p><img class="img-fluid border" src="assets/images/Ventas/Creacion de Listas de Precios - Trasladar Recargos.png" alt=""></p>
@@ -4077,94 +4120,6 @@
 
           <hr class="divider">
 
-          <!--  Ventas -> Otros Listados -> Comprobantes Emitidos x Sucursal
-		============================ -->
-          <section id="man_ventas_comprobxsucursal">
-            <h3>Comprobantes Emitidos por Sucursal</h3>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Boton Comprobantes Emitidos.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Boton Comprobantes Emitidos.png" alt=""></a></p>
-
-            <p>
-              La opción Listado de Comprobantes Emitidos está ubicada en el submenú <b>Relacionados a Comprobantes</b>,
-              lista todos los comprobantes de ventas emitidos por sucursal en un período determinado.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes por Sucursal.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes por Sucursal.png" alt=""></a>
-            </p>
-
-            <p>Seleccione la sucursal y el tipo de comprobante, establezca las fechas y presione Buscar.</p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes por Sucursal - Listado.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes por Sucursal - Listado.png"
-                  alt=""></a></p>
-
-            <p>Haciendo doble click sobre uno de los registros, se abrirá una vista del comprobante. Presione Imprimir
-              para generar el reporte.</p>
-
-          </section>
-
-          <hr class="divider">
-
-          <!-- Ventas -> Otros Listados -> Comprobantes Emitidos x Cliente
-		============================ -->
-          <section id="man_ventas_comprobxcliente">
-            <h3>Comprobantes Emitidos por Cliente</h3>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Boton Comprobantes Clientes.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Boton Comprobantes Clientes.png" alt=""></a></p>
-
-            <p>
-              La opción Listado de Comprobantes Emitidos está ubicada en el submenú <b>Relacionados a Comprobantes</b>,
-              lista todos los comprobantes de ventas emitidos para un cliente en específico en un período determinado.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes Clientes.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes Clientes.png" alt=""></a></p>
-
-            <p>
-              Seleccione el cliente, el tipo de comprobante, establezca un rango de fechas y presione Buscar. Presione
-              Imprimir para generar el reporte.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes Clientes - Listado.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes Clientes - Listado.png"
-                  alt=""></a></p>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Ventas -> Otros Listados -> Recibos de Cobro x Sucursal
-		============================ -->
-          <section id="man_ventas_reciboxsucursal">
-            <h3>Recibos de Cobro por Sucursal</h3>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Boton Listado de Recibos.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Boton Listado de Recibos.png" alt=""></a></p>
-
-            <p>
-              La opción Listado de Recibos se encuentra en el submenú <b>Relacionados a Comprobantes</b>, lista todos
-              los cobros efectuados por sucursal.
-            </p>
-
-            <p>
-              En la primer tabla se listan los recibos, y en las otras, según el recibo seleccionado, se detallan las
-              retenciones que afectaron la operación y
-              el detalle de los valores que componen su importe. <br>
-              Seleccione la sucursal, las fechas y presione Buscar.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Ventana Lista de Recibos.png"><img
-                  class="img-fluid border" src="assets/images/Ventas/Ventana Lista de Recibos.png" alt=""></a></p>
-
-            <p>
-              Presione Imprimir para generar el reporte.
-            </p>
-          </section>
-
-          <hr class="divider">
-
           <!-- Ventas -> Otros Listados -> Control de Forma de Pago de Clientes
 		============================ 
     <section id="man_ventas_ctrlpagocliente">
@@ -4318,6 +4273,96 @@
           </section>
 
           <hr class="divider">
+
+
+              <!--  Ventas -> Otros Listados -> Comprobantes Emitidos x Sucursal
+		============================ -->    
+    <section id="man_otroslistados_comprobantes"><h3>Otros Listados: Relacionados a comprobantes</h3></section>
+    <section id="man_ventas_comprobxsucursal">
+      <h3>Comprobantes Emitidos por Sucursal</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Comprobantes Emitidos.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Boton Comprobantes Emitidos.png" alt=""></a></p>
+
+      <p>
+        La opción Listado de Comprobantes Emitidos está ubicada en el submenú <b>Relacionados a Comprobantes</b>,
+        lista todos los comprobantes de ventas emitidos por sucursal en un período determinado.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes por Sucursal.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes por Sucursal.png" alt=""></a>
+      </p>
+
+      <p>Seleccione la sucursal y el tipo de comprobante, establezca las fechas y presione Buscar.</p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes por Sucursal - Listado.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes por Sucursal - Listado.png"
+            alt=""></a></p>
+
+      <p>Haciendo doble click sobre uno de los registros, se abrirá una vista del comprobante. Presione Imprimir
+        para generar el reporte.</p>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- Ventas -> Otros Listados -> Comprobantes Emitidos x Cliente
+============================ -->
+    <section id="man_ventas_comprobxcliente">
+      <h3>Comprobantes Emitidos por Cliente</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Comprobantes Clientes.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Boton Comprobantes Clientes.png" alt=""></a></p>
+
+      <p>
+        La opción Listado de Comprobantes Emitidos está ubicada en el submenú <b>Relacionados a Comprobantes</b>,
+        lista todos los comprobantes de ventas emitidos para un cliente en específico en un período determinado.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes Clientes.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes Clientes.png" alt=""></a></p>
+
+      <p>
+        Seleccione el cliente, el tipo de comprobante, establezca un rango de fechas y presione Buscar. Presione
+        Imprimir para generar el reporte.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Comprobantes Clientes - Listado.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Ventana Comprobantes Clientes - Listado.png"
+            alt=""></a></p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Ventas -> Otros Listados: Rel. Comp. -> Recibos de Cobro x Sucursal
+============================ -->
+    <section id="man_ventas_reciboxsucursal">
+      <h3>Recibos de Cobro por Sucursal</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Listado de Recibos.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Boton Listado de Recibos.png" alt=""></a></p>
+
+      <p>
+        La opción Listado de Recibos se encuentra en el submenú <b>Relacionados a Comprobantes</b>, lista todos
+        los cobros efectuados por sucursal.
+      </p>
+
+      <p>
+        En la primer tabla se listan los recibos, y en las otras, según el recibo seleccionado, se detallan las
+        retenciones que afectaron la operación y
+        el detalle de los valores que componen su importe. <br>
+        Seleccione la sucursal, las fechas y presione Buscar.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Ventana Lista de Recibos.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Ventana Lista de Recibos.png" alt=""></a></p>
+
+      <p>
+        Presione Imprimir para generar el reporte.
+      </p>
+    </section>
+
+    <hr class="divider">
 
      <!-- Sección Compras
 		============================ -->
@@ -5636,8 +5681,8 @@
     
           <!-- USUARIOS
 		============================ -->
-    <section id="man_usuarios">
-      <h2>Usuarios</h2>
+    <section id="man_admin">
+      <h2>Administracion del Sistema</h2>
       
       <p><img class="img-fluid border" src="assets/images/Usuarios/Boton Usuarios.png" alt=""></p>
 
