@@ -133,6 +133,7 @@
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_datos_geo">Datos Geográficos</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_cond_pago">Condiciones de Pago</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_admin_alias">Administracion del Alias</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_config_local">Configuración Local</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_tipos_retenciones">Tipos de Retenciones</a>
               </li>
@@ -441,11 +442,11 @@
           </li>          
 
           <!--SECCION ADMIN-->
-          <li class="nav-item"><a class="nav-link text-2" href="#man_usuarios">Administracion</a>
+          <li class="nav-item"><a class="nav-link text-2" href="#man_admin">Administracion</a>
             <ul class="nav flex-column text-2">
               <li class="nav-item"><a class="nav-link text-2" href="#man_crear_usaurios">Crear Usuarios</a> </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_perfiles">Perfiles</a> </li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_acciones_emergencia">Acciones de Emergencia</a>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_acciones_emergencia"></a>
                 <ul class="nav flex-column text-2">
 
                 </ul>
@@ -488,7 +489,7 @@
               <div class="col-sm-6 col-lg-4">
                 <ul class="list-unstyled">
                   <li><strong>Versión:</strong> 8.2.0.38</li>
-                  <li><strong>Autor:</strong> <a href="" target="_blank"><b>Luis A. Roldán</b></a></li>
+                  <li><strong>Autor:</strong> <a href="#"><b>Luis A. Roldán</b></a></li>
                 </ul>
               </div>
               <div class="col-sm-6 col-lg-4">
@@ -514,7 +515,7 @@
             <ul>
               <li>Sistema Operativo Windows.</li>
               <li>Paquete Redistribuible Microsoft .NET</li>
-              <li>Motor de Bases de Datos Firebird.</li>
+              <li>Motor de Bases de Datos Firebird o Interbase.</li>
             </ul>
             </p>
 
@@ -999,6 +1000,28 @@
           </section>
           <hr class="divider">
 
+          <!--  Primeros Pasos -> Administración del Alias
+		============================ -->
+          <section id="man_admin_alias">
+            <h3>Administración de los Alias de Bases de Datos</h3>
+
+            <p> Se accede desde Parámetros, botón Administración del Alias.   </p>
+            <p><img class="img-fluid border" src="assets/images/Parametros/Boton Admin Alias.png" alt=""> </p>
+            <p>En esta ventana, podremos ingresar y editar los distintos Alias para las bases de datos con los que trabaja el sistema. El Alias es el nombre con el 
+              que la base de datos está identificada en el sistema, y el Path es su ubicación, ya sea en el mismo equipo, una red o un sistema remoto.      
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Parametros/Administracion del Alias.png" alt=""> </p>
+            <p>
+              En caso de trabajar con más de una base de datos, la herramienta permite agregar nuevos alias utilizando el botón 
+              <img class="img-fluid border" src="assets/images/Parametros/Administracion del Alias - Boton Agregar Alias.png">. Con el botón "Carpeta", se abrirá una ventana con 
+              el explorador de Windows donde podremos buscar el archivo de la base de datos, generalmente ubicado dentro del mismo directorio donde está instalado el sistema dentro 
+              de la carpeta "Tablas IB".
+            </p>
+
+
+          </section>
+          <hr class="divider">
+
 
           <!--  Primeros Pasos -> Configuracion del Equipo Local
 		============================ -->
@@ -1009,8 +1032,7 @@
               Se accede desde Inicio, botón Configuracion Local. <br>
               <img class="img-fluid border" src="assets/images/Inicio/Boton Config Local.png" alt=""> <br>
               Desde esta opción se configurará el equipo local, o sea, el equipo donde se está trabajando actualmente.
-              Aquí se detalla en qué sucursal está, con qué depósito trabaja por defecto, el nombre de la base de datos
-              a la que está referenciando, cuál es su caja por defecto,
+              Aquí se detalla en qué sucursal está, con qué depósito trabaja por defecto, cuál es su caja por defecto,
               algunos controles de stock y caja, los intervalos de cuenta corriente (por ejemplo, 30 días: mensual, 60
               días: bimestral, etc.) y las impresoras. <br>
               <img class="img-fluid border" src="assets/images/Inicio/Config Local.png" alt=""> 
@@ -1311,6 +1333,22 @@
                         <p>Video tutorial <a href="https://www.youtube.com/watch?v=BGHOx6TgHiQ" target="_blank"
                             rel="noopener noreferrer">aquí</a>. <br>
                             También puede dirijirse a la sección Ventas -> Facturas de Venta -> Facturación de Contado.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="heading5-1">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse5-1"
+                          aria-expanded="false" aria-controls="collapse6">¿Qué hacer si ingresé una factura de venta al contado en una caja 
+                          equivocada?</a> </h5>
+                    </div>
+                    <div id="collapse5-1" class="collapse" aria-labelledby="heading5-1" data-parent="#popularTopics">
+                      <div class="card-body">
+                        <p>Video tutorial <a href="https://youtu.be/BGHOx6TgHiQ?t=212" target="_blank"
+                            rel="noopener noreferrer">aquí</a>. <br>
+                            Debemos tener en cuenta que, para poder realizar una corrección de este tipo, debemos ser <b>usuario administrador</b> y 
+                            <b>la caja no debe haberse cerrado desde la vez que hicimos la operación a correjir</b>.
                       </div>
                     </div>
                   </div>
@@ -2013,8 +2051,7 @@
               <li>Código: Este código lo provee el sistema, con él se referencia a la cuenta.</li>
               <li>Tipo: Puede ser caja o banco. De ser banco, se habilitarán las celdas Banco y Nro de Cuenta.</li>
               <li>Nombre: Con el que se distinguirá a la cuenta.</li>
-              <li>Banco: Nombre del banco, éste es cargado desde el menú Bancos, ver Entidades Bancarias en la página
-                124.</li>
+              <li>Banco: Nombre del banco, éste es cargado desde el menú Bancos, ver Entidades Bancarias en la sección Bancos -> Datos Iniciales.</li>
               <li>Nro de cuenta: Número de la cuenta bancaria.</li>
             </ul>
             </p>
@@ -2212,7 +2249,32 @@
             <p><u>Pie</u>:</p>
             <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Pie.png" alt=""></p>
             <p>
-              En el pie de la ventana encontramos los saldos finales de la caja, además de herramientas varias. Con el botón de
+              En el pie de la ventana encontramos los saldos finales de la caja, además de herramientas varias. Con el botón de <b>Buscar Cajas Abiertas</b>, 
+              se abre una nueva ventana donde podemos visualizar las cajas acutalmente abiertas. Haciendo click en una de estas cajas y presionando el botón OK, 
+              cambiamos la caja actualmente seleccionada.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Busq Abiertas.png" alt=""></p>
+            <p>
+              A la izquierda de este botón se encuentra la opción de buscar cierres de caja. Funciona similar al buscador anterior, con la única diferencia de que debemos 
+              seleccionar la caja en el menú desplegable y luego el período de cierre que queremos consultar. Presionando el botón OK, cambiamos la caja seleccionada al 
+              cierre de caja resaltado. Veremos que la etiqueta del estado de caja en la cabecera dirá "Cerrada" y estará indicada la fecha de cierre, además de que no 
+              podremos realizar cambios en los movimientos.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Busq Cerradas.png" alt=""></p>
+            <p>El botón <b>Cerrar Caja</b> nos permitirá cerrar la caja actualmente seleccionada (si está abierta). Al hacer click en este botón, aparecerá un cartel 
+              emergente que nos pedirá confimación de esta operación. Sólo debemos hacer click en aceptar si estamos completamente seguros de que los movimientos de la caja 
+              son correctos, ya que luego de cerrarla no podremos modificarlos. Al aceptar cerrar la caja, nos aparecerá otro cartel preguntando si queremos realizar una 
+              transferencia de los saldos finales de esta caja a otra, podemos aceptar o no según sea necesario.
+            </p>
+            <p>El botón <b>Ver Resumen</b> abrirá una nueva ventana donde podremos observar un resumen de los movimientos de la caja.
+              <p><img class="img-fluid border" src="assets/images/Fondos/Consulta de Caja - Resumen.png" alt=""></p>
+              Arriba de este botón, se encuentra una caja de texto con un buscador donde se indica el archivo de reporte que se utilzará en la impresión, funciona 
+              de la misma forma que explicamos en Primeros Pasos -> Formularios de Comprobante.
+            </p>
+            <p>
+              Finalmente, en la parte derecha del pie de la ventana se encuentran dos botones: uno para cargar lotes de tarjetas de crédito y otro para realizar una transferencia 
+              de efectivo desde esta caja a otra. También, podemos observar una caja de texto con el saldo final de la caja entre ingresos y egresos. Si es positivo, significa 
+              que la caja tuvo más ingresos que egresos, y el saldo se mostrará de color azul. Caso contrario, el saldo será negativo y se mostrará de color rojo.
             </p>
 
             <p><b>Cheques de Terceros</b>:</p>
@@ -3380,12 +3442,29 @@
               Presionando F11 sobre un artículo podrá ver una consulta sobre los movimientos del artículo. <br>
             </p>
 
+            <p>
+              En la barra de estado, a la derecha, se indica si la factura afecta al libro IVA de ventas y a la cuenta corriente:              
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - IVA.png" alt=""></p>
+            <ul>
+              <li>Vacío: la factura no está agregada al libro IVA ni a la cuenta corriente.</li>
+              <li>IVA: la factura está agregada al libro IVA pero no a la cuenta corriente.</li>
+              <li>IVA-CC: la factura está agregada al libro IVA y a la cuenta corriente.</li>
+              <li>-CC: la factura está agregada a la cuenta corriente pero no al libro IVA.</li>
+            </ul>
+
             <p><b><u>Detalles de Impuestos</u></b></p>
             <p><a class="popup-img" href="assets/images/Ventas/Facturacion Venta Cuenta Corriente - Impuestos.png">
                 <img class="img-fluid border"
                   src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - Impuestos.png" alt=""></a></p>
             <p>
-              Explicacion sobre sección Impuestos en facturacion cta cte.
+              Como se muestra en la imagen, las secciones corresponden a las mostradas en la sección Primeros Pasos -> Formularios de Comprobantes. La única diferencia en el 
+              formulario de una factura en cuenta corriente es la sección de la izquierda, que corresponde a las Notas de Crédito y Débito, explicada a continuación. 
+            </p>
+
+            <p><u><b>Opciones adicionales</b></u></p>
+            <p>
+
             </p>
           </section>
           <hr class="divider">
@@ -3427,6 +3506,12 @@
 
             <p><a class="popup-img" href="assets/images/Ventas/Nota de Debito.png"><img class="img-fluid border" src="assets/images/Ventas/Nota de Debito.png"
               alt=""></a></p>
+
+            <p>En la sección impuestos, en el recuadro de la derecha, se indica a qué factura está aplicada esta Nota de Crédito o Débito.</p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Nota de Credito - Impuestos.png" alt=""></p>
+            <p>Haciendo click el botón de Buscar Factura, se abrirá una nueva ventana donde podremos buscar una factura a la que aplicar la Nota de Crédito o Débito.
+              Presionando las teclas Ctrl + A, podremos ver y borrar estas aplicaciones.
+            </p>
 
           </section>
 
@@ -3491,6 +3576,15 @@
               Cuando finalicemos de ingresar los montos y el Resto de la venta esté en cero, podremos hacer click en
               <b>Confirmar</b> y guardar la factura y/o imprimirla.
             </p>
+
+            <p>
+              En la barra de estado, a la derecha, se indica si la factura afecta al libro IVA de ventas y a la cuenta corriente:              
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado.png" alt=""></p>
+            <ul>
+              <li>Vacío: la factura no está agregada al libro IVA.</li>
+              <li>IVA: la factura está agregada al libro IVA.</li>
+            </ul>
           </section>
 
           <hr class="divider">
@@ -4028,6 +4122,12 @@
 
             <p><a class="popup-img" href="assets/images/Ventas/Deudas - Traer Saldos.png"><img class="img-fluid border"
                   src="assets/images/Ventas/Deudas - Traer Saldos.png" alt=""></a></p>
+
+            <p>Seleccionando un cliente de la lista y haciendo click en el botón <b>>></b> en la esquina inferior derecha, se abrirá una nueva sección 
+              donde podremos consultar los comprobantes pendientes del cliente seleccionado.
+            </p>
+            <p><a class="popup-img" href="assets/images/Ventas/Deudas - Comp Pend.png"><img class="img-fluid border"
+              src="assets/images/Ventas/Deudas - Comp Pend.png" alt=""></a></p>
           </section>
 
           <hr class="divider">
