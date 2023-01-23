@@ -239,6 +239,7 @@
                   <li class="nav-item"><a class="nav-link text-2" href="#man_listaxdefecto_sucursal">Lista de Precios por Defecto por Sucursal</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_generalidades">Generalidades</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_presupuestos">Presupuestos</a>
                 <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_listpresupuestoxcli">Listado de
@@ -302,8 +303,6 @@
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_libroiva">Libro IVA de Ventas</a>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_otroslistados">Otros Listados</a>
                 <ul class="nav flex-column text-2">
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_artvendidos">Artículos Vendidos</a>
-                  </li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_credxcliente">Análisis de Crédito
                       por Cliente</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_oprealizadas">Informe de Operaciones
@@ -318,6 +317,12 @@
                       Emitidos por Cliente</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_reciboxsucursal">Recibos de Cobro
                       por Sucursal</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_otroslistados_relventas">Otros Listados: Ventas</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_artvendidos">Artículos Vendidos</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -994,7 +999,8 @@
               <img class="img-fluid border" src="assets/images/Parametros/Condiciones de Pago.png" alt=""> <br>
               Se puede cargar un descuento por cada forma de pago.
               Como vimos en Sucursal, también es posible cargarle un recargo, para ello se ingresa en descuento, pero
-              con número negativo.
+              con número negativo. <br>
+              En el cuadro de texto "Días", podemos ingresar cuantos días a partir de su emisión tendrá el comprobante antes de vencerse.
             </p>
 
           </section>
@@ -2732,29 +2738,7 @@
             </p>
             En esta pantalla encontramos una barra de navegación de los registros que funciona de la siguiente manera:
             </p>
-            <!-- TO-DO: CAMBIAR POR UNA SOLA IMAGEN COMO LA DEL MANUAL DE USUARIO-->
-            <p>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn 1er reg.png" alt=""> <b>Primer
-                Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn reg ant.png" alt=""> <b>Registro
-                Anterior</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn reg SIG.png" alt=""> <b>Siguiente
-                Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn ult reg.png" alt=""> <b>Último
-                Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn agregar reg.png" alt=""> <b>Agregar
-                Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn eliminar reg.png" alt=""> <b>Eliminar
-                Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn editar reg actual.png" alt="">
-              <b>Editar Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn confirmar reg.png" alt="">
-              <b>Confirmar Datos del Nuevo Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn cancelar.png" alt=""> <b>Cancelar
-                Ingreso de Nuevo Registro</b><br>
-              <img class="img-fluid border" src="assets/images/Clientes/LDR - Btn actualizar reg.png" alt="">
-              <b>Actualizar Lista de Registros</b><br><br>
-            </p>
+            <p><img class="img-fluid border" src="assets/images/Clientes/LDR - Botones.png" alt=""></p>
 
             <p>
               De este modo, podemos recorrer los diferentes registros, en este caso, los diferentes lugares de recepción
@@ -2802,7 +2786,6 @@
               Desde Imprimir podrá visualizar una vista previa en formato imprimible de comportamiento similar al visto
               en Reportes (ver Primeros Pasos -> Aspectos Generales -> Reportes).
             </p>
-            <!--TODO: AGREGAR IMAGEN CON LA VISTA DE IMPRESIÓN DE LISTADO DE CLIENTES-->
           </section>
 
           <hr class="divider">
@@ -3072,20 +3055,78 @@
         <hr class="divider">      
 
           <!-- Ventas -> Generalidades 
-		============================ 
-          <section id="man_ventas_general">
-            <h3>General (A Hacer)</h3>
+		============================ -->
+          <section id="man_ventas_generalidades">
+            <h3>Generalidades de los Formularios de Venta</h3>
 
             <p> En esta sección se describirán funcionalidades generales que comparten las ventanas relacionadas con la
               facturación, presupuestos, remitos, etc.
               Es recomendable leer esta sección antes de continuar con algunas de las funcionalidades, ya que en sus
-              secciones correspondientes se hará referencia al contenido
-              descrito a continuación.
+              secciones correspondientes pueden haber referencias al contenido descrito a continuación.
             </p>
 
-            <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-                  src="assets/images/Ventas/" alt=""></a></p>
-          </section> -->
+            <p>
+              Tomaremos como ejemplo el formulario de ticket de venta, el más simplificado de los comprobantes de venta. Como vimos en la sección Primeros Pasos -> Formularios 
+              de Comprobante, en el encabezado podemos observar la fecha de emisión del comprobante, la sucursal de venta, el tipo de comprobante, el cliente, el vendedor y 
+              el número del comprobante, además de algunas otras características (enumeradas en la siguiente imagen) que explicaremos más adelante.                            
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Generalidades.png"><img class="img-fluid border"
+              src="assets/images/Ventas/Generalidades.png" alt=""></a></p>
+
+            <p>
+              Presione Agregar en la barra de herramientas para crear un nuevo comprobante. Con Enter o el mouse vaya navegando por los diferentes
+              campos del encabezado.
+              El sistema por defecto ingresará la fecha actual, la sucursal desde donde se está trabajando, el tipo de
+              comprobante y el número que le corresponde.
+              Igualmente estos datos pueden ser cambiados. El siguiente dato que deberá ingresar es el cliente, esto
+              puede hacerse de tres maneras diferentes:<br>
+            <ol>
+              <li>Presione el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt=""> y busque
+                en la lista de clientes.</li>
+              <li>Presione Ctrl + Enter y también se le desplegará el listado de clientes. </li>
+              <li>Si conoce el código del cliente, ingréselo directamente. </li>
+            </ol>
+              Análogamente, podemos modificar cualquiera de los otros datos (sucursal, vendedor, etc). Otros datos editables que pueden aparecer y no se muestran en la 
+              imagen son el "lugar de recepción" o LDR (en facturas de contado, facturas de cta. cte., presupuestos, remitos y notas de venta) y la condición de venta (en 
+              facturas de cta. cte., remitos y presupuestos) que indica descuentos o recargos en la venta y los días antes del vencimiento del comprobante (ver Primeros Pasos 
+              -> Condiciones de Pago).
+            </p>
+
+            <p><u>Características adicionales</u></p>
+            <p><b>1º)</b> Los formularios de venta por contado, por cuenta corriente y por ticket tienen un submenú adicional en la esquina superior izquierda con acciones 
+              adicionales. En las secciones correspondientes se explicarán estas opciones con más detalles.
+            </p>
+            <p>
+              <b>2º)</b> Los formularios mencionados en el punto anterior también tienen una fecha extra además de la fecha de emisión: la fecha fiscal. Esta fecha indica 
+              a qué período fiscal corresponde esta factura. Por lo general, esta fecha coincide con la fecha de emisión, pero pueden ocurrir excepciones. <br>
+              Por ejemplo, supongamos que tenemos una caja que opera desde las 18 hasta las 02 horas, y realiza la facturación en su cierre. 
+              Si en nuestro ejemplo fuera el último día del mes, algunas facturas que realizamos en esta caja podrían quedar fuera del período fiscal. En este caso, 
+              puede ser necesario modificar esta fecha en dichas facturas para que entren en el período fiscal que deseamos. Esta acción sólo puede ser realizada por 
+              administradores, ver Administración -> Acciones Comodín.
+            </p>
+            <p>
+              <b>3º)</b> Con el botón Editar Cliente <img class="img-fluid border" src="assets/images/Boton Editar.png" alt="">,
+              puede cambiar los datos del cliente seleccionado. <br>
+              Con el botón Nuevo Cliente <img class="img-fluid border" src="assets/images/Boton Nuevo.png" alt="">,
+              puede ingresar un nuevo cliente.
+              Cualquiera de estos botones abrirá la siguiente ventana donde ingresar o modificar los datos del
+              cliente:<br>
+              <img class="img-fluid border" src="assets/images/Ventas/Ventana nuevo cliente.png" alt=""><br>
+              Con el botón <b>Confirmar</b>, crearemos un nuevo cliente o modificaremos los datos del cliente que
+              hayamos seleccionado y cerraremos la ventana. <br>
+              El botón <b>Cancelar</b> anula la operación. <br>
+              En el caso de Editar Cliente, la ventana tendrá un botón extra <b>Guardar en Clientes</b> que utilizará
+              los datos ingresados para guardar una nueva entrada en la lista
+              de Clientes en lugar de modificar los datos del cliente que hayamos seleccionado.
+            </p>
+
+            <p><b>4º)</b> Finalmente, podemos observar un menú desplegable para seleccionar la lista de precios, que se encuentra en todos los formularios de venta excepto 
+              las Notas de Venta.
+            </p>
+          </section>
+
+          <hr class="divider">     
 
           <!-- Ventas -> Presupuestos
 		============================ -->          
@@ -3105,35 +3146,8 @@
             <p><a class="popup-img" href="assets/images/Ventas/Presupuestos.png"><img class="img-fluid border"
                   src="assets/images/Ventas/Presupuestos.png" alt=""></a></p>
 
-            <p>
-              Presione Agregar para crear un nuevo presupuesto. Con Enter o el mouse vaya navegando por los diferentes
-              campos del encabezado.
-              El sistema por defecto ingresará la fecha actual, la sucursal desde donde se está trabajando, el tipo de
-              comprobante y el número que le corresponde.
-              Igualmente estos datos pueden ser cambiados. El siguiente dato que deberá ingresar es el cliente, esto
-              puede hacerse de tres maneras diferentes:<br>
-            <ol>
-              <li>Presione el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt=""> y busque
-                en la lista de clientes.</li>
-              <li>Presione Ctrl + Enter y también se le desplegará el listado de clientes. </li>
-              <li>Si conoce el código del cliente, ingréselo directamente. </li>
-            </ol>
-            </p>
-            <p>
-              Con el botón Editar Cliente <img class="img-fluid border" src="assets/images/Boton Editar.png" alt="">,
-              puede cambiar los datos del cliente particularmente para este presupuesto. <br>
-              Con el botón Nuevo Cliente <img class="img-fluid border" src="assets/images/Boton Nuevo.png" alt="">,
-              puede ingresar un nuevo cliente para este presupuesto.
-              Cualquiera de estos botones abrirá la siguiente ventana donde ingresar o modificar los datos del
-              cliente:<br>
-              <img class="img-fluid border" src="assets/images/Ventas/Ventana nuevo cliente.png" alt=""><br>
-              Con el botón <b>Confirmar</b>, crearemos un nuevo cliente o modificaremos los datos del cliente que
-              hayamos seleccionado y cerraremos la ventana. <br>
-              El botón <b>Cancelar</b> anula la operación. <br>
-              En el caso de Editar Cliente, la ventana tendrá un botón extra <b>Guardar en Clientes</b> que utilizará
-              los datos ingresados para guardar una nueva entrada en la lista
-              de Clientes en lugar de modificar los datos del cliente que hayamos seleccionado.
-            </p>
+            
+            
             <p>
               Al ingresar el cliente, Lugar de Recepción, Depósito y Condición de Venta se cargarán automáticamente
               según lo que se haya cargado en el ABM de clientes.
@@ -3160,7 +3174,7 @@
                   class="img-fluid border" src="assets/images/Ventas/Presupuestos - Impuestos.png" alt=""></a></p>
             <p>
               <!-- "Vistos anteriormente" ¿dónde?. Agregar ref.-->
-              El funcionamiento es muy similar a vistos anteriormente. Veamos los diferentes valores:
+              El funcionamiento es muy similar al visto en Primeros Pasos -> Formularios de Comprobantes. Veamos los diferentes valores:
             <ul>
               <li>Subtotal: Es el importe de todos los artículos presupuestados que serán gravados.</li>
               <li>Exento: Si existieran artículos exentos, aquí va el subtotal.</li>
@@ -3443,7 +3457,7 @@
             </p>
 
             <p>
-              En la barra de estado, a la derecha, se indica si la factura afecta al libro IVA de ventas y a la cuenta corriente:              
+              En la barra de estado, a la derecha, se indica si la factura afecta al libro IVA de ventas y a la cuenta corriente del cliente:              
             </p>
             <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - IVA.png" alt=""></p>
             <ul>
@@ -3482,11 +3496,9 @@
               Para crearla se siguen los mismos pasos que en la facturación en cuenta corriente, pero en Tipo de
               Comprobante se deberá elegir Nota de Crédito.
               El resto de los datos se ingresan de igual manera. Al igual que las notas de crédito que veremos en
-              Compras,
-              éstas deberán ser imputadas a las facturas correspondientes
-              desde Imputaciones (ver Cobro a Clientes -> Imputaciones). Si la nota de crédito es al contado, se deberá
-              habilitar la opción NC
-              de Contado. De ser así, se habilitará la opción de elegir la caja a la que corresponderá.
+              Compras, éstas deberán ser imputadas a las facturas correspondientes desde Imputaciones (ver Cobro a Clientes -> Imputaciones). 
+              Si la nota de crédito es al contado, se deberá habilitar la opción NC de Contado. 
+              De ser así, se habilitará la opción de elegir la caja a la que corresponderá.
             </p>
 
 
@@ -3495,12 +3507,14 @@
             <p>
               En este caso, esta nota no afectará su cuenta corriente, diferenciándose así de la nota de crédito en
               cuenta corriente. <br>
+              Otra forma más sencilla y rápida de generar notas de crédito es utilizando el botón "Generar NC sobre este comprobante" que aparece en la barra de herramientas de los 
+              formularios de venta al contado, factura de cuenta corriente y ticket de venta.
             </p>
             <p>
-              Las Notas de Débito por venta se cargan también desde esta opción. Éstas implican una disminución en el
+              Las Notas de Débito por venta se cargan de la misma forma mostrada al principio. Éstas implican una disminución en el
               stock y un movimiento que agregará deuda en la cuenta
               corriente del cliente. Luego, se deberán imputar los recibos o notas de crédito (según corresponda) a
-              estas notas de débito, desde el menú Ventas, opción Imputaciones (ver Ventas -> Cobro a Clientes ->
+              estas notas de débito, desde el menú Ventas, opción Aplicaciones Cta. Cte. de Ventas (ver Ventas -> Cobro a Clientes ->
               Imputaciones).
             </p>
 
@@ -3666,6 +3680,26 @@
             <p><a class="popup-img" href="assets/images/Ventas/Nota de Venta.png">
                 <img class="img-fluid border" src="assets/images/Ventas/Nota de Venta.png" alt=""></a></p>
 
+            <p>Las notas de venta, generalmente, se generan a partir de un presupuesto. Veremos en el siguiente ejemplo, un cliente Responsable Inscripto
+              nos solicita 500 "COSAS". Se genera el siguiente presupuesto:
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Nota de Venta - Ej Pres.png" alt=""></p>
+            <p>
+              En la misma ventana de presupuesto, como vimos en su sección, se encuentra el botón "Más Opciones". Hacemos click, y luego seleccionamos la opción 
+              "Generar Nota de Venta". 
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Nota de Venta - Ej Gen NV.png" alt=""></p>
+            <p>
+              Se generará la siguiente Nota de Venta:
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Nota de Venta - Ej NV.png" alt=""></p>
+            <p>En la barra de estado podemos observar el presupuesto del cual se originó la nota de venta. Haciendo click en él, se abrirá la ventana con este presupuesto.
+               El siguiente y último paso es generar el Remito. Para eso, presionamos el botón "Generar Remito de Vta". Se abrirá una nueva ventana con el siguiente remito:
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Nota de Venta - Ej Rto.png" alt=""></p>
+            <p>En la barra de estado se encuentra la nota de venta original desde la que se generó el remito. A partir del remito, también es posible generar una factura como 
+              vimos en la sección "Remitos".
+            </p>
 
           </section>
 
@@ -3950,6 +3984,10 @@
 
           <hr class="divider">
 
+          <!-- Ventas -> Cobro a Clientes -> Recibo de Cobro x Lote
+		============================ -->
+
+
           <!-- Ventas -> Precio Especiales Clientes
 		============================ -->
           <section id="man_ventas_preespcli">
@@ -4146,11 +4184,18 @@
 
             <p>
               Se utiliza para listar todos los clientes con un detalle mensual de los saldos. Presione Buscar para
-              listarlos.
+              listarlos. Puede utilizar los menús desplegables para filtrar por sucursal, vendedor, zona, categoría y/o cobrador.
             </p>
 
             <p><a class="popup-img" href="assets/images/Ventas/Ventana Saldos Mensuales.png"><img
                   class="img-fluid border" src="assets/images/Ventas/Ventana Saldos Mensuales.png" alt=""></a></p>
+
+            <p>
+              En la pestaña Detallado puede ver más específicamente los comprobantes que generan estos saldos y a qué cliente corresponden.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Ventana Saldos Mensuales - Detallado.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Ventana Saldos Mensuales - Detallado.png" alt=""></a></p>
 
             <p>
               Presione Imprimir para generar el reporte.
@@ -4158,6 +4203,45 @@
           </section>
 
           <hr class="divider">
+
+          <!-- Ventas -> Fiscalizacion por Lote
+		============================ -->
+    <section id="man_fiscalizacion_lote">
+      <h3>Fiscalizacion por Lote</h3>
+
+      <p>
+        Se accede desde el botón <b>Fiscalizar por Lote</b> dentro de la solapa Ventas.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Fiscalizar por Lote.png"><img class="img-fluid border"
+            src="assets/images/Ventas/Boton Fiscalizar por Lote.png" alt=""></a></p>
+
+      <p>
+        Esta herramienta permite consultar y fiscalizar aquellos comprobantes pendientes de fiscalización. Presione Buscar para listar estos comprobantes.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Fiscalizacion por Lote.png"><img
+            class="img-fluid border" src="assets/images/Ventas/Fiscalizacion por Lote.png" alt=""></a></p>
+
+      <p>
+        Puede fiscalizar uno de estos comprobantes seleccionándolo en la lista con el click izquierdo del mouse y presionando el botón Fiscalizar, o bien fiscalizar todos 
+        los comprobantes listados con el botón Fisc. Lote. <br>
+        En la pestaña "Datos AFIP" puede consultar los comprobantes que tiene registrados en la AFIP. En la parte superior, puede indicar letra y números del comprobante, desde 
+        y hasta qué número de comprobante se realizará la búsqueda, sucursal de venta y tipo de comprobante. En el menú desplegable de comprobantes, aparecen en las columnas el 
+        nombre del comprobante, la letra, el número de sucursal, el número del último comprobante, el nombre de la sucursal y el código de AFIP.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Fiscalizacion por Lote - Buscar en AFIP.png"><img
+        class="img-fluid border" src="assets/images/Ventas/Fiscalizacion por Lote - Buscar en AFIP.png" alt=""></a></p>
+
+      <p>Presione consultar para aplicar los filtros y obtener un listado. Puede terminar esta operación en cualquier momento con el botón Cancelar. Finalmente, puede 
+        presionar el botón Imprimir para generar un reporte de este listado.
+      </p>
+
+    </section>
+
+    <hr class="divider">
+
 
           <!-- Ventas -> Libro IVA
 		============================ -->
@@ -4211,7 +4295,7 @@
             <p>
               Sección con otras herramientas útiles relacionadas a informes y listados.
               Las herramientas descritas a continuación se encuentran en las secciones dentro de Ventas ->
-              <b>Listados</b>.
+              <b>Listados</b>. En esta sección, nos enfocaremos en las herramientas dentro del submenú "Otros Listados".
             </p>
 
             <p><a class="popup-img" href="assets/images/Ventas/Otros Listados.png"><img class="img-fluid border"
@@ -4250,50 +4334,6 @@
     </section>
 
     <hr class="divider"> -->
-
-          <!-- Ventas -> Otros Listados -> Articulos Vendidos
-		============================ -->
-          <section id="man_ventas_artvendidos">
-            <h3>Articulos Vendidos</h3>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Boton Venta Articulos.png"><img class="img-fluid border"
-                  src="assets/images/Ventas/Boton Venta Articulos.png" alt=""></a></p>
-
-            <p>
-              Se accede desde el submenú <b>Relacionado a las Vtas.</b>, opción Listado de Vta por Artiuclo. Lista todos
-              los artículos vendidos en un período determinado.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Vtas x Articulo.png"><img class="img-fluid border"
-                  src="assets/images/Ventas/Vtas x Articulo.png" alt=""></a></p>
-
-            <p>
-              Parámetros de búsqueda:
-            <ul>
-              <li><b>Items a Visualizar</b>: Permite elegir qué tipo de artículos se buscarán: afectados por IVA,
-                exentos o ambos.</li>
-              <li><b>Sucursal</b>: donde se realizaron las ventas buscadas.</li>
-              <li><b>Zona</b>: donde se realizaron las ventas buscadas.</li>
-              <li><b>Marca</b> de los articulos vendidos buscados.</li>
-              <li><b>Filtro Comprobante</b>: qué tipo de comprobantes emitidos se buscarán.</li>
-              <li><b>Fechas</b> desde y hasta las que fueron emitidos los comprobantes.</li>
-              <li><b>Rubro</b> de los artículos buscados.</li>
-              <li><b>SubRubro</b> de los artículos buscados.</li>
-              <li><b>Vendedor</b> que realizó las ventas.</li>
-              <li><b>Artículo:</b> permite buscar un único artículo en específico. Desmarcar la casilla <b>Todos los
-                  artículos</b> para usar.</li>
-              <li><b>Cliente:</b> permite buscar ventas realizadas a un único cliente en específico. Desmarcar la
-                casilla <b>Todos los clientes</b> para usar.</li>
-            </ul>
-            Presione Buscar para iniciar el proceso, puede tardar unos minutos. En la tabla debajo aparecerán los
-            resultados. Presione Imprimir para generar un reporte.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
-                  src="assets/images/Ventas/" alt=""></a></p>
-          </section>
-
-          <hr class="divider">
 
 
           <!-- Ventas -> Otros Listados -> Análisi de Cred x Cliente
@@ -4377,7 +4417,9 @@
 
               <!--  Ventas -> Otros Listados -> Comprobantes Emitidos x Sucursal
 		============================ -->    
-    <section id="man_otroslistados_comprobantes"><h3>Otros Listados: Relacionados a comprobantes</h3></section>
+    <section id="man_otroslistados_comprobantes"><h3>Otros Listados: Relacionados a comprobantes</h3>
+      <p class="lead">Explicaremos las herramientas de listado dentro del submenú "Relacionados a Comprobantes".</p>
+    </section>
     <section id="man_ventas_comprobxsucursal">
       <h3>Comprobantes Emitidos por Sucursal</h3>
 
@@ -4460,6 +4502,54 @@
       <p>
         Presione Imprimir para generar el reporte.
       </p>
+    </section>
+
+    <hr class="divider">
+
+    <!--  Ventas -> Otros Listados -> Articulos Vendidos
+		============================ -->    
+    <section id="man_otroslistados_relventas"><h3>Otros Listados: Relacionados a las ventas</h3>
+      <p class="lead">Explicaremos las herramientas de listado dentro del submenú "Relacionados a las Vtas".</p>
+    </section>
+
+    <section id="man_ventas_artvendidos">
+      <h3>Articulos Vendidos</h3>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Boton Venta Articulos.png"><img class="img-fluid border"
+            src="assets/images/Ventas/Boton Venta Articulos.png" alt=""></a></p>
+
+      <p>
+        Se accede desde el submenú <b>Relacionado a las Vtas.</b>, opción Listado de Vta por Artiuclo. Lista todos
+        los artículos vendidos en un período determinado.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Vtas x Articulo.png"><img class="img-fluid border"
+            src="assets/images/Ventas/Vtas x Articulo.png" alt=""></a></p>
+
+      <p>
+        Parámetros de búsqueda:
+      <ul>
+        <li><b>Items a Visualizar</b>: Permite elegir qué tipo de artículos se buscarán: afectados por IVA,
+          exentos o ambos.</li>
+        <li><b>Sucursal</b>: donde se realizaron las ventas buscadas.</li>
+        <li><b>Zona</b>: donde se realizaron las ventas buscadas.</li>
+        <li><b>Marca</b> de los articulos vendidos buscados.</li>
+        <li><b>Filtro Comprobante</b>: qué tipo de comprobantes emitidos se buscarán.</li>
+        <li><b>Fechas</b> desde y hasta las que fueron emitidos los comprobantes.</li>
+        <li><b>Rubro</b> de los artículos buscados.</li>
+        <li><b>SubRubro</b> de los artículos buscados.</li>
+        <li><b>Vendedor</b> que realizó las ventas.</li>
+        <li><b>Artículo:</b> permite buscar un único artículo en específico. Desmarcar la casilla <b>Todos los
+            artículos</b> para usar.</li>
+        <li><b>Cliente:</b> permite buscar ventas realizadas a un único cliente en específico. Desmarcar la
+          casilla <b>Todos los clientes</b> para usar.</li>
+      </ul>
+      Presione Buscar para iniciar el proceso, puede tardar unos minutos. En la tabla debajo aparecerán los
+      resultados. Presione Imprimir para generar un reporte.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
+            src="assets/images/Ventas/" alt=""></a></p>
     </section>
 
     <hr class="divider">
@@ -5779,10 +5869,10 @@
     <hr class="divider">
 
     
-          <!-- USUARIOS
+          <!-- Administracion
 		============================ -->
     <section id="man_admin">
-      <h2>Administracion del Sistema</h2>
+      <h2>Administración y Mantenimiento del Sistema</h2>
       
       <p><img class="img-fluid border" src="assets/images/Usuarios/Boton Usuarios.png" alt=""></p>
 
@@ -5797,7 +5887,7 @@
 
     <hr class="divider">
 
-          <!--
+          <!-- Administracion -> Crear Usuario
 		============================ -->
     <section id="man_">
       <h3>Crear Usuario</h3>
