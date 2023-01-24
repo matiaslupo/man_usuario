@@ -293,14 +293,22 @@
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_ajustes">Ajustes</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_fiscalizacion_lote">Comprobantes sin Fiscalizar</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_saldos">Saldos</a>
                 <ul class="nav flex-column text-2">
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_deudacliente">Deuda del Cliente</a>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_deuda_cliente">Deuda por Cliente</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_deudacliente">Estado de Deudas de Clientes</a>
                   </li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_saldosmensuales">Saldos
                       Mensuales</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_saldos_afecha">Saldos a Fecha del Comprobante</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_composicion_deudas">Composición de Deudas</a>
+                  </li>
                 </ul>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_libroiva">Libro IVA de Ventas</a>
+              </li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_libroiva">Libro IVA de Ventas</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_otroslistados">Otros Listados</a>
                 <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_credxcliente">Análisis de Crédito
@@ -4107,6 +4115,44 @@
 
           <hr class="divider">
 
+              <!-- Ventas -> Fiscalizacion por Lote
+        ============================ -->
+          <section id="man_fiscalizacion_lote">
+            <h3>Fiscalizacion por Lote</h3>
+
+            <p>
+              Se accede desde el botón <b>Fiscalizar por Lote</b> dentro de la solapa Ventas.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Boton Fiscalizar por Lote.png"><img class="img-fluid border"
+                  src="assets/images/Ventas/Boton Fiscalizar por Lote.png" alt=""></a></p>
+
+            <p>
+              Esta herramienta permite consultar y fiscalizar aquellos comprobantes pendientes de fiscalización. Presione Buscar para listar estos comprobantes.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Fiscalizacion por Lote.png"><img
+                  class="img-fluid border" src="assets/images/Ventas/Fiscalizacion por Lote.png" alt=""></a></p>
+
+            <p>
+              Puede fiscalizar uno de estos comprobantes seleccionándolo en la lista con el click izquierdo del mouse y presionando el botón Fiscalizar, o bien fiscalizar todos 
+              los comprobantes listados con el botón Fisc. Lote. <br>
+              En la pestaña "Datos AFIP" puede consultar los comprobantes que tiene registrados en la AFIP. En la parte superior, puede indicar letra y números del comprobante, desde 
+              y hasta qué número de comprobante se realizará la búsqueda, sucursal de venta y tipo de comprobante. En el menú desplegable de comprobantes, aparecen en las columnas el 
+              nombre del comprobante, la letra, el número de sucursal, el número del último comprobante, el nombre de la sucursal y el código de AFIP.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Fiscalizacion por Lote - Buscar en AFIP.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Fiscalizacion por Lote - Buscar en AFIP.png" alt=""></a></p>
+
+            <p>Presione consultar para aplicar los filtros y obtener un listado. Puede terminar esta operación en cualquier momento con el botón Cancelar. Finalmente, puede 
+              presionar el botón Imprimir para generar un reporte de este listado.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
           <!-- Ventas -> Saldos
 		============================ -->
           <section id="man_ventas_saldos">
@@ -4123,10 +4169,46 @@
 
           <hr class="divider">
 
+          <!-- Ventas -> Saldos de Deuda de Cliente
+		============================ -->
+          <section id="man_deuda_cliente">
+            <h3>Saldo Deuda por Cliente</h3>
+
+            <p>
+              Se accede desde la opción <b>Saldos Deuda por Cliente</b> dentro del menú Listados Saldos.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Boton Saldo Deuda por Cliente.png"><img class="img-fluid border"
+                  src="assets/images/Ventas/Boton Saldo Deuda por Cliente.png" alt=""></a></p>
+
+            <p>
+              Se utiliza para listar todas las deudas de un cliente. Presione el boton Buscar <img class="img-fluid border"
+              src="assets/images/Boton Buscar.png" alt=""> en Cliente para generar el 
+              listado. Es posible indicar una Fecha de Corte hasta la cual se buscarán facturas. Haciendo click en el botón 
+              <b>+</b> en las facturas, se mostrarán aquellos comprobantes aplicados a esa factura.  <br>
+              En la sección a la derecha, en la tabla superior, se encuentran los saldos a favor del cliente. En la tabla debajo, 
+              podemos seleccionar un filtro por el cual agrupar los comprobantes seleccionando una opción en el menú 
+              desplegable y tildando la opción "Usa Filtro".
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Saldo deuda de Clientes.png"><img
+                  class="img-fluid border" src="assets/images/Ventas/Saldo deuda de Clientes.png" alt=""></a></p>
+            
+            <p>
+              Presione Imprimir para generar el reporte.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Saldo deuda de Clientes - Imprimir.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Saldo deuda de Clientes - Imprimir.png" alt=""></a></p>
+
+          </section>
+
+          <hr class="divider">
+
           <!-- Ventas -> Deudas de Clientes
 		============================ -->
           <section id="man_ventas_deudacliente">
-            <h3>Deuda del Cliente</h3>
+            <h3>Estado de Deudas de Clientes</h3>
 
             <p>
               Se accede desde la opción Saldos de Deudas Clientes, se listan todos los clientes con deuda.
@@ -4176,7 +4258,7 @@
             <h3>Saldos Mensuales</h3>
 
             <p>
-              Se accede desde la opción <b>Saldos de Cliente Mensual</b> dentro del menú Listados Saldos
+              Se accede desde la opción <b>Saldos de Cliente Mensual</b> dentro del menú Listados Saldos.
             </p>
 
             <p><a class="popup-img" href="assets/images/Ventas/Boton Saldo Mensual.png"><img class="img-fluid border"
@@ -4204,46 +4286,123 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Fiscalizacion por Lote
+          <!-- Ventas -> Saldos de Deuda de Cliente
 		============================ -->
-    <section id="man_fiscalizacion_lote">
-      <h3>Fiscalizacion por Lote</h3>
+          <section id="man_saldos_afecha">
+            <h3>Saldos de Deudas de Clientes a Fecha de Factura</h3>
 
-      <p>
-        Se accede desde el botón <b>Fiscalizar por Lote</b> dentro de la solapa Ventas.
-      </p>
+            <p>
+              Se accede desde la opción <b>Saldos Clientes Mensual a Fecha</b> dentro del menú Listados Saldos.
+            </p>
 
-      <p><a class="popup-img" href="assets/images/Ventas/Boton Fiscalizar por Lote.png"><img class="img-fluid border"
-            src="assets/images/Ventas/Boton Fiscalizar por Lote.png" alt=""></a></p>
+            <p><a class="popup-img" href="assets/images/Ventas/Boton Saldo Clientes a Fecha.png"><img class="img-fluid border"
+                  src="assets/images/Ventas/Boton Saldo Clientes a Fecha.png" alt=""></a></p>
 
-      <p>
-        Esta herramienta permite consultar y fiscalizar aquellos comprobantes pendientes de fiscalización. Presione Buscar para listar estos comprobantes.
-      </p>
+            <p>
+              En esta ventana, podemos generar una listado de las deudas de clientes relacionada a los vencimientos de las facturas. 
+              En la parte superior de la ventana, se encuentra la fecha de corte hasta la que se realizará la búsqueda y 
+              los filtros: por vendedor, por zona, por sucursal y por estado del cliente. Adicionalmente, podemos indicar si la búsqueda 
+              considerará la fecha de vencimiento de la factura o la fecha de emisión.
+            </p>
 
-      <p><a class="popup-img" href="assets/images/Ventas/Fiscalizacion por Lote.png"><img
-            class="img-fluid border" src="assets/images/Ventas/Fiscalizacion por Lote.png" alt=""></a></p>
+            <p><a class="popup-img" href="assets/images/Ventas/Saldos de Deuda a Fecha.png"><img
+                  class="img-fluid border" src="assets/images/Ventas/Saldos de Deuda a Fecha.png" alt=""></a></p>
 
-      <p>
-        Puede fiscalizar uno de estos comprobantes seleccionándolo en la lista con el click izquierdo del mouse y presionando el botón Fiscalizar, o bien fiscalizar todos 
-        los comprobantes listados con el botón Fisc. Lote. <br>
-        En la pestaña "Datos AFIP" puede consultar los comprobantes que tiene registrados en la AFIP. En la parte superior, puede indicar letra y números del comprobante, desde 
-        y hasta qué número de comprobante se realizará la búsqueda, sucursal de venta y tipo de comprobante. En el menú desplegable de comprobantes, aparecen en las columnas el 
-        nombre del comprobante, la letra, el número de sucursal, el número del último comprobante, el nombre de la sucursal y el código de AFIP.
-      </p>
+            <p>
+              El filtro "Grupo" permite seleccionar un grupo de comprobantes (ver Primeros Pasos -> Comprobantes -> Grupos de Comprobantes) para 
+              la búsqueda. Sólo se listarán comprobantes que pertenezcan al grupo mostrado en el desplegable "Composicion Filtro".
+            </p>
 
-      <p><a class="popup-img" href="assets/images/Ventas/Fiscalizacion por Lote - Buscar en AFIP.png"><img
-        class="img-fluid border" src="assets/images/Ventas/Fiscalizacion por Lote - Buscar en AFIP.png" alt=""></a></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Saldos de Deuda a Fecha - Filtro Comprobantes.png" alt=""></p>
+            
+            <p>
+              Presione Imprimir para generar el reporte, o Exportar XLS para guardar como archivo Excel.
+            </p>
 
-      <p>Presione consultar para aplicar los filtros y obtener un listado. Puede terminar esta operación en cualquier momento con el botón Cancelar. Finalmente, puede 
-        presionar el botón Imprimir para generar un reporte de este listado.
-      </p>
+            <p><a class="popup-img" href="assets/images/Ventas/Saldos de Deuda a Fecha - Impresion.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Saldos de Deuda a Fecha - Impresion.png" alt=""></a></p>
 
-    </section>
+          </section>
 
-    <hr class="divider">
+          <hr class="divider">
+
+      <!-- Ventas -> Composicion de Deuda de Cliente
+          ============================ -->
+          <section id="man_composicion_deudas">
+            <h3>Composición de Deudas de Clientes</h3>
+
+            <p>
+              Se accede desde la opción <b>Composicion de Deuda Venta</b> dentro del menú Listados Saldos.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Boton Composicion Deuda.png"><img class="img-fluid border"
+                  src="assets/images/Ventas/Boton Composicion Deuda.png" alt=""></a></p>
+
+            <p>
+              En esta ventana, podemos generar una listado personalizable de las deudas de clientes, similar al visto en el Listado de Políticas de Precio. 
+              En la parte superior, se encuentran las fechas desde y hasta la que se buscarán las deudas. Al hacer click en <b>Mostrar Campos</b>, 
+              se mostrará la sección de campos delineada en la imagen, que permite agregar campos adicionales a la tabla. <br>              
+              En la sección superior izquierda de la tabla, se muestran aquellos campos que aparecerán en la tabla de resultados. Debajo, se muestran los 
+              registros cuyos resultados se mostrarán en la tabla, además del total. Finalmente, a la derecha se muestra la tabla en sí 
+              con los campos deseados y sus resultados.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Composicion Deuda Clientes.png"><img
+                  class="img-fluid border" src="assets/images/Ventas/Composicion Deuda Clientes.png" alt=""></a></p>
+
+            <p>
+              Al hacer click en la flecha hacia abajo en cualquiera de los campos, se mostrará un menú con filtros donde podemos indicar qué valores deseamos ver. 
+              Por ejemplo, podemos especificar qué facturas deseamos que se muestren en la tabla agregando el campo "Detalles" y destildando las cajas de aquellas 
+              facturas que no irán. Al hacer click en "OK", se aplicará el filtro y se actualizará la tabla. 
+            </p>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Composicion Deuda Clientes - Filtro.png" alt=""></p>
+            
+            <p>
+              También podemos generar otro listado donde las deudas estén agrupadas por mes haciendo click en la pestaña "Detalle Mensual". 
+              Con los botones <b>+</b> desplegamos los detalles para observar los comprobantes y los totales de las deudas de los clientes. 
+            </p>
+            
+            <p><a class="popup-img" href="assets/images/Ventas/Composicion Deuda Clientes - Detalle Mensual.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Composicion Deuda Clientes - Detalle Mensual.png" alt=""></a></p>
+
+            <p>Al igual que en la vista anterior, podemos hacer click en el ícono de engrudo en uno de los campos para ver los filtros.</p>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Composicion Deuda Clientes - Filtro.png" alt=""></p>
+
+            <p>Si hacemos click en "Custom", se abrirá una ventana donde podremos generar un filtro personalizado.</p>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Filtro Personalizable.png" alt=""></p>
+
+            <p>Para definir el filtro, seleccionamos una opción del menú desplegable e ingresamos un valor en la caja de texto. Por ejemplo, si quisiéramos 
+              que sólo se muestren aquellas deudas cuyo total es mayor a 1200, podríamos definir el siguiente filtro:
+            </p>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Composicion Deuda Clientes - Ej Filtro.png" alt=""></p>
+
+            <p>Podríamos agregar un segundo filtro haciendo lo mismo con el desplegable de abajo. Si en el medio de los filtros está seleccionada la opción 
+              "AND" (Y en inglés), esto significa que sólo se mostrarán en la tabla aquellos registros que cumplan las dos condiciones que definimos. En cambio, 
+              si está seleccionada la opción "OR" (Ó en inglés), basta con que los registros cumplan alguna de las dos condiciones para mostrarse, pero 
+              si no cumplen ninguna de las dos no se mostrarán. Presionando el botón "OK" aplicaremos el filtro.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Composicion Deuda Clientes - Filtros Detalle.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Composicion Deuda Clientes - Filtros Detalle.png" alt=""></a></p>
+
+            <p>Podemos observar que el registro con total menor a 1200 ya no aparece. Si presionamos el botón "Customize", 
+              se abrirá una nueva ventana para visualizar y personalizar los filtros. <br>
+              Presione Imprimir para generar el reporte, o Exportar XLS para guardar como archivo Excel.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Composicion Deuda Clientes - Imprimir.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Composicion Deuda Clientes - Imprimir.png" alt=""></a></p>
+
+          </section>
+
+          <hr class="divider">
 
 
-          <!-- Ventas -> Libro IVA
+          <!-- Ventas -> Libro IVA Ventas
 		============================ -->
           <section id="man_ventas_libroiva">
             <h2>Libro IVA de Ventas</h2>
@@ -4539,14 +4698,49 @@
         <li><b>Rubro</b> de los artículos buscados.</li>
         <li><b>SubRubro</b> de los artículos buscados.</li>
         <li><b>Vendedor</b> que realizó las ventas.</li>
-        <li><b>Artículo:</b> permite buscar un único artículo en específico. Desmarcar la casilla <b>Todos los
+        <li><b>Artículo</b>: permite buscar un único artículo en específico. Desmarcar la casilla <b>Todos los
             artículos</b> para usar.</li>
-        <li><b>Cliente:</b> permite buscar ventas realizadas a un único cliente en específico. Desmarcar la
+        <li><b>Cliente</b>: permite buscar ventas realizadas a un único cliente en específico. Desmarcar la
           casilla <b>Todos los clientes</b> para usar.</li>
       </ul>
       Presione Buscar para iniciar el proceso, puede tardar unos minutos. En la tabla debajo aparecerán los
-      resultados. Presione Imprimir para generar un reporte.
+      resultados. Presione Imprimir para generar un reporte, o Excel para generar un archivo de planilla de cálculo con esta lista.
       </p>
+
+      <p><u><b>Lista Agrupada</b></u></p>
+      <p>Al hacer click en la pestaña "Agrupado", se abrirá una nueva solapa donde podremos realizar un listado personalizable de los artículos vendidos. 
+        Este listado funciona de manera similar al visto en Listado de Políticas de Precio.
+      </p>
+
+      <p><a class="popup-img" href="assets/images/Ventas/Vtas x Articulo - Agrupado.png"><img class="img-fluid border"
+        src="assets/images/Ventas/Vtas x Articulo - Agrupado.png" alt=""></a></p>
+
+      <p>
+        En la sección debajo se encuentra la configuración del listado:
+      </p>
+      <ul>
+        <li><b>Sucursal</b>: donde se realizaron las ventas buscadas.</li>
+        <li><b>Cliente</b>: permite buscar ventas realizadas a un único cliente en específico. Desmarcar la
+          casilla <b>Todos los clientes</b> para usar.</li>
+        <li><b>Tomar Fecha</b>: indica si realizaremos la búsqueda tomando la fecha de venta o la fecha fiscal de los comprobantes.</li>
+        <li><b>Año y Mes</b>: indica el año y mes del año para el que se realizará la búsqueda.</li>
+      </ul>
+      <p>Presionando el botón Buscar dentro de la sección a la derecha (no el de la izquierda), se ejecutará el listado de los artículos utilizando 
+        los filtros definidos. <br>
+        Dentro de esta sección también se encuentran las opciones para personalizar el listado. Al hacer click en "Muestra Totales", se abrirá una pequeña ventana 
+        donde podremos configurar qué totales se mostrarán en la tabla. 
+      </p>
+      <p><img class="img-fluid border" src="assets/images/Ventas/Vtas x Articulo - Agrupado Totales.png" alt=""></p>
+      <p>
+        Al hacer click en "Muestra Campos", se mostrará una nueva sección con los campos disponibles para utilizar en la tabla. A continuación, describiremos cómo 
+        podemos utilizar estos campos para agrupar y personalizar la vista final.
+      </p>
+      <p><img class="img-fluid border" src="assets/images/Ventas/Vtas x Articulo - Agrupado Campos.png" alt=""></p>
+      
+
+      <p><u><b>Ranking</b></u></p>
+
+      <p><u><b>Ventas por Vendedor</b></u></p>
 
       <p><a class="popup-img" href="assets/images/Ventas/"><img class="img-fluid border"
             src="assets/images/Ventas/" alt=""></a></p>
