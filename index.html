@@ -3884,14 +3884,55 @@
               Como se muestra en la imagen, las secciones corresponden a las mostradas en la sección Primeros Pasos ->
               Formularios de Comprobantes. La única diferencia en el
               formulario de una factura en cuenta corriente es la sección de la izquierda, que corresponde a las Notas
-              de Crédito y Débito, explicada a continuación.
+              de Crédito y Débito, explicada en la próxima sección.
             </p>
 
-            <p><u><b>Opciones adicionales</b></u></p>
-            <p>
+            <p><u><b>Menú de Opciones</b></u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - Menu Adicionales.png" alt=""></p>
+            <p>Menú desplegable de opciones adicionales para las facturas de venta en cuenta corriente. Estas opciones permiten:</p>
+            <ul>
+              <li><b>Mostrar diálogo de impresión</b>: Si ésta opción está marcada, antes de imprimir el comprobante 
+                se mostrará un cuadro de diálogo con las opciones de impresión (selección de impresora, cantidad de copias, etc).</li>
+              <li><b>Ver Movimientos Caja NC</b>:</li>
+              <li><b>Impresión Formato a Mail</b>:</li>
+              <li><b>Pasar a Papelera</b>: Mueve la factura seleccionada a la papelera de reciclaje.</li>
+              <li><b>Modo Despachante</b>: Cambia el formulario a modo despachante, mostrando algunos campos relacionados 
+                a la entrega de los artículos. En la cabecera se mostrarán los siguientes campos:
+                <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - Cabecera Despacho.png" alt=""></p>
+                Aqui podremos indicar los datos principales del despacho como la fecha, el documento aduanero, el tipo de transporte y 
+                el tipo de operación. Luego, en el pie se mostrarán estos campos:
+                <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - Pie Despacho.png" alt=""></p>
+                En Origen y Destino seleccionamos una de las localidades cargadas en el sistema (ver Primeros Pasos -> Datos Geográficos). También 
+                podemos indicar la comisión del transporte en Honorarios y añadir una nota relacionada.
+              </li>
+              <li><b>Datos Adicionales</b>: Muestra una sección en la cabecera del formulario donde agregar datos relacionados a las exportaciones.
+                <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - Datos Adicionales.png" alt=""></p>
+              </li>
+              <li><b>Expresar Unidades de Stock en Enteros</b>: Redondea los decimales en las unidades de stock.</li>
+              <li><b>Fiscalización Automática</b>: Si ésta opción está tildada, al confirmar el comprobante 
+                la ventana de fiscalización se abrirá automáticamente.</li>
+            </ul>
 
+            <p><u><b>Herramientas Adicionales</b></u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta Cuenta Corriente - Herramientas Adicionales.png" alt=""></p>
+            <p>Estos botones se encuentran en la barra de herramientas y permiten realizar otras acciones con la factura de cuanta corriente seleccionada. 
+              De izquierda a derecha, son:
             </p>
+            <ul>
+              <li><b>Anular factura</b>: anula el comprobante seleccionado.</li>
+              <li><b>Enviar por mail</b>: envía el comprobante por mail, debe estar configurada la cuenta de email para poder utilizarla (ver Primeros Pasos -> Configuración Local).</li>
+              <li><b>Ver entregas</b>: abre una ventana donde se listan las entregas. Esta misma lista puede visualizarse en la pestaña "Entregas".</li>
+              <li><b>Generar Remito</b>: abre una ventana para generar un remito relacionado a esta factura. Al confirmar el remito, el número del mismo se mostrará en la 
+                cabecera del formulario, dentro de la caja de texto "Número de Remito".</li>
+              <li><b>Enviar mercadería a acopio</b>: abre una nueva ventana donde se genera un acopio de la mercadería indicada en la factura.</li>
+              <li><b>Listado de Remitos Asociados</b>: genera un reporte con la lista de los remitos asociados a la factura.</li>
+              <li><b>Fiscalizar</b>: abre la ventana de fiscalización.</li>
+              <li><b>Generar Nota de Crédito sobre este comprobante</b>: crea una nota de crédito relacionada a esta factura, y anula el comprobante.</li>
+              <li><b>Papelera de reciclaje</b>: abre una ventana donde se muestran las facturas borradas o enviadas a la papelera. Es posible restaurar estas facturas.</li>
+            </ul>
+
           </section>
+
           <hr class="divider">
 
           <!-- Ventas -> Notas de Cred y Deb
@@ -3940,12 +3981,12 @@
               Crédito o Débito.</p>
             <p><img class="img-fluid border" src="assets/images/Ventas/Nota de Credito - Impuestos.png" alt=""></p>
             <p>Haciendo click el botón de Buscar Factura, se abrirá una nueva ventana donde podremos buscar una factura
-              a la que aplicar la Nota de Crédito o Débito.
+              a la que aplicar la Nota de Crédito o Débito. Si la nota no tiene aplicada una factura, no tendremos 
+              habilitada la <b>fiscalización</b>.
               Presionando las teclas Ctrl + A, podremos ver y borrar estas aplicaciones.
             </p>
 
           </section>
-
 
           <hr class="divider">
 
@@ -3972,7 +4013,8 @@
             <p><a class="popup-img" href="assets/images/Ventas/Facturacion Venta de Contado - Impuestos.png">
                 <img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Impuestos.png"
                   alt=""></a></p>
-            <p>Explicación sobre Impuestos para Facturas de venta ctdo.</p>
+            <p>Esta pestaña funciona de la misma manera que la explicada en las facturas de cuenta corriente y en 
+              la sección Primeros Pasos -> Formularios de Comprobantes.</p>
 
             <p><b><u>Valores de la Venta</u></b></p>
             <p><a class="popup-img" href="assets/images/Ventas/Facturacion Venta de Contado - Valores.png">
@@ -4012,10 +4054,51 @@
               En la barra de estado, a la derecha, se indica si la factura afecta al libro IVA de ventas y a la cuenta
               corriente:
             </p>
-            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado.png" alt=""></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Libro IVA.png" alt=""></p>
             <ul>
               <li>Vacío: la factura no está agregada al libro IVA.</li>
               <li>IVA: la factura está agregada al libro IVA.</li>
+            </ul>
+
+            <p><u><b>Menú de Opciones</b></u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Menu Opciones.png" alt=""></p>
+            <p>Al igual que las facturas de cuenta corriente, el formulario de facturas de venta contado tiene un menu de opciones adicionales:</p>
+            <ul>
+              <li><b>Mostrar Diálogo de impresión</b>: Si ésta opción está marcada, antes de imprimir el comprobante 
+                se mostrará un cuadro de diálogo con las opciones de impresión (selección de impresora, cantidad de copias, etc).</li>
+              <li><b>Omitir Control de Valores (master)</b>: Sólo puede ser utilizada por usuarios administradores. Permite pasar 
+                por alto el control de ingreso de valores en la caja.
+              </li>
+              <li><b>Revisión de Valores Ingresados</b>: Para realizar esta acción, la caja donde se realizó el comprobante no debe haberse cerrado desde la fecha 
+                en la que la factura fue emitida. Abre una nueva ventana donde podremos ajustar los valores ingresados en la operación.
+                <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Revision Valores Ingresados.png" alt=""></p>
+                En la tabla de la izquierda observamos los valores y los modos de pagos que fueron ingresados en la operación. Aquellos cuya columna "V" esté tildada serán aquellos que 
+                entrarán en la modificación y sumarán al resto que deberemos completar.  <br>
+                El ingreso de los valores, realizado en la sección a la derecha, es idéntico al que vimos anteriormente. La única diferencia es que no estamos habilitados a cambiar la caja.
+              </li>
+              <li><b>Impresión Formato Mail</b>:</li>
+              <li><b>Pasar a Papelera</b>: Envía la factura a la papelera de reciclaje.</li>
+              <li><b>Expresar Unidades de Stock en Enteros</b>: Redondea los valores expresados en unidades de stock, es decir que no se mostrarán decimales
+                 en las cantidades de los artículos.</li>
+              <li><b>Iniciar Foco en Fecha</b>: Si esta opción está tildada, al crear o modificar una factura el cursor enfocará el campo de Fecha en lugar de Cliente,
+                 como lo hace por defecto.</li>
+            </ul>
+
+            <p><u><b>Herramientas Adicionales</b></u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Herramientas Adicionales.png" alt=""></p>
+            <p>Botones en la barra de herramientas que permiten realizar otras acciones. De izquierda a derecha, son:</p>
+            <ul>
+              <li><b>Presupuesto</b>: habilitado durante la creación de una nueva factura. Abre una ventana donde podremos completar los detalles desde presupuestos.</li>
+              <li><b>Imprimir</b>: imprime el comprobante.</li>
+              <li><b>Anular factura</b>: anula el comprobante seleccionado.</li>
+              <li><b>Enviar por mail</b>: envía el comprobante por mail, debe estar configurada la cuenta de email para poder utilizarla (ver Primeros Pasos -> Configuración Local).</li>
+              <li><b>Generar Remito</b>: abre una ventana para generar un remito relacionado a esta factura. Al confirmar el remito, el número del mismo se mostrará en la 
+                cabecera del formulario, dentro de la caja de texto "Número de Remito".</li>
+              <li><b>Enviar mercadería a acopio</b>: abre una nueva ventana donde se genera un acopio de la mercadería indicada en la factura.</li>
+              <li><b>Listado de Remitos Asociados</b>: genera un reporte con la lista de los remitos asociados a la factura.</li>
+              <li><b>Fiscalizar</b>: abre la ventana de fiscalización.</li>
+              <li><b>Generar Nota de Crédito sobre este comprobante</b>: crea una nota de crédito relacionada a esta factura, y anula el comprobante.</li>
+              <li><b>Papelera de reciclaje</b>: abre una ventana donde se muestran las facturas borradas o enviadas a la papelera. Es posible restaurar estas facturas.</li>
             </ul>
           </section>
 
@@ -4041,10 +4124,36 @@
               Diríjase a la sección <a href="#man_ventas_facturacionctdo"><b>Facturación de Contado</b></a> para una
               descripción de cómo ingresar los montos.
             </p>
-            <p class="lead"><u><b>Comandas</b></u></p>
-            <p>
+            <p ><u><b>Comandas</b></u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Ticket Vta Contado - Comanderas.png" alt=""></p>
+            <p>En esta sección podemos configurar las comandas.</p>
 
-            </p>
+            <p><u><b>Menú de Opciones</b></u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Ticket Vta Contado - Menu Opciones.png" alt=""></p>
+            <p>Menú desplegable en la esquina superior izquierda del formulario con opciones adicionales:</p>
+            <ul>
+              <li><b>Revisión de Valores Ingresados</b>:Para realizar esta acción, la caja donde se realizó el comprobante no debe haberse cerrado desde la fecha 
+                en la que la factura fue emitida. Abre una nueva ventana donde podremos ajustar los valores ingresados en la operación.
+                <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Revision Valores Ingresados.png" alt=""></p>
+                En la tabla de la izquierda observamos los valores y los modos de pagos que fueron ingresados en la operación. Aquellos cuya columna "V" esté tildada serán aquellos que 
+                entrarán en la modificación y sumarán al resto que deberemos completar.  <br>
+                El ingreso de los valores, realizado en la sección a la derecha, es idéntico al que vimos anteriormente. La única diferencia es que no estamos habilitados a cambiar la caja.</li>
+              <li><b>Activar Diálogo Valores</b>:</li>
+              <li><b>Leer peso</b>:</li>
+              <li><b>Pasar a Papelera</b>: Envía el ticket factura a la papelera de reciclaje.</li>
+              <li><b>Iniciar Foco en Fecha</b>: Si esta opción está tildada, al crear o modificar una factura el cursor enfocará el campo de Fecha en lugar de Cliente,
+                como lo hace por defecto.</li>
+            </ul>
+
+            <p><u><b>Herramientas Adicionales</b></u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Ticket Vta Contado - Herramientas Adicionales.png" alt=""></p>
+            <p>Botones adicionales en el menú de herramientas, de izquierda a derecha son:</p>
+            <ul>
+              <li><b>Anular factura</b>: anula el comprobante seleccionado.</li>
+              <li><b>Generar Nota de Crédito sobre este comprobante</b>: crea una nota de crédito relacionada a esta factura, y anula el comprobante.</li>
+              <li><b>Fiscalizar</b>: abre la ventana de fiscalización.</li>
+              <li><b>Papelera de reciclaje</b>: abre una ventana donde se muestran las facturas borradas o enviadas a la papelera. Es posible restaurar estas facturas.</li>
+            </ul>
           </section>
 
 
@@ -4075,7 +4184,7 @@
             <p>
               Este proceso mostrará todas las vistas previas de las facturas listas para imprimir. Para imprimir uno de
               estos comprobantes, lo seleccionamos en la lista y
-              presionamos el botón Imprimir. Para imprimir todos los comprobantes, en la lista, hacemos click en el
+              presionamos el botón Imprimir. Para imprimir todos los comprobantes en la lista, hacemos click en el
               botón Imprimir Todo. Para quitar un comprobante de la lista,
               lo seleccionamos y hacemos click en el botón Marcar. Si está tildada la opción "Marcar Todos", al hacer
               click limpiaremos la lista completa.
