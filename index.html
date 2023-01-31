@@ -128,7 +128,11 @@
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_datos_empresa">Datos de la Empresa</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_sucursales">Sucursales</a></li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_comprobantes">Comprobantes</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_comprobantes">Comprobantes</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_comprobantes_filtros">Filtros de Comprobantes</a></li>
+                </ul>
+              </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_alicuotasiva">Alícuotas de IVA</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_tipos_inscripcion">Tipos de Inscripción</a>
               </li>
@@ -249,10 +253,6 @@
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_generalidades">Generalidades</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_presupuestos">Presupuestos</a>
-                <ul class="nav flex-column text-2">
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_listpresupuestoxcli">Listado de
-                      Presupuestos por Cliente</a></li>
-                </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_remitos">Remitos</a>
                 <ul class="nav flex-column text-2">
@@ -280,19 +280,19 @@
                   </li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_ticketfactura">Ticket / Factura</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_ctrlcompnoimpreso">Control de
-                      Comprobantes
-                      no Impresos</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_fiscalizacion">Fiscalización</a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_notaventa">Notas de Venta</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_hojacarga">Hojas de Carga</a></li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_reciboexpss">Recibo Express</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_cobroclientes">Cobro a Clientes</a>
                 <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_recibocobro">Recibo de Cobro</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_imputaciones">Imputaciones</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_imputaciones">Imputaciones</a></li>                  
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_cobroxlote">Recibos por Lote</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_reciboexpss">Recibo Express</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_preespcli">Precios Especiales por
@@ -329,6 +329,15 @@
                       por Cliente</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_oprealizadas">Informe de Operaciones
                       Realizadas</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_percepcion_fcventa">Percepciones de IIBB en 
+                    Facturas de Venta
+                  </a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_recibosxcobrador">Recibos por Cobrador</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_clientesxcondventa">Clientes por Condición 
+                    de Venta
+                  </a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_facturas_vencidas">Facturas Vencidas</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_composicion_cobranza">Composición de Cobranza</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_otroslistados_comprobantes">Otros Listados:
@@ -338,6 +347,10 @@
                       Emitidos por Sucursal</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_comprobxcliente">Comprobantes
                       Emitidos por Cliente</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_listpresupuestoxcli">
+                    Presupuestos por Cliente</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_ctrlcompnoimpreso">Control de
+                        Comprobantes no Impresos</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_ventas_reciboxsucursal">Recibos de Cobro
                       por Sucursal</a></li>
                 </ul>
@@ -751,7 +764,7 @@
             </p>
 
             <p><u>Archivos de reporte</u></p>
-            <p>Los archivos de reporte se encuentran en la carpeta <b>Reportes</b> dentro de la carptea donde fue
+            <p>Los archivos de reporte se encuentran en la carpeta <b>Reportes</b> dentro de la carpeta donde fue
               instalado el Sistema de Gestión.
               Esta dirección debe coincidir con la especificada en la configuración del sistema. Para asegurarnos de
               ello, nos dirigimos a
@@ -897,7 +910,7 @@
             </p>
 
             <p><u>Clonar Comprobantes</u></p>
-            <p><img class="img-fluid border" src="assets/images/Parametros/Sucursales.png" alt=""></p>
+            <p><img class="img-fluid border" src="assets/images/Parametros/Sucursales - Clonar Comprobantes.png" alt=""></p>
             <p>
               Esta opción permite a distintas sucursales compartir comprobantes. Seleccione una sucursal de destino y
               una de origen a partir del cual se obtendrán los
@@ -987,6 +1000,44 @@
 
           </section>
 
+          <hr class="divider">
+
+          <!-- Comprobantes -> Filtros
+		============================ -->
+          <section id="man_comprobantes_filtros">
+            <h4>Filtros de Comprobantes de Cuenta Corriente</h4>
+
+            <p>
+              Se accede desde Parámetros, botón "Filtro de Cbtes. de C.C. Vta." ó  "Filtro de Cbtes. de C.C. Compra."<br>
+              <img class="img-fluid border" src="assets/images/Parametros/Boton Filtro Cpbte CC.png" alt=""> <br>
+              La pantalla tanto para ventas como para compras son idénticas, por lo que utilizaremos la ventana de 
+              ventas para ejemplificar<br>
+              Esta herramienta permite agrupar comprobantes que afecten la cuenta corriente en grupos de filtro personalizados,
+               que luego pueden ser utilizados en algunas herramientas de listado.
+            </p>
+
+            <p><img class="img-fluid border" src="assets/images/Parametros/Filtro de comprobantes de CC.png" alt=""></p>
+
+            <p>
+              Presionamos el botón Agregar para generar un nuevo filtro. El ID será asignado automáticamente, en la caja de 
+              texto "Descripción" escribimos el nombre del grupo. Luego, indicamos el tipo de grupo (Cuenta Corriente o Informe de Saldo) y 
+              el número del grupo de filtros. Podemos también seleccionar una sucursal específica cuyos comprobantes queremos ver en el listado. <br>
+              Supongamos que, en este listado, queremos que sólo estén las facturas de contado, de cuenta corriente y los recibos de ambas 
+              sucursales (Central y Lavalle). Debemos mover dichos comprobantes a la lista de la izquierda utilizando los botones:
+            </p>
+            <ul>
+              <li><b><<<</b>: mueve el elemento seleccionado de la tabla de la derecha a la tabla de la izquierda, 
+                es decir que lo agrega al grupo de filtros.</li>
+              <li><b>>></b>: mueve todos los elementos de la tabla de la izquierda a la tabla de la derecha, 
+                es decir que los quita del grupo de filtros.</li>
+              <li><b><<</b>: mueve todos los elementos de la tabla de la derecha a la tabla de la izquierda, 
+                es decir que agrega todos los comprobantes listados al grupo de filtros.</li>
+            </ul>
+            <p>Usando los botones, la tabla nos debería quedar así:</p>
+            <p><img class="img-fluid border" src="assets/images/Parametros/Filtro de comprobantes de CC - Ejemplo.png" alt=""></p>
+            <p>Confirmamos para guardar el grupo de filtros.</p>
+
+          </section>
           <hr class="divider">
 
           <!-- Primeros Pasos -> Alicuotas de IVA
@@ -1122,8 +1173,32 @@
               Desde esta opción se configurará el equipo local, o sea, el equipo donde se está trabajando actualmente.
               Aquí se detalla en qué sucursal está, con qué depósito trabaja por defecto, cuál es su caja por defecto,
               algunos controles de stock y caja, los intervalos de cuenta corriente (por ejemplo, 30 días: mensual, 60
-              días: bimestral, etc.) y las impresoras. <br>
+              días: bimestral, etc.) y las impresoras por defecto para impresión de comprobantes y de listados. <br>
               <img class="img-fluid border" src="assets/images/Inicio/Config Local.png" alt="">
+            </p>
+
+            <p><u>Correo</u></p>
+            <p>En esta pestaña, se realiza la configuración del correo para habilitar el envío de facturas por email.</p>
+            <p><img class="img-fluid border" src="assets/images/Inicio/Config Local - Correo.png" alt=""></p>
+
+            <p><u>Otras Opciones</u></p>
+            <p><img class="img-fluid border" src="assets/images/Inicio/Config Local - Otras Opciones.png" alt=""></p>
+            <p>En esta sección se encuentran otras opciones del sistema, como cantidad de decimales, el motor de base de datos que utiliza y la 
+              selección de los alias que configuramos en la sección anterior para las bases de datos regular y contable. Al ser una sección con 
+              opciones sensibles para la correcta operación del sistema, se recomienda que sólo los usuarios administradores la utilicen. <br>
+              Una de las opciones importantes es la configuración del certificado requerido para la fiscalización de facturas. Para ello, 
+              utilizamos las siguientes opciones del menú:              
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Inicio/Config Local - Certificado.png" alt=""></p>
+            <p>
+              En la primera opción indicamos la clave privada utilizada por el certificado. Hacemos click en el botón del explorador y 
+              buscamos el archivo correspondiente.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Inicio/Config Local - Buscar Clave.png" alt=""></p>
+            <p>Con la segunda opción, buscamos el archivo del certificado.</p>
+            <p><img class="img-fluid border" src="assets/images/Inicio/Config Local - Buscar Certificado.png" alt=""></p>
+            <p>
+              Si nos aparece el botón, hacemos click en "Aplicar a todos los usuarios" y luego Confirmamos para guardar los cambios.
             </p>
 
           </section>
@@ -3572,24 +3647,6 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Presupuesto -> Listado
-		============================ -->
-          <section id="man_ventas_listpresupuestoxcli">
-            <h3>Listado de Presupuestos por Cliente</h3>
-
-            <p>Se accede desde el submenú Listados Relacionados a Comprobantes, opción Listar presupuestos por cliente
-              <br>
-              <img class="img-fluid border" src="assets/images/Ventas/Boton Listar Presupuestos.png" alt="">
-            </p>
-
-            <p>Mediante esta opción puede listar los presupuestos pendientes de un cliente determinado en un período
-              determinado. Para ello deberá elegir el cliente y presionar Ver.</p>
-            <p><a class="popup-img" href="assets/images/Ventas/Listar Presupuestos.png"><img class="img-fluid border"
-                  src="assets/images/Ventas/Listar Presupuestos.png" alt=""></a></p>
-          </section>
-
-          <hr class="divider">
-
           <!-- Ventas -> Remitos
 		============================ -->
           <section id="man_ventas_remitos">
@@ -3977,7 +4034,7 @@
             <p><a class="popup-img" href="assets/images/Ventas/Nota de Debito.png"><img class="img-fluid border"
                   src="assets/images/Ventas/Nota de Debito.png" alt=""></a></p>
 
-            <p>En la sección impuestos, en el recuadro de la derecha, se indica a qué factura está aplicada esta Nota de
+            <p>En la sección impuestos, en el recuadro verde a la izquierda, se indica a qué factura está aplicada esta Nota de
               Crédito o Débito.</p>
             <p><img class="img-fluid border" src="assets/images/Ventas/Nota de Credito - Impuestos.png" alt=""></p>
             <p>Haciendo click el botón de Buscar Factura, se abrirá una nueva ventana donde podremos buscar una factura
@@ -4069,8 +4126,8 @@
               <li><b>Omitir Control de Valores (master)</b>: Sólo puede ser utilizada por usuarios administradores. Permite pasar 
                 por alto el control de ingreso de valores en la caja.
               </li>
-              <li><b>Revisión de Valores Ingresados</b>: Para realizar esta acción, la caja donde se realizó el comprobante no debe haberse cerrado desde la fecha 
-                en la que la factura fue emitida. Abre una nueva ventana donde podremos ajustar los valores ingresados en la operación.
+              <li><b>Revisión de Valores Ingresados</b>: Para realizar esta acción, la caja donde se realizó el comprobante no debe haberse cerrado desde 
+                que la factura fue emitida. Abre una nueva ventana donde podremos ajustar los valores ingresados en la operación.
                 <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Revision Valores Ingresados.png" alt=""></p>
                 En la tabla de la izquierda observamos los valores y los modos de pagos que fueron ingresados en la operación. Aquellos cuya columna "V" esté tildada serán aquellos que 
                 entrarán en la modificación y sumarán al resto que deberemos completar.  <br>
@@ -4159,37 +4216,41 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Control de Comprobantes no Impresos
+          <!-- Ventas -> Fiscalización
 		============================ -->
-          <section id="man_ventas_ctrlcompnoimpreso">
-            <h4>Control de Comprobantes no Impresos</h4>
+          <section id="man_ventas_fiscalizacion">
+            <h3>Fiscalización de Facturas</h3>
 
-            <p>
-              Se accede dentro de la solapa Ventas, sección Listados, dentro del menú desplegable <b>Relacionados a
-                Comprobantes</b>
+            <p>En esta sección, describiremos la herramienta de fiscalización del sistema. Para utilizarla, debe estar configurado el certificado 
+              de facturación electrónica (ver Primeros Pasos -> Configuración Local). Al hacer click en el botón "Fiscalizar" en cualquiera de 
+              los formularios vistos en esta sección, se abrirá la siguiente ventana:
             </p>
 
-            <p><a class="popup-img" href="assets/images/Ventas/Ctrl Comp no Impresos.png">
-                <img class="img-fluid border" src="assets/images/Ventas/Ctrl Comp no Impresos.png" alt=""></a></p>
+            <p><a class="popup-img" href="assets/images/Ventas/Fiscalizacion.png">
+                <img class="img-fluid border" src="assets/images/Ventas/Fiscalizacion.png" alt=""></a></p>
 
-            <p>
-              Esta opción emite un listado de todos los comprobantes de ventas que fueron facturados pero no impresos.
-              Para imprimirlos, seleccione uno y presione Marcar. Repita la operación hasta que haya marcado todos los
-              comprobantes deseados y presione Imprimir.
+            <p>En esta sección, podemos observar los datos y las opciones de fiscalización. Al hacer click en el botón "Fiscalizar", se 
+              iniciará el proceso de fiscalización cuyo progreso se mostrará en la consola debajo. Al finalizar con éxito, la factura 
+              tendrá asignado un C.A.E. que le otorgará peso fiscal.
             </p>
 
-            <p><a class="popup-img" href="assets/images/Ventas/Ventana Comp No Impreso.png">
-                <img class="img-fluid border" src="assets/images/Ventas/Ventana Comp No Impreso.png" alt=""></a></p>
-
+            <p><u>Revisión</u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Fiscalizacion - Revision.png" alt=""></p>
             <p>
-              Este proceso mostrará todas las vistas previas de las facturas listas para imprimir. Para imprimir uno de
-              estos comprobantes, lo seleccionamos en la lista y
-              presionamos el botón Imprimir. Para imprimir todos los comprobantes en la lista, hacemos click en el
-              botón Imprimir Todo. Para quitar un comprobante de la lista,
-              lo seleccionamos y hacemos click en el botón Marcar. Si está tildada la opción "Marcar Todos", al hacer
-              click limpiaremos la lista completa.
+              En la segunda pestaña, podemos consultar si el comprobante ya tiene un C.A.E. asignado en nuestra página de AFIP 
+              utilizando el botón "Buscar". Si encuentra un valor, podemos asignar este C.A.E. localmente a la factura seleccionada 
+              utilizando el botón "Asignar".
             </p>
+
+            <p><u>Consulta de Comprobantes</u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Fiscalizacion - Consulta Comprobantes.png" alt=""></p>
+            <p>
+              En la tercer y última pestaña, podemos generar un listado de los comprobantes que hayamos cargado
+               en la AFIP haciendo click en el botón "Cosulta Cpbtes".
+            </p>
+
           </section>
+
 
           <hr class="divider">
 
@@ -4337,46 +4398,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Recibo Express
-          ============================ -->
-          <section id="man_ventas_reciboexpss">
-            <h3>Recibo Express</h3>
 
-            <p>
-              Se encuentra en la sección Ventas, botón Recibo Express.<br>
-              <img class="img-fluid border" src="assets/images/Ventas/Boton Recibo Express.png" alt="">
-            </p>
-
-            <p>Esta herramienta permite generar recibos de forma rápida y sencilla:
-            <ol>
-              <li>Seleccionamos la Sucursal (1), el tipo de Comprobante (2), la Caja donde se registrará la venta (3) y
-                el Modo de Pago (4).</li>
-              <li>Buscamos al Cliente y seleccionamos una fecha (5).</li>
-              <li>Ingresamos el Número de Recibo (6).</li>
-              <li>Finalmente, ingresamos el importe (7) y hacemos click en el botón <img class="img-fluid border"
-                  src="assets/images/Ventas/Recibo Express - OK.png" alt="">.</li>
-            </ol>
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Recibo Express.png">
-                <img class="img-fluid border" src="assets/images/Ventas/Recibo Express.png" alt=""></a></p>
-
-            <p>
-              Al hacer doble click en el recibo, se abrirá una nueva ventana donde podremos realizar la facturación e
-              impresión del comprobante.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Ventas/Recibo Express - Doble Click.png">
-                <img class="img-fluid border" src="assets/images/Ventas/Recibo Express - Doble Click.png" alt=""></a>
-            </p>
-
-            <p>Si hacemos click en la sección <b>Cta. Cte.</b> debajo, veremos un listado de los comprobantes en la
-              Cuenta Corriente del cliente que seleccionamos. <br>
-              <img class="img-fluid border" src="assets/images/Ventas/Recibo Express - Cta Cte.png" alt="">
-            </p>
-          </section>
-
-          <hr class="divider">
 
           <!-- Ventas -> Cobro a Clientes
 		============================ -->
@@ -4439,6 +4461,22 @@
             <p>
               Esta sección está explicada en Primeros Pasos -> Valores.
             </p>
+
+            <p><b><u>Otras Opciones</u></b></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Recibo de Cobranza - Menu Opciones.png" alt=""></p>
+            <ul>
+              <li><b>Borrar una Aplicación</b>: borra la aplicación cuyo importe esté resaltado en la tabla de aplicaciones.</li>
+              <li><b>Borrar Todas las Aplicaciones</b>: borra todas las aplicaciones en la tabla.</li>
+              <li><b>Cambiar Clase Comprobante</b>: abre una ventana donde es posible modificar el tipo de comprobante y la sucursal.</li>
+              <li><b>Cambiar Código/Fecha</b>: abre una ventana donde es posible modificar el cliente, la fecha y el número del comprobante.</li>
+              <li><b>Revisión de Valores Ingresados</b>: Para realizar esta acción, la caja donde se realizó el comprobante no debe haberse cerrado 
+                desde que el recibo fue emitido. Abre una nueva ventana donde podremos ajustar los valores ingresados en la operación.
+                <p><img class="img-fluid border" src="assets/images/Ventas/Facturacion Venta de Contado - Revision Valores Ingresados.png" alt=""></p>
+                En la tabla de la izquierda observamos los valores y los modos de pagos que fueron ingresados en la operación. Aquellos cuya columna "V" esté tildada serán aquellos que 
+                entrarán en la modificación y sumarán al resto que deberemos completar.  <br>
+                El ingreso de los valores, realizado en la sección a la derecha, es idéntico al que vimos anteriormente. La única diferencia es que no estamos habilitados a cambiar la caja.
+              </li>
+            </ul>
 
             <p><u><b>Retenciones</b></u></p>
             <p><a class="popup-img" href="assets/images/Ventas/Recibo de Cobranza - Retenciones.png">
@@ -4545,6 +4583,79 @@
           <!-- Ventas -> Cobro a Clientes -> Recibo de Cobro x Lote
 		============================ -->
 
+          <section id="man_ventas_cobroxlote">
+            <h3>Recibo de Cobro por Lote</h3>
+
+            <p> Se encuentra en la sección Ventas, botón "Ingresar Recibos por lote".
+              <img class="img-fluid border" src="assets/images/Ventas/Boton Recibo por Lote.png " alt="">
+            </p>
+
+            <p>Se abrirá la sigueinte ventana, donde podremos automatizar la creación de recibos de cobro.</p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Recibo de Cobro por Lote.png" alt=""></p>
+
+            <p>              
+              En la tabla a la derecha, se mostrarán los comprobantes a los que podremos aplicar una cobranza. 
+              Seleccione un período Desde y Hasta y presione buscar para generar el listado. En la columna más a 
+              la derecha de esta tabla, se encuentran las cajas de selección que indican a cuales de estas facturas 
+              se le generaran un recibo de cobro. Arriba de la tabla, a la derecha, se encuentran dos botones: 
+              uno para seleccionar todos los elementos y otro para deseleccionar todos. Finalmente, en la sección a la derecha, 
+              presionamos el botón "Generar Recibo" para iniciar la operación. Al finalizar, se vaciará la tabla a la izquierda 
+              y aparecerán los recibos de cobro en la tabla a la derecha. Si nos equivocamos en la operación, 
+              podemos presionar el botón "Borrar" para eliminar estos recibos.
+            </p>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Recibo de Cobro por Lote - Recibos.png" alt=""></p>
+
+            <p>
+              En la parte superior, podemos seleccionar a qué sucursal y en qué caja serán asignados estos recibos. Por defecto, 
+              los valores ingresados en los recibos serán en efectivo. También podemos indicar el tipo de comprobante. <br>
+              Finalmente, haciendo doble click en cualquiera de estos recibos abriremos una ventana con el detalle del recibo de cobro.
+            </p>
+
+          </section>
+
+          <hr class="divider">
+
+                    <!-- Ventas -> Recibo Express
+          ============================ -->
+          <section id="man_ventas_reciboexpss">
+            <h3>Recibo Express</h3>
+
+            <p>
+              Se encuentra en la sección Ventas, botón Recibo Express.<br>
+              <img class="img-fluid border" src="assets/images/Ventas/Boton Recibo Express.png" alt="">
+            </p>
+
+            <p>Esta herramienta permite generar recibos de forma rápida y sencilla:
+            <ol>
+              <li>Seleccionamos la Sucursal (1), el tipo de Comprobante (2), la Caja donde se registrará la venta (3) y
+                el Modo de Pago (4).</li>
+              <li>Buscamos al Cliente y seleccionamos una fecha (5).</li>
+              <li>Ingresamos el Número de Recibo (6).</li>
+              <li>Finalmente, ingresamos el importe (7) y hacemos click en el botón <img class="img-fluid border"
+                  src="assets/images/Ventas/Recibo Express - OK.png" alt="">.</li>
+            </ol>
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Recibo Express.png">
+                <img class="img-fluid border" src="assets/images/Ventas/Recibo Express.png" alt=""></a></p>
+
+            <p>
+              Al hacer doble click en el recibo, se abrirá una nueva ventana donde podremos realizar la facturación e
+              impresión del comprobante.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Recibo Express - Doble Click.png">
+                <img class="img-fluid border" src="assets/images/Ventas/Recibo Express - Doble Click.png" alt=""></a>
+            </p>
+
+            <p>Si hacemos click en la sección <b>Cta. Cte.</b> debajo, veremos un listado de los comprobantes en la
+              Cuenta Corriente del cliente que seleccionamos. <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Recibo Express - Cta Cte.png" alt="">
+            </p>
+          </section>
+
+          <hr class="divider">
 
           <!-- Ventas -> Precio Especiales Clientes
 		============================ -->
@@ -4689,7 +4800,8 @@
             <p>
               Puede fiscalizar uno de estos comprobantes seleccionándolo en la lista con el click izquierdo del mouse y
               presionando el botón Fiscalizar, o bien fiscalizar todos
-              los comprobantes listados con el botón Fisc. Lote. <br>
+              los comprobantes listados con el botón Fisc. Lote. Se abrirá una ventana como la que hemos descrito en 
+              Facturas de Venta -> Fiscalización.<br>
               En la pestaña "Datos AFIP" puede consultar los comprobantes que tiene registrados en la AFIP. En la parte
               superior, puede indicar letra y números del comprobante, desde
               y hasta qué número de comprobante se realizará la búsqueda, sucursal de venta y tipo de comprobante. En el
@@ -5055,7 +5167,7 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Otros Listados -> Control de Forma de Pago de Clientes
+          <!-- Ventas -> Otros Listados -> Control de Forma de Pago de Clientes (en prod)
 		============================ 
     <section id="man_ventas_ctrlpagocliente">
       <h3>Control de Forma de Pago de Clientes</h3>
@@ -5071,7 +5183,7 @@
     <hr class="divider"> -->
 
 
-          <!-- Ventas -> Otros Listados ->
+          <!-- Ventas -> Otros Listados -> Retenciones (en prod)
 		============================ 
     <section id="man_ventas_retenciones">
       <h3>Retenciones</h3>
@@ -5165,6 +5277,151 @@
 
           <hr class="divider">
 
+          <!-- Ventas -> Otros Listados -> Percepciones IIBB en Facturas de Vta
+          ============================ -->
+          <section id="man_percepcion_fcventa">
+            <h3>Listado de Percepción de Ingresos Brutos en Facturas de Venta </h3>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Boton Percepcion IIBB Fc Venta.png"><img
+              class="img-fluid border" src="assets/images/Ventas/Boton Percepcion IIBB Fc Venta.png" alt=""></a></p>
+
+            <p>
+              En esta ventana se listan las percepciones de ingresos brutos realizadas en las facturas de venta.
+            </p>
+            
+            <p><a class="popup-img" href="assets/images/Ventas/Percepciones IIBB Fc Venta.png"><img class="img-fluid border"
+              src="assets/images/Ventas/Percepciones IIBB Fc Venta.png" alt=""></a></p>
+
+            <p>
+              Indique un período y presione Buscar para generar el listado. Puede Imprimir este listado o generar un archivo de texto para presentar el la web de ARBA utilizando 
+              los botones correspondientes.
+            </p>
+            
+          </section>
+
+          <hr class="divider">
+
+                    <!-- Ventas -> Otros Listados -> Recibos x Cobrador / Vendedor
+          ============================ -->
+          <section id="man_recibosxcobrador">
+            <h3>Listado de Recibos por Cobrador</h3>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Boton Listado Recibos x Cobrador.png" alt=""></p>
+            <p>
+              En esta pantalla, podemos listar los recibos por cobrador y/o vendedor. Seleccionamos un período y presionamos buscar para generar el listado
+            </p>
+            
+            <p><a class="popup-img" href="assets/images/Ventas/Listado de Recibos por Cobrador.png"><img class="img-fluid border"
+              src="assets/images/Ventas/Listado de Recibos por Cobrador.png" alt=""></a></p>
+          </section>
+
+          <p>
+            Presione Imprimir para generar un reporte, o Exportar a XLS para generar una planilla de cálculo con este listado.
+          </p>
+
+          <hr class="divider">
+
+                    <!-- Ventas -> Otros Listados -> Clietnes x Cond Vta
+		============================ -->
+          <section id="man_clientesxcondventa">
+            <h3>Listado de Clientes por Condición de Venta</h3>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Boton Listado Clientes x Cond Vta.png" alt=""></p>
+
+            <p>
+              Esta ventana permite listar clientes por condiciones de pago que tengan asociadas en su planilla de clientes. 
+              Seleccione una condición de venta en el menú desplegable y presione el botón Buscar para generar el listado.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Listado Clientes por Cond Vta.png"><img class="img-fluid border"
+              src="assets/images/Ventas/Listado Clientes por Cond Vta.png" alt=""></a></p>
+
+              <p>
+                Presione Imprimir para generar un reporte.
+              </p>
+          </section>
+
+          <hr class="divider"> 
+
+                    <!-- Ventas -> Otros Listados -> List. Facturas Vencidas
+		============================ -->
+          <section id="man_facturas_vencidas">
+            <h3>Listado de Facturas Vencidas</h3>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Boton Listado Facturas Vencidas.png" alt=""></p>
+
+            <p>
+              En este buscador, podemos indicar un rango de fechas desde y hasta junto con un conjunto de filtros para los que 
+              listar facturas vencidas. Los filtro disponibles son por sucursal, por vendedor, por zona y por estado del cliente. 
+              Presione el botón Buscar para generar el listado acorde a los filtros indicados.
+            </p>
+            
+            <p><a class="popup-img" href="assets/images/Ventas/Listado de Facturacion Vencida.png"><img class="img-fluid border"
+              src="assets/images/Ventas/Listado de Facturacion Vencida.png" alt=""></a></p>
+
+            <p>Presione Imprimir ó Imprimir Tabla para generar el reporte en forma normal o de tabla según corresponda.</p>
+
+            <p><u>Listado Personalizado</u></p>
+            <p><img class="img-fluid border" src="assets/images/Ventas/Boton Listado Facturas Vencidas.png" alt=""></p>
+            <p>Similar a como hemos visto en secciones anteriores, esta ventana posee un listado adicional personalizable por el usuario, con distintas secciones:</p>
+            <ol>
+              <li><b>Campos Disponibles</b>: en esta sección aparecen los campos disponibles que todavía no están en uso. Pueden ser arrastrados
+                 a cualquierda de las otras tres secciones.</li>
+              <li><b>Campos Agregados a la Tabla</b>: campos que aparecen en la tabla de la sección 4. Intercambiando los lugares de los campos
+                 también modificamos el orden en que se muestran.</li>
+              <li><b>Lista de Ítems</b>: muestra los ítems cuyos resultados se ven en la tabla. Haciendo click en la flecha hacia abajo en el
+                 campo "Razón Social", podremos especificar qué items se mostrarán en la tabla.</li>
+              <li><b>Tabla</b>: en esta sección es donde finalmente visualizamos la tabla con los resultados. De la misma forma que en el resto de
+                 las secciones, podemos agregar campos y filtrar qué items ver haciendo click en la flecha hacia abajo del campo correspondiente.</li>
+            </ol>
+            <p>Presionando Exportar puede generar una planilla de cálculo como se ve en la pantalla.</p>
+          </section>
+
+          <hr class="divider"> 
+
+
+                    <!-- Ventas -> Otros Listados -> Composición de Cobranza
+		============================ -->
+          <section id="man_composicion_cobranza">
+            <h3>Composición de Cobranza</h3>
+
+            <p><img class="img-fluid border" src="assets/images/Ventas/Boton Composicion Cobranza.png" alt=""></p>
+
+            <p>
+              Esta ventana permite generar un listado de recibos de cobro y visualizar su composición. Indique una fecha 
+              Desde y Hasta y presione Buscar para iniciar la operación.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Composicion de Cobranza.png"><img class="img-fluid border"
+              src="assets/images/Ventas/Composicion de Cobranza.png" alt=""></a></p>
+
+              <p>
+                En la cabecera del formulario se encuentran los filtros. Es posible filtrar por cliente, destildando la 
+                opción "Todos los Clientes" y utilizando el botón <img class="img-fluid border"
+                src="assets/images/Boton Buscar.png" alt=""> para buscar un cliente. También podemos filtrar por 
+                sucursal, cobrador y zona. Finalmente, al tildar la opción "Usa Filtro" podremos seleccionar uno de los  
+                filtros de comprobantes de cuenta corriente de ventas creados en Primeros Pasos -> Comprobantes. En 
+                la tabla debajo de este filtro indica los comprobantes que este contiene. Presione 
+                nuevamente el botón Buscar para aplicar los filtros y realizar nuevamente el listado.
+              </p>
+
+              <p>
+                En la primer tabla se muestran los recibos de cobro encontrados. La segunda tabla lista aquellas facturas 
+                contenidas en el recibo de cobro, cada una con su importe facturado, importe aplicado en el recibo y los 
+                días de vencimiento antes de su cobro (número positivo indica que fue cobrada luego de su fecha de 
+                vencimiento, número negativo indica lo contrario). <br>
+                Al seleccionar una factura en la segunda tabla, en la tercera se mostrarán los valores ingresados en su 
+                cobro, y en la cuarta las retenciones correspondientes. 
+              </p>
+
+              <p>
+                Finalmente, en la sección a la derecha se muestran totales y promedios relacionados al recibo de cobro seleccionado. 
+                Presione Imprimir para generar un reporte.
+              </p>
+          </section>
+
+          <hr class="divider">         
+
 
           <!--  Ventas -> Otros Listados -> Rel. Comprob. Comprobantes Emitidos x Sucursal
 		============================ -->
@@ -5229,8 +5486,60 @@
 
           <hr class="divider">
 
-          <!-- Ventas -> Otros Listados: Rel. Comprob. -> Recibos de Cobro x Sucursal
-============================ -->
+                    <!-- Ventas ->  Otros Listados: Rel. Comprob. -> Listado Presupuesto x Cliente
+		============================ -->
+          <section id="man_ventas_listpresupuestoxcli">
+            <h3>Listado de Presupuestos por Cliente</h3>
+
+            <p>Se accede desde el submenú Listados Relacionados a Comprobantes, opción Listar presupuestos por cliente
+              <br>
+              <img class="img-fluid border" src="assets/images/Ventas/Boton Listar Presupuestos.png" alt="">
+            </p>
+
+            <p>Mediante esta opción puede listar los presupuestos pendientes de un cliente determinado en un período
+              determinado. Para ello deberá elegir el cliente y presionar Ver.</p>
+            <p><a class="popup-img" href="assets/images/Ventas/Listar Presupuestos.png"><img class="img-fluid border"
+                  src="assets/images/Ventas/Listar Presupuestos.png" alt=""></a></p>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Ventas -> Otros Listados: Rel. Comprob. -> Control de Comprobantes no Impresos
+		============================ -->
+          <section id="man_ventas_ctrlcompnoimpreso">
+            <h4>Control de Comprobantes no Impresos</h4>
+
+            <p>
+              Se accede dentro de la solapa Ventas, sección Listados, dentro del menú desplegable <b>Relacionados a
+                Comprobantes</b>
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Ctrl Comp no Impresos.png">
+                <img class="img-fluid border" src="assets/images/Ventas/Ctrl Comp no Impresos.png" alt=""></a></p>
+
+            <p>
+              Esta opción emite un listado de todos los comprobantes de ventas que fueron facturados pero no impresos.
+              Para imprimirlos, seleccione uno y presione Marcar. Repita la operación hasta que haya marcado todos los
+              comprobantes deseados y presione Imprimir.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Ventas/Ventana Comp No Impreso.png">
+                <img class="img-fluid border" src="assets/images/Ventas/Ventana Comp No Impreso.png" alt=""></a></p>
+
+            <p>
+              Este proceso mostrará todas las vistas previas de las facturas listas para imprimir. Para imprimir uno de
+              estos comprobantes, lo seleccionamos en la lista y
+              presionamos el botón Imprimir. Para imprimir todos los comprobantes en la lista, hacemos click en el
+              botón Imprimir Todo. Para quitar un comprobante de la lista,
+              lo seleccionamos y hacemos click en el botón Marcar. Si está tildada la opción "Marcar Todos", al hacer
+              click limpiaremos la lista completa.
+            </p>
+          </section>
+
+          <hr class="divider">
+
+         <!-- Ventas -> Otros Listados: Rel. Comprob. -> Recibos de Cobro x Sucursal
+          ============================ -->
           <section id="man_ventas_reciboxsucursal">
             <h3>Recibos de Cobro por Sucursal</h3>
 
