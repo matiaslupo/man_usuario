@@ -438,6 +438,30 @@
             </ul>
           </li>
 
+          <!--SECCION PEDIDOS-->
+          <li class="nav-item"><a class="nav-link text-2" href="#man_pedidos">Pedidos de Clientes</a>
+            <ul class="nav flex-column text-2">
+              <li class="nav-item"><a class="nav-link text-2" href="#man_nota_pedido">Notas de Pedido</a></li>
+            </ul>
+          </li>
+
+           <!--SECCION ACOPIOS-->
+           <li class="nav-item"><a class="nav-link text-2" href="#man_acopios">Acopios</a>
+            <ul class="nav flex-column text-2">
+              <li class="nav-item"><a class="nav-link text-2" href="#man_acopio_mercaderia">Acopio de Mercadería</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_panel_acopios">Panel de Acopio</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_consolidacion_acopios">Consolidación de Acopios</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_entrega_mercaderia">Entregar Mercadería en Acopio</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_listados_acopios">Listados de Acopios</a>
+                <ul class="nav flex-column text-2">
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_entregas_acopios">Entregas de Acopios</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_mercaderia_acopio">Mercadería en Acopio</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ctacte_acopio">Cuenta Corriente de Acopios</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
           <!--SECCION BANCOS      -->
 
           <li class="nav-item"><a class="nav-link text-2" href="#man_bancos">Bancos</a>
@@ -468,13 +492,6 @@
                       Emitidos</a></li>
                 </ul>
               </li>
-            </ul>
-          </li>
-
-          <!--SECCION PEDIDOS-->
-          <li class="nav-item"><a class="nav-link text-2" href="#man_pedidos">Pedidos de Clientes</a>
-            <ul class="nav flex-column text-2">
-              <li class="nav-item"><a class="nav-link text-2" href="#man_nota_pedido">Notas de Pedido</a></li>
             </ul>
           </li>
 
@@ -613,7 +630,7 @@
 
           <hr class="divider">
 
-          <!-- Sección Primeros Pasos
+          <!-- Sección Primeros Pasos ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_primeros_pasos">
             <h2>Primeros Pasos</h2>
@@ -1362,7 +1379,8 @@
           <hr class="divider">
 
 
-          <!-- FAQ
+          <!-- FAQ ---------------------------------------------------------------------------------------------------------------------------------------------------||
+           || ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_faq">
             <h2>Preguntas Frecuentes</h2>
@@ -1455,7 +1473,7 @@
                               class="img-fluid border" src="assets/images/Boton Buscar.png" alt=""> para
                             seleccionar qué cuenta abriremos. Opcionalmente, podemos cambiar la Fecha o agregar
                             Observaciones de ser necesario. Finalmente, hacemos click en <b>Confirmar</b> y
-                            la caja ya estará abierta y disponible para su uso.
+                            la caja ya estará abierta y disponible para su uso. <br>
                             <img class="img-fluid border" src="assets/images/Fondos/Apertura de Caja.png" alt="">
                           </li>
                         </ol>
@@ -1600,9 +1618,10 @@
 
           <hr class="divider">
 
+          <!-- ||---------------------------------------------------------------------------------------------------------------------------------------------------||  -->
 
 
-          <!-- Stock
+          <!-- Seccion Stock ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_stock">
             <h2>Stock</h2>
@@ -1693,9 +1712,10 @@
                 actualizará el costo de la misma con el monto de la compra.
                 De no ser así, el costo será el mismo desde su carga inicial o desde alguna eventual modificación
                 manual. </li>
-              <li>Código de proveedor: El código del artículo según el proveedor.</li>
-              <li>Código de reemplazo: Puede ingresarse el código de algún artículo que pueda servir como reemplazo de
-                éste. </li>
+              <li>Códigos de proveedores: Muestra una ventana con los códigos del artículo según los proveedores.
+                <p><img class="img-fluid border" src="assets/images/Stock/Articulos - Cod Prov.png" alt=""></p>
+              </li>
+              <li>Código alternativo: Puede ingresarse manualmente otro código de artículo para utilizar además del código sugerido por defecto. </li>
               <li>Tabla: Se detallan los depósitos donde se van a almacenar los artículos. Volviendo a lo explicado en
                 Sucursales, aquí también se puede cargar un recargo por depósito, desde la columna % Recargo. Se
                 detallan además el stock inicial, o sea, de cuánto fue la primer compra. En el stock medio se ingresa el
@@ -1732,8 +1752,8 @@
             </p>
 
             <p><u>Movimientos de Stock</u><br>
-            <p><a class="popup-img" href="assets/images/Stock/Articulos - Costo Impuestos.png"><img
-                  class="img-fluid border" src="assets/images/Stock/Articulos - Costo Impuestos.png" alt=""></a></p>
+            <p><a class="popup-img" href="assets/images/Stock/Articulos - Mov Stock.png"><img
+                  class="img-fluid border" src="assets/images/Stock/Articulos - Mov Stock.png" alt=""></a></p>
             </p>
 
             <p>
@@ -2029,7 +2049,7 @@
               Para generar una lista de precios personalizada se deben seguir los siguiente pasos:
             <ol>
               <li>Elegir el depósito y presionar Iniciar.</li>
-              <li>Se puede modificar el orden de las columnas, haciendo click sobre el nombre de las columnasy
+              <li>Se puede modificar el orden de las columnas, haciendo click sobre el nombre de las columnas y
                 arrastrándolas.</li>
               <li>Es posible filtrar por marcas utilizando el Filtro en la parte superior. Aparecerá un menú de contexto
                 donde podremos seleccionar qué marcas
@@ -2127,7 +2147,7 @@
 
           <hr class="divider">
 
-          <!-- Seccion Fondos
+          <!-- Seccion Fondos ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_fondos">
             <h2>Fondos</h2>
@@ -2844,7 +2864,7 @@
 
           <hr class="divider">
 
-          <!-- Seccion Ventas
+          <!-- Seccion Ventas ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_ventas">
             <h2>Ventas</h2>
@@ -5313,11 +5333,11 @@
             
             <p><a class="popup-img" href="assets/images/Ventas/Listado de Recibos por Cobrador.png"><img class="img-fluid border"
               src="assets/images/Ventas/Listado de Recibos por Cobrador.png" alt=""></a></p>
-          </section>
 
-          <p>
-            Presione Imprimir para generar un reporte, o Exportar a XLS para generar una planilla de cálculo con este listado.
-          </p>
+              <p>
+                Presione Imprimir para generar un reporte, o Exportar a XLS para generar una planilla de cálculo con este listado.
+              </p>
+          </section>
 
           <hr class="divider">
 
@@ -5735,7 +5755,7 @@
 
           <hr class="divider">
 
-          <!-- Sección Compras
+          <!-- Sección Compras ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_compras">
             <h2>Compras</h2>
@@ -6622,7 +6642,328 @@
 
           <hr class="divider">
 
-          <!-- Sección Bancos
+
+
+
+          <!-- Seccion Pedidos de Clientes ---------------------------------------------------------------------------------------------------------------------------------------------------||
+		============================ -->
+          <section id="man_pedidos">
+            <h2>Pedidos de Clientes</h2>
+
+            <p class="lead">En esta sección se detallan herramientas para el registro y listado de Pedidos de Clientes.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Pedidos/Solapa Pedidos.png"><img class="img-fluid border"
+                  src="assets/images/Pedidos/Solapa Pedidos.png" alt=""></a></p>
+          </section>
+
+          <hr class="divider">
+
+
+          <!-- Pedidos de Clientes -> Nota de Pedido
+		============================ -->
+          <section id="man_nota_pedido">
+            <h3>Notas de Pedido de Clientes</h3>
+
+            <p>Se accede desde la sección Pedido Clientes:</p>
+
+            <p><img class="img-fluid border" src="assets/images/Pedidos/Boton Notas de Pedido.png" alt=""></p>
+
+            <p>Con este comprobante, podemos guardar en el sistema un pedido del cliente. Su funcionamiento es como está
+              indicado en la sección <b>Formularios de Comprobantes</b>
+              en <b>Primeros Pasos</b>. En el pie podemos ver una sección donde se indica el Estado de la nota de pedido
+              y el usuario que Generó el comprobante, además del Total
+              de la transacción.</p>
+
+            <p><a class="popup-img" href="assets/images/Pedidos/Nota de Pedido.png"><img class="img-fluid border"
+                  src="assets/images/Pedidos/Nota de Pedido.png" alt=""></a></p>
+
+            <p>En la Barra de Herramientas, podemos ver algunas opciones adicionales. Estas, de izquierda a derecha,
+              son:</p>
+            <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - Adicionales.png" alt=""></p>
+            <ul>
+              <li>
+                <b>Dar por Cumplida o Terminada</b>: Marca la nota de pedido como cumplida. Si en el detalle hay items
+                pendientes, los completa. También cambia el estado de
+                la nota de pedido a "Cumplido". <br>
+                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - Dar por Cumplida.png"
+                    alt=""></p>
+              </li>
+              <li>
+                <b>Copiar Nota de Pedido</b>: Esta opción se habilita en notas de pedido cuyo estado es Pendiente, y
+                donde se haya generado al menos una factura o remito pero
+                el pedido no se haya comletado. Crea una nueva nota de pedido con los faltantes, y marca la factura
+                original como Cumplido. También, debajo de la sección "N.
+                de Pedido Anteri." en la cabecera del formulario, aparecerá el número de la nota de pedido a partir de
+                la cual se realizó la copia.
+                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - NP Ant.png" alt=""></p>
+                <br>
+                Haciendo click en el número o presionando las teclas Alt + A, se abrirá en la misma ventana la nota de
+                pedido vinculada.
+              </li>
+              <li>
+                <b>Generar Remito</b>: Si no hay cantidades entregadas, no permite realziar esta acción. Genera un
+                remito en una nueva ventana con los items entregados y enlaza esta
+                nota de pedido a él. Debajo de la sección "Cpbt. de Entrega" en la cabecera del formulario de la nota de
+                pedido original, aparecerá el número de este remito.
+                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - CE Remito.png" alt=""></p>
+                <br>
+                Haciendo click en el número o presionando las teclas Alt + E, se abrirá el remito en otra ventana.
+              </li>
+              <li>
+                <b>Imprimir</b>: Genera un reporte para imprimir la Nota de Pedido.
+              </li>
+              <li>
+                <b>Generar Factura</b>: Si no hay cantidades entregadas, no permite realizar esta acción. Genera una
+                factura de cuenta corriente con los items entregados y enlaza esta
+                nota de pedido a ella. Debajo de la sección "Cbpt. de Entrega" en la cabecera del formulario de la nota
+                de pedido original, aparecerá el número de esta factura.
+                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - CE Factura.png" alt=""></p>
+                <br>
+                Haciendo click en el número o presionando las teclas Alt + E, se abrirá la factura en otra ventana.
+              </li>
+            </ul>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Pedidos de Clientes
+		============================ -->
+          <section id="man_">
+            <h3></h3>
+
+            <p></p>
+
+            <p><img class="img-fluid border" src="assets/images/Pedidos/" alt=""></p>
+
+            <p><a class="popup-img" href="assets/images/Pedidos/"><img class="img-fluid border"
+                  src="assets/images/Pedidos/" alt=""></a></p>
+          </section>
+
+          <!--  <hr class="divider"> -->
+
+       <!-- Sección Acopios ---------------------------------------------------------------------------------------------------------------------------------------------------||
+          ============================ -->
+          <section id="man_acopios">
+            <h2>Acopios</h2>
+
+            <p class="lead">En esta solapa, encontramos herramientas para administrar los acopios generados en las facturas de venta.</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/Solapa Acopios.png" alt=""></p>
+
+          </section>
+
+          <hr class="divider"> 
+
+      <!-- Acopios -> Mercadería Acopiada
+          ============================ -->
+          <section id="man_acopio_mercaderia">
+            <h3>Consultar Acopios</h3>
+
+            <p>Se encuentra dentro de la sección Acopios, botón "Acopio Mercadería".</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/Boton Acopio Mercaderia.png" alt=""></p>
+
+            <p>
+              En esta ventana, podremos consultar los registros de acopios de mercadería utilizando el botón Buscar. 
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Acopios/Acopio de Mercaderia.png"><img class="img-fluid border"
+                  src="assets/images/Acopios/Acopio de Mercaderia.png" alt=""></a></p>
+
+            <p>
+              En la cabecera del formulario, vemos los datos del acopio: la fecha en que fue generado, el código y nombre del 
+              cliente, su dirección y su localidad. A la derecha, se encuentra en número de la factura a partir de la 
+              que se generó el acopio y el número de acopio. En la tabla de detalles, se listan los artículos acopiados, 
+              con su respectiva cantidad acopiada, cantidad entregada y saldo restante por entregar. <br>
+              En el pie del formulario, se encuentran las observaciones y una lista de entregas. Al hacer doble click 
+              sobre una de ellas, se abrirá una nueva ventana con los datos del remito de entrega seleccionado.
+            </p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/Acopio de Mercaderia - Origen.png" alt=""></p>
+            <p>
+              Al hacer click en la pestaña "Origen del Acopio", se mostrará una tabla con los artículos acopiados, 
+              la cantidad acopiada desde la factura original y el precio neto gravado y total gravado para cada acopio. <br>
+              Presionando el botón Imprimir, generamos un reporte del acopio.
+            </p>
+            
+          </section>
+
+          <hr class="divider"> 
+
+      <!-- Acopios -> Panel Acopios
+          ============================ -->
+          <section id="man_panel_acopios">
+            <h3>Panel de Acopios</h3>
+
+            <p>Otra forma de consultar acopios es utilizando la herramienta "Panel de Acopios".</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/Boton Panel de Acopios.png" alt=""></p>
+
+            <p>Es una herramienta más visual para ver y buscar acopios. Para obtener el listado, presionamos el botón "Acopios".</p>
+
+            <p><a class="popup-img" href="assets/images/Acopios/Panel de Acopios.png"><img class="img-fluid border"
+                  src="assets/images/Acopios/Panel de Acopios.png" alt=""></a></p>
+
+            <p>
+              En cada tarjeta, podemos ver los datos principales del acopio: fecha en que fue generado, el número del comprobante de origen, y los datos 
+              del cliente como nombre, dirección, localidad y código postal. Al manter pulsado el click izquierdo del mouse y arrastrando hacia la izquierda 
+              o derecha, nos iremos desplazando por las distintas tarjetas. Haciendo doble click en cualquiera de estas tarjetas, se abrirá la
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Acopios/Panel de Acopios - Ajustes.png" alt=""></p>
+            <p>
+              Al hacer click en la etiqueta "Ajustes", veremos opciones de personalización de esta pantalla, como por ejemplo el intervalo de la animación, 
+              la transparencia del fondo y el modo de visualización, del cual existen dos: el modo mosaico, como se ve en la pantalla de ejemplo, y el modo 
+              carrusel, que es el seleccionado por defecto.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Acopios/Panel de Acopios - Carruzel.png" alt=""></p>
+          </section>
+
+          <hr class="divider"> 
+
+      <!-- Acopios -> Consolidación de Acopios
+          ============================ -->
+          <section id="man_consolidacion_acopios">
+            <h3>Consolidación de Acopios</h3>
+
+            <p>Se encuentra dentro de la sección Acopios, botón "Consolidacion Acopios".</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/Boton Consolidacion Acopios.png" alt=""></p>
+
+            <p>
+              En la parte superior de la ventana, seleccionamos un cliente con el botón <img class="img-fluid border" src="assets/images/Boton Buscar.png" alt="">, 
+              y automáticamente se completará la tabla debajo con los artículos relacionados a los acopios y las entregas del cliente seleccionado. </p>
+
+            <p><a class="popup-img" href="assets/images/Acopios/Consolidacion de Acopios.png"><img class="img-fluid border"
+                  src="assets/images/Acopios/Consolidacion de Acopios.png" alt=""></a></p>
+            <p>
+              En las columnas se indican: 
+              <ul>
+                <li>El código y detalle del producto.</li>
+                <li>Cantidad acopiada.</li>
+                <li>Cantidad entregada por remito.</li>
+                <li>Cantidad pendiente de facturar (si es negativo, indica existencias aún en acopio).</li>
+                <li>Precio del artículo.</li>
+                <li>Total en devoluciones.</li>
+                <li>Total final.</li>
+                <li>Casilla de selección de artículos. Sólo es posible seleccionar artículos con existencias pendientes a facturar.</li>
+              </ul>
+              Los registros en rojo, son aquellos artículos acopiados relacionados a compras anticipadas, y los registros en negro corresponden a los artículos entregados
+              por remito con existencias pendientes a facturar. <br>
+              Debajo de la tabla, se muestran los totales en devoluciones, compras anticipadas y entregas a cobrar. La caja de texto "Parcial" indica el total a cobrar de los 
+              artículos seleccionados en la tabla, que incrementará a medida que tildemos las casillas de selección. <br>
+              En la barra de herramientas, encontramos dos botones para facturar los artículos seleccionados: uno para venta en cuenta corriente y otro para venta al contado. 
+              También el botón de Imprimir para generar un reporte de la tabla.
+            </p>                
+
+            <p><u>Acopios</u></p>
+            <p><img class="img-fluid border" src="assets/images/Acopios/Consolidacion de Acopios - Acopios.png" alt=""></p>
+            <p>
+              En esta pestaña, podemos observar los acopios del cliente seleccionado. Al hacer doble click sobre uno de ellos, se abrirá la ventana de acopio de 
+              mercadría relacionada.
+            </p>
+
+            <p><u>Remitos</u></p>
+            <p><img class="img-fluid border" src="assets/images/Acopios/Consolidacion de Acopios - Remitos.png" alt=""></p>
+            <p>
+              Por último, esta pestaña lista los remitos del cliente seleccionado. Haciendo doble click sobre uno de ellos, abriremos la ventana del remito.
+            </p>
+            
+          </section>
+
+          <hr class="divider"> 
+
+      <!-- Acopios -> Entregar Mercadería Acopiada
+          ============================ -->
+          <section id="man_entregar_acopiada">
+            <h3>Entrega de Mercadería Acopiada</h3>
+
+            <p>Se encuentra dentro de la sección Acopios, botón "Entregar Mercadería en Acopio".</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/Boton Entregar Mercaderia.png" alt=""></p>
+
+            <p>
+              Se abrirá una ventana donde podremos registrar entregas de mercadería acopiada. Para comenzar, seleccionamos un cliente en 
+              el menú desplegable de la sección derecha o escribimos su código en el buscador. En la primera tabla se mostrarán los 
+              comprobantes de compras anticipadas del cliente seleccionado, y en la segunda tabla se muestran los artículos acopiados 
+              relacionados al comprobante seleccionado.
+            </p>
+
+            <p><a class="popup-img" href="assets/images/Acopios/Entregar Mercaderia en Acopio.png"><img class="img-fluid border"
+                  src="assets/images/Acopios/Entregar Mercaderia en Acopio.png" alt=""></a></p>
+
+            <p>
+              Presionamos el botón "Agregar" para comenzar a registrar la entrega. Haciendo click derecho sobre uno de los ítems en 
+              la tabla de artículos, lo seleccionamos. Luego, lo arrastramos con el click izquierdo a la tabla de la izquierda para 
+              agregarlo a la entrega.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Acopios/Entregar Mercaderia en Acopio - Agregar Artículo.png" alt=""></p>
+            <p>
+              Podemos modificar la cantidad entregada haciendo doble click sobre la casilla "Cantidad" e ingresando un valor. A la derecha, se 
+              actualizará la caja de texto "Entregado" con la cantidad correspondiente.
+            </p>
+            <p><img class="img-fluid border" src="assets/images/Acopios/Entregar Mercaderia en Acopio - Modificar Cantidad.png" alt=""></p>
+            <p>
+              Presionamos Confirmar para guardar la operación. Con el botón Imprimir generamos un reporte de la entrega, y con el 
+              botón Generar Remito abrimos una nueva ventana donde crearemos un remito de entrega.
+            </p>
+
+          </section>
+
+          <hr class="divider"> 
+
+      <!-- Acopios -> Mercadería Acopiada
+          ============================ -->
+          <section id="man_listados_acopios"><h3>Listados de Acopios</h3>
+
+            <p class="lead">Sección con opciones de listado de acopios.</p>
+            <p><img class="img-fluid border" src="assets/images/Acopios/Listados de Acopios.png" alt=""></p>
+          
+          </section>
+          <section id="man_entregas_acopios">
+            <h4>Listado de Entregas de Acopios</h4>
+
+            <p>Se encuentra dentro de la sección Listados de Acopios, botón "Listado Entrega de Acopios".</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/" alt=""></p>
+
+            <p><a class="popup-img" href="assets/images/Acopios/Listado Entregas de Acopios.png"><img class="img-fluid border"
+                  src="assets/images/Acopios/Listado Entregas de Acopios.png" alt=""></a></p>
+          </section>
+
+          <hr class="divider"> 
+
+      <!-- Acopios -> Mercadería Acopiada
+          ============================ -->
+          <section id="man_mercaderia_acopio">
+            <h4>Mercadería en Acopio</h4>
+
+            <p>Se encuentra dentro de la sección Listados de Acopios, botón "Listado de Acopios".</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/" alt=""></p>
+
+            <p><a class="popup-img" href="assets/images/Acopios/Mercaderia en Acopio.png"><img class="img-fluid border"
+                  src="assets/images/Acopios/Mercaderia en Acopio.png" alt=""></a></p>
+          </section>
+
+          <hr class="divider"> 
+
+      <!-- Acopios -> Mercadería Acopiada
+          ============================ -->
+          <section id="man_ctacte_acopios">
+            <h4>Cuenta Corriente de Acopios</h4>
+
+            <p>Se encuentra dentro de la sección Listados de Acopios, botón "Cta. Cte. Acopio".</p>
+
+            <p><img class="img-fluid border" src="assets/images/Acopios/" alt=""></p>
+
+            <p><a class="popup-img" href="assets/images/Acopios/Cuenta Corriente Acopio.png"><img class="img-fluid border"
+                  src="assets/images/Acopios/Cuenta Corriente Acopio.png" alt=""></a></p>
+          </section>
+
+          <hr class="divider"> 
+
+              <!-- Sección Bancos ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_bancos">
             <h2>Bancos</h2>
@@ -6911,120 +7252,7 @@
 
           <hr class="divider">
 
-
-          <!-- Pedidos de Clientes
-		============================ -->
-          <section id="man_pedidos">
-            <h2>Pedidos de Clientes</h2>
-
-            <p class="lead">En esta sección se detallan herramientas para el registro y listado de Pedidos de Clientes.
-            </p>
-
-            <p><a class="popup-img" href="assets/images/Pedidos/Solapa Pedidos.png"><img class="img-fluid border"
-                  src="assets/images/Pedidos/Solapa Pedidos.png" alt=""></a></p>
-          </section>
-
-          <hr class="divider">
-
-
-          <!-- Pedidos de Clientes -> Nota de Pedido
-		============================ -->
-          <section id="man_nota_pedido">
-            <h3>Notas de Pedido de Clientes</h3>
-
-            <p>Se accede desde la sección Pedido Clientes:</p>
-
-            <p><img class="img-fluid border" src="assets/images/Pedidos/Boton Notas de Pedido.png" alt=""></p>
-
-            <p>Con este comprobante, podemos guardar en el sistema un pedido del cliente. Su funcionamiento es como está
-              indicado en la sección <b>Formularios de Comprobantes</b>
-              en <b>Primeros Pasos</b>. En el pie podemos ver una sección donde se indica el Estado de la nota de pedido
-              y el usuario que Generó el comprobante, además del Total
-              de la transacción.</p>
-
-            <p><a class="popup-img" href="assets/images/Pedidos/Nota de Pedido.png"><img class="img-fluid border"
-                  src="assets/images/Pedidos/Nota de Pedido.png" alt=""></a></p>
-
-            <p>En la Barra de Herramientas, podemos ver algunas opciones adicionales. Estas, de izquierda a derecha,
-              son:</p>
-            <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - Adicionales.png" alt=""></p>
-            <ul>
-              <li>
-                <b>Dar por Cumplida o Terminada</b>: Marca la nota de pedido como cumplida. Si en el detalle hay items
-                pendientes, los completa. También cambia el estado de
-                la nota de pedido a "Cumplido". <br>
-                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - Dar por Cumplida.png"
-                    alt=""></p>
-              </li>
-              <li>
-                <b>Copiar Nota de Pedido</b>: Esta opción se habilita en notas de pedido cuyo estado es Pendiente, y
-                donde se haya generado al menos una factura o remito pero
-                el pedido no se haya comletado. Crea una nueva nota de pedido con los faltantes, y marca la factura
-                original como Cumplido. También, debajo de la sección "N.
-                de Pedido Anteri." en la cabecera del formulario, aparecerá el número de la nota de pedido a partir de
-                la cual se realizó la copia.
-                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - NP Ant.png" alt=""></p>
-                <br>
-                Haciendo click en el número o presionando las teclas Alt + A, se abrirá en la misma ventana la nota de
-                pedido vinculada.
-              </li>
-              <li>
-                <b>Generar Remito</b>: Si no hay cantidades entregadas, no permite realziar esta acción. Genera un
-                remito en una nueva ventana con los items entregados y enlaza esta
-                nota de pedido a él. Debajo de la sección "Cpbt. de Entrega" en la cabecera del formulario de la nota de
-                pedido original, aparecerá el número de este remito.
-                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - CE Remito.png" alt=""></p>
-                <br>
-                Haciendo click en el número o presionando las teclas Alt + E, se abrirá el remito en otra ventana.
-              </li>
-              <li>
-                <b>Imprimir</b>: Genera un reporte para imprimir la Nota de Pedido.
-              </li>
-              <li>
-                <b>Generar Factura</b>: Si no hay cantidades entregadas, no permite realizar esta acción. Genera una
-                factura de cuenta corriente con los items entregados y enlaza esta
-                nota de pedido a ella. Debajo de la sección "Cbpt. de Entrega" en la cabecera del formulario de la nota
-                de pedido original, aparecerá el número de esta factura.
-                <p><img class="img-fluid border" src="assets/images/Pedidos/Nota de Pedido - CE Factura.png" alt=""></p>
-                <br>
-                Haciendo click en el número o presionando las teclas Alt + E, se abrirá la factura en otra ventana.
-              </li>
-            </ul>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Pedidos de Clientes
-		============================ -->
-          <section id="man_">
-            <h3></h3>
-
-            <p></p>
-
-            <p><img class="img-fluid border" src="assets/images/Pedidos/" alt=""></p>
-
-            <p><a class="popup-img" href="assets/images/Pedidos/"><img class="img-fluid border"
-                  src="assets/images/Pedidos/" alt=""></a></p>
-          </section>
-
-          <!--  <hr class="divider">
-
-       Pedidos de Clientes
-		============================ 
-    <section id="man_">
-      <h3></h3>
-
-      <p></p>
-
-      <p><img class="img-fluid border" src="assets/images/Pedidos/" alt=""></p>
-
-      <p><a class="popup-img" href="assets/images/Pedidos/"><img class="img-fluid border"
-            src="assets/images/Pedidos/" alt=""></a></p>
-    </section>
-
-    <hr class="divider"> -->
-
-          <!-- Personal
+          <!-- Sección Personal ---------------------------------------------------------------------------------------------------------------------------------------------------||
 		============================ -->
           <section id="man_personal">
             <h2>Personal</h2>
@@ -7186,7 +7414,7 @@
             <h3>Comisiones</h3>
           </section>
 
-          <!--
+          <!-- Personal -> Asignar Vendedores a Facturas
 		============================ -->
           <section id="man_vendedores_facturas">
             <h4>Asignación de Vendedores a Facturas</h4>
@@ -7206,7 +7434,7 @@
             </p>
           </section>
 
-          <!--
+          <!-- Personal -> Liquidacion Comisiones
 		============================ -->
           <section id="man_liquidacion_comisiones">
             <h3>Liquidación de Comisiones</h3>
@@ -7227,7 +7455,7 @@
               presione Confirma. </p>
           </section>
 
-          <!--
+          <!-- Personal -> Listado de Facturas por Vendedor
 		============================ -->
           <section id="man_facturasxvendedor">
             <h3>Listado de Facturas por Vendedor</h3>
