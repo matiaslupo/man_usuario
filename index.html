@@ -451,12 +451,12 @@
               <li class="nav-item"><a class="nav-link text-2" href="#man_acopio_mercaderia">Acopio de Mercadería</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_panel_acopios">Panel de Acopio</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_consolidacion_acopios">Consolidación de Acopios</a></li>
-              <li class="nav-item"><a class="nav-link text-2" href="#man_entrega_mercaderia">Entregar Mercadería en Acopio</a></li>
+              <li class="nav-item"><a class="nav-link text-2" href="#man_entregar_acopiada">Entregar Mercadería en Acopio</a></li>
               <li class="nav-item"><a class="nav-link text-2" href="#man_listados_acopios">Listados de Acopios</a>
                 <ul class="nav flex-column text-2">
                   <li class="nav-item"><a class="nav-link text-2" href="#man_entregas_acopios">Entregas de Acopios</a></li>
                   <li class="nav-item"><a class="nav-link text-2" href="#man_mercaderia_acopio">Mercadería en Acopio</a></li>
-                  <li class="nav-item"><a class="nav-link text-2" href="#man_ctacte_acopio">Cuenta Corriente de Acopios</a></li>
+                  <li class="nav-item"><a class="nav-link text-2" href="#man_ctacte_acopios">Cuenta Corriente de Acopios</a></li>
                 </ul>
               </li>
             </ul>
@@ -6925,10 +6925,55 @@
 
             <p>Se encuentra dentro de la sección Listados de Acopios, botón "Listado Entrega de Acopios".</p>
 
-            <p><img class="img-fluid border" src="assets/images/Acopios/" alt=""></p>
-
             <p><a class="popup-img" href="assets/images/Acopios/Listado Entregas de Acopios.png"><img class="img-fluid border"
                   src="assets/images/Acopios/Listado Entregas de Acopios.png" alt=""></a></p>
+
+            <p>
+              En esta ventana, se listan todos los acopios que estén marcados como "Cumplido". Haciendo doble click sobre 
+              uno de estos registros, se abrirá la ventana correspondiente de consulta de acopio. Presionando Imprimir se generará 
+              un reporte de este listado.
+            </p>
+
+            <p><u>Lista detallada</u></p>
+            <p><a class="popup-img" href="assets/images/Acopios/Listado Entregas de Acopios - Detalle.png"><img class="img-fluid border"
+              src="assets/images/Acopios/Listado Entregas de Acopios - Detalle.png" alt=""></a></p>
+            <p>
+              En esta pantalla, podemos observar un listado personalizable como hemos visto en otras características:
+            </p>
+            <ol>
+              <li><b>Campos disponibles</b>: Haciendo click en la etiqueta "Mostrar Campos", se abrirá está sección de la ventana 
+                donde veremos los campos que todavía no están en uso. Pueden ser arrastrados a cualquierda de las otras tres secciones.
+              </li>
+              <li><b>Campos agregados a la tabla</b>: Campos que aparecen en la tabla. Intercambiando los lugares de los campos también modificamos el orden en que se muestran.</li>
+              <li><b>Registros en la tabla</b>: Muestra los registros de entregas de acopios que se verán en la tabla. Haciendo click en la flecha
+                 hacia abajo en alguno de los campos, podremos especificar qué items se mostrarán en la tabla. <br>
+                 Agregando campos en esta sección, podremos agrupar y ordenar los ítems.
+                </li>
+              <li><b>Tabla</b>: en esta sección es donde finalmente visualizamos la tabla con los totales de los artículos vendidos.
+                 De la misma forma que en el resto de las secciones, podemos agregar campos. Las primeras dos columnas muestran el saldo en el acopio, 
+                 mientras que las otras dos muestran el saldo en remitos de acopio (RA).
+              </li>
+            </ol>
+
+            <p>
+              Haciendo click en la etiqueta "Muestra Totales", podremos personalizar qué totales ver en la tabla:
+            </p>
+            <ul>
+              <li><u>Total General Columnas</u>:
+                <p><img class="img-fluid border" src="assets/images/General/Listado Detallada - Total Gen Col.png" alt=""></p>
+              </li>
+              <li><u>Totales por Columnas</u>:
+                <p><img class="img-fluid border" src="assets/images/General/Listado Detallada - Total por Col.png" alt=""></p>
+              </li>
+              <li><u>Total General Linea</u>:
+                <p><img class="img-fluid border" src="assets/images/General/Lista Detallada - Total Gen por Linea.png" alt=""></p>
+              </li>
+              <li><u>Totales por Linea</u>:
+                <p><img class="img-fluid border" src="assets/images/General/Lista Detallada - Total por Linea.png" alt=""></p>
+              </li>
+            </ul>
+
+            <p>Finalmente, podemos presionar el botón Imprimir a la derecha para generar un reporte de este listado.</p>
           </section>
 
           <hr class="divider"> 
@@ -6938,12 +6983,19 @@
           <section id="man_mercaderia_acopio">
             <h4>Mercadería en Acopio</h4>
 
-            <p>Se encuentra dentro de la sección Listados de Acopios, botón "Listado de Acopios".</p>
-
-            <p><img class="img-fluid border" src="assets/images/Acopios/" alt=""></p>
+            <p>
+              Se encuentra dentro de la sección Listados de Acopios, botón "Listado de Acopios". Presione el botón buscar para listar 
+              generar un listado de los acopios de los clientes.
+            </p>
 
             <p><a class="popup-img" href="assets/images/Acopios/Mercaderia en Acopio.png"><img class="img-fluid border"
                   src="assets/images/Acopios/Mercaderia en Acopio.png" alt=""></a></p>
+
+            <p>
+              Con el botón "Exportar XLS" podemos crear una planilla de cálculo Excel con el listado, y con el botón "Imprimir" 
+              generamos un reporte.
+            </p>
+            
           </section>
 
           <hr class="divider"> 
@@ -6953,12 +7005,18 @@
           <section id="man_ctacte_acopios">
             <h4>Cuenta Corriente de Acopios</h4>
 
-            <p>Se encuentra dentro de la sección Listados de Acopios, botón "Cta. Cte. Acopio".</p>
-
-            <p><img class="img-fluid border" src="assets/images/Acopios/" alt=""></p>
+            <p>
+              Se encuentra dentro de la sección Listados de Acopios, botón "Cta. Cte. Acopio". Presione Buscar 
+              para generar un listado con las cuentas corrientes de los clientes relacionadas con sus acopios de mercadería.
+            </p>
 
             <p><a class="popup-img" href="assets/images/Acopios/Cuenta Corriente Acopio.png"><img class="img-fluid border"
                   src="assets/images/Acopios/Cuenta Corriente Acopio.png" alt=""></a></p>
+
+            <p>
+              Presione "Imprimir" para generar un reporte o "Exportar" para crear una planilla de cálculo Excel con la tabla.
+            </p>
+            
           </section>
 
           <hr class="divider"> 
